@@ -171,10 +171,25 @@ version of that page as authoritative.
   component.
 - Implement keyboard operation and appropriate semantic HTML/ARIA in
   code.
-- For Button and IconButton, implement a visible keyboard-focus treatment
-  with `:focus-visible` in code; do not invent a new Figma focus variant.
+- Keyboard focus is a code-only treatment with `:focus-visible` (no
+  Figma focus variant). Every interactive component uses the semantic
+  focus tokens: `color/focus/ring` (orange-500; ≥ 3:1 on canvas, surface,
+  surface-subtle and the dark secondary background), `focus/ring-width`
+  (2 px) and `focus/ring-offset` (2 px), drawn as an outline outside the
+  component. Do not create per-component focus colours.
+- The effect styles `focus/*` and `shadows/*` in the Figma file come from
+  a third-party UI kit and point to variables outside the Kotify
+  collections. They are **not** part of Kotify DS: do not use them.
 - Buttons are sized with horizontal and vertical padding, not fixed
   heights.
+- **Secondary button:** hover and pressed intentionally keep the
+  `color/surface/subtle` background. Do not add hover/pressed surface
+  tokens for this single case. State feedback is motion: hover lifts the
+  button 2 px (`translateY(-2px)`), pressed scales it to 0.98, with a
+  ~120 ms ease-out transition, disabled under `prefers-reduced-motion`.
+- **Primary disabled:** the label stays at 90 % opacity (other variants
+  use 50 %) because 50 % did not meet legibility contrast on the disabled
+  primary background. Do not "harmonise" it.
 - Disabled controls must prevent their action and expose their disabled
   state semantically.
 - Buttons need concise, action-oriented labels.
@@ -251,8 +266,8 @@ When rebuilding or extending a prototype:
 - Figma aliases with opacity (for example a disabled background at 50 %)
   are output as `color-mix(in srgb, var(--token) N%, transparent)`.
 - When a Figma component binds a different token than the one its name
-  suggests (for example a disabled state bound to the default-background
-  token), mirror the component binding and report the inconsistency.
+  suggests, mirror the component binding and report the inconsistency so
+  it can be fixed in Figma.
 - Use the name in each variable's Figma **code syntax** (`WEB`) as the CSS
   custom property name. The pattern is the variable path in lowercase,
   with `/`, spaces, and commas replaced by `-` (for example
@@ -310,3 +325,11 @@ A change is ready for review when:
   - Code stack set: Angular, Storybook, CSS custom properties.
   - Code repository created (github.com/Zeshek/kotify-ds) with the token
     pipeline, Storybook foundations, and Button as the pilot component.
+  - Semantic focus tokens created in Figma: `color/focus/ring`,
+    `focus/ring-width`, `focus/ring-offset` (Semantics: 104 variables;
+    total 593).
+  - Ghost and destructive disabled states now bind their own
+    `disabled-background` tokens in Figma.
+  - Secondary button hover/pressed resolved with motion instead of new
+    colour tokens; primary disabled label at 90 % documented as an
+    accessibility decision.

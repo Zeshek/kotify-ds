@@ -2320,6 +2320,33 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "resolved": "400"
   },
   {
+    "collection": "Semantics",
+    "name": "color/focus/ring",
+    "type": "color",
+    "css": "--color-focus-ring",
+    "aliasOf": "Primitives/colors/orange/500",
+    "opacity": null,
+    "resolved": "#c3420d"
+  },
+  {
+    "collection": "Semantics",
+    "name": "focus/ring-width",
+    "type": "number",
+    "css": "--focus-ring-width",
+    "aliasOf": "Primitives/border-width/border-2",
+    "opacity": null,
+    "resolved": "2px"
+  },
+  {
+    "collection": "Semantics",
+    "name": "focus/ring-offset",
+    "type": "number",
+    "css": "--focus-ring-offset",
+    "aliasOf": "Primitives/spacing/0,5",
+    "opacity": null,
+    "resolved": "2px"
+  },
+  {
     "collection": "Component",
     "name": "button/variant/primary/default-background",
     "type": "color",

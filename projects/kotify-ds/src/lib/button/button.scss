@@ -47,11 +47,10 @@
     color: var(--_fg-disabled);
   }
 
-  // Code-only keyboard focus treatment (no Figma focus variant exists).
-  // Uses the semantic on-canvas colour for maximum contrast on the canvas.
+  // Keyboard focus (code-only; no Figma focus variant). Semantic focus tokens.
   &:focus-visible {
-    outline: 2px solid var(--color-on-canvas-default);
-    outline-offset: 2px;
+    outline: var(--focus-ring-width) solid var(--color-focus-ring);
+    outline-offset: var(--focus-ring-offset);
   }
 
   // ── Sizes ────────────────────────────────────────────────────────────────
@@ -72,14 +71,34 @@
     --_bg-disabled: var(--button-variant-secondary-disabled-background);
     --_fg: var(--button-variant-secondary-foreground);
     --_fg-disabled: var(--button-variant-secondary-disabled-foreground);
+
+    // Hover/pressed keep the same background by design (see Figma description).
+    // State feedback is motion: hover lifts 2 px, pressed scales to 0.98.
+    transition: transform 120ms ease-out;
+
+    &:hover:not(:disabled) {
+      transform: translateY(-2px);
+    }
+
+    &:active:not(:disabled) {
+      transform: scale(0.98);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+
+      &:hover:not(:disabled),
+      &:active:not(:disabled) {
+        transform: none;
+      }
+    }
   }
 
   &.kds-button--ghost {
     --_bg: var(--button-variant-ghost-default-background);
     --_bg-hover: var(--button-variant-ghost-hover-background);
     --_bg-pressed: var(--button-variant-ghost-pressed-background);
-    // Figma binds the disabled ghost fill to default-background (not disabled-background).
-    --_bg-disabled: var(--button-variant-ghost-default-background);
+    --_bg-disabled: var(--button-variant-ghost-disabled-background);
     --_fg: var(--button-variant-ghost-foreground);
     --_fg-disabled: var(--button-variant-ghost-disabled-foreground);
   }
@@ -88,8 +107,7 @@
     --_bg: var(--button-variant-destructive-default-background);
     --_bg-hover: var(--button-variant-destructive-hover-background);
     --_bg-pressed: var(--button-variant-destructive-pressed-background);
-    // Figma binds the disabled destructive fill to default-background (not disabled-background).
-    --_bg-disabled: var(--button-variant-destructive-default-background);
+    --_bg-disabled: var(--button-variant-destructive-disabled-background);
     --_fg: var(--button-variant-destructive-foreground);
     --_fg-disabled: var(--button-variant-destructive-disabled-foreground);
   }

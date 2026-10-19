@@ -99,3 +99,6 @@ font/display-2/font-weight|F|@P:font/weight/font-normal|FONT_WEIGHT
 color/on primary/container|C|@P:colors/orange/500|FILL,TEXT_FILL,STROKE_COLOR,EFFECT_COLOR
 color/primary/container|C|@P:colors/orange/100|FILL,TEXT_FILL,STROKE_COLOR,EFFECT_COLOR
 font/caption/font-weight|F|@P:font/weight/font-normal|FONT_WEIGHT
+color/focus/ring|C|@P:colors/orange/500|STROKE_COLOR,EFFECT_COLOR
+focus/ring-width|F|@P:border-width/border-2|STROKE_FLOAT,EFFECT_FLOAT
+focus/ring-offset|F|@P:spacing/0,5|EFFECT_FLOAT

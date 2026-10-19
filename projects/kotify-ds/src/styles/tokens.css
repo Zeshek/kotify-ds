@@ -259,6 +259,9 @@
   --color-on-primary-container: var(--colors-orange-500);
   --color-primary-container: var(--colors-orange-100);
   --font-caption-font-weight: var(--font-weight-font-normal);
+  --color-focus-ring: var(--colors-orange-500);
+  --focus-ring-width: var(--border-width-border-2);
+  --focus-ring-offset: var(--spacing-0-5);
 
   /* Component */
   --button-variant-primary-default-background: var(--color-primary-base);

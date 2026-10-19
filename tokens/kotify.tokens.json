@@ -1976,6 +1976,32 @@
         "FONT_WEIGHT"
       ],
       "$value": "{Primitives.font/weight/font-normal}"
+    },
+    "color/focus/ring": {
+      "$type": "color",
+      "css": "--color-focus-ring",
+      "scopes": [
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/orange/500}"
+    },
+    "focus/ring-width": {
+      "$type": "number",
+      "css": "--focus-ring-width",
+      "scopes": [
+        "STROKE_FLOAT",
+        "EFFECT_FLOAT"
+      ],
+      "$value": "{Primitives.border-width/border-2}"
+    },
+    "focus/ring-offset": {
+      "$type": "number",
+      "css": "--focus-ring-offset",
+      "scopes": [
+        "EFFECT_FLOAT"
+      ],
+      "$value": "{Primitives.spacing/0,5}"
     }
   },
   "Component": {
