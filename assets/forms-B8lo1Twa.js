@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-vtgMY1y5.js";import{_ as t,z as n}from"./angular-platform-Bup4TBJQ.js";var r;function init_forms(){return(init_forms=e((()=>{t(),r=new n(``)})))()}export{init_forms as n,r as t};

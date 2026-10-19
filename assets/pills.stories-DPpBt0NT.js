@@ -1,0 +1,20 @@
+import{n as e}from"./rolldown-runtime-vtgMY1y5.js";import{A as t,D as n,G as r,I as i,T as a,_ as o,it as s,m as c,rt as l,v as u,w as d}from"./angular-platform-Bup4TBJQ.js";import{r as f,t as p}from"./dist-BQq3Uu71.js";var m;function init_pills(){return(init_pills=e((()=>{m=`.kds-pills{gap:var(--pills-module-gap);scrollbar-width:none;padding:calc(var(--focus-ring-width) + var(--focus-ring-offset));margin:calc(-1 * (var(--focus-ring-width) + var(--focus-ring-offset)));display:flex;overflow-x:auto}.kds-pill{box-sizing:border-box;padding:var(--pills-py) var(--pills-px);border:var(--pills-default-border-width) solid var(--pills-default-border-color);border-radius:var(--pills-radius);background-color:var(--pills-default-background);color:var(--pills-default-foreground);font-family:var(--pills-font-family), system-ui, sans-serif;font-size:var(--pills-font-size);font-weight:var(--pills-font-weight);line-height:var(--pills-line-height);white-space:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent;flex:none;justify-content:center;align-items:center;margin:0;text-decoration:none;display:inline-flex}.kds-pill:focus-visible{outline:var(--focus-ring-width) solid var(--color-focus-ring);outline-offset:var(--focus-ring-offset)}.kds-pill.kds-pill--selected{background-color:var(--pills-selected-background);color:var(--pills-selected-foreground);border-color:#0000}`})))()}var h,g;function init_pills$1(){return(init_pills$1=e((()=>{s(),init_pills(),o(),h=class KdsPills{ariaLabel=u();static propDecorators={ariaLabel:[{type:t,args:[{isSignal:!0,alias:`ariaLabel`,required:!1,transform:void 0}]}]}},h=l([a({selector:`kds-pills`,standalone:!0,encapsulation:i.None,changeDetection:d.OnPush,host:{class:`kds-pills`,role:`group`,"[attr.aria-label]":`ariaLabel() ?? null`},template:`<ng-content />`,styles:[m]})],h),g=class KdsPill{selected=u(!1,{transform:c});isButton=r(n).nativeElement.tagName===`BUTTON`;static propDecorators={selected:[{type:t,args:[{isSignal:!0,alias:`selected`,required:!1,transform:void 0}]}]}},g=l([a({selector:`button[kdsPill], a[kdsPill]`,standalone:!0,encapsulation:i.None,changeDetection:d.OnPush,host:{class:`kds-pill`,"[class.kds-pill--selected]":`selected()`,"[attr.aria-pressed]":`isButton ? (selected() ? 'true' : 'false') : null`,"[attr.aria-current]":`!isButton && selected() ? 'page' : null`,"[attr.type]":`isButton ? 'button' : null`},template:`<ng-content />`})],g)})))()}var _,v,y;function init_pills_stories(){return(init_pills_stories=e((()=>{p(),init_pills$1(),_={title:`Components/Pills`,tags:[`autodocs`],decorators:[f({imports:[h,g]})],parameters:{docs:{description:{component:["Lightweight secondary navigation or filtering. Mirrors the Figma `pills` and `pills/item` (status default | selected, editable text).",``,'- On buttons the selected item exposes `aria-pressed`; on links, `aria-current="page"`.',`- Selected is filled and default is outlined, so the state does not depend on colour alone.`,`- Not a replacement for tabs or multi-step navigation. On narrow screens the row scrolls horizontally.`].join(`
+`)}}}},v={render:()=>({props:{sections:[`Entrantes`,`Principales`,`Postres`,`Bebidas`],current:`Entrantes`},template:`
+      <kds-pills ariaLabel="Secciones de la carta">
+        @for (s of sections; track s) {
+          <button kdsPill [selected]="s === current" (click)="current = s">{{ s }}</button>
+        }
+      </kds-pills>`})},y=[`Interactive`],v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:`{
+  render: () => ({
+    props: {
+      sections: ['Entrantes', 'Principales', 'Postres', 'Bebidas'],
+      current: 'Entrantes'
+    },
+    template: \`
+      <kds-pills ariaLabel="Secciones de la carta">
+        @for (s of sections; track s) {
+          <button kdsPill [selected]="s === current" (click)="current = s">{{ s }}</button>
+        }
+      </kds-pills>\`
+  })
+}`,...v.parameters?.docs?.source}}}})))()}init_pills_stories();export{v as Interactive,y as __namedExportsOrder,_ as default};
