@@ -1,0 +1,37 @@
+import{n as e}from"./rolldown-runtime-vtgMY1y5.js";import{A as t,G as n,H as r,I as i,M as a,S as o,T as s,_ as c,it as l,rt as u,v as d,w as f,y as p}from"./angular-platform-Bup4TBJQ.js";import{r as m,t as h}from"./dist-Db0PSVxJ.js";import{n as g,t as _}from"./forms-B8lo1Twa.js";var v;function init_radio(){return(init_radio=e((()=>{v=`.kds-radio-host{display:block}.kds-radio{--_bg:var(--radio-button-default-background);--_border:var(--radio-button-default-border-color);align-items:center;gap:var(--radio-button-gap);box-sizing:border-box;width:100%;padding:var(--radio-button-p);border:var(--radio-button-border-width) solid var(--_border);border-radius:var(--radio-button-radius);background-color:var(--_bg);cursor:pointer;-webkit-tap-highlight-color:transparent;display:flex;position:relative}.kds-radio>input{clip:rect(0 0 0 0);white-space:nowrap;border:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.kds-radio:has(>input:focus-visible){outline:var(--focus-ring-width) solid var(--color-focus-ring);outline-offset:var(--focus-ring-offset)}.kds-radio--selected{--_bg:var(--radio-button-selected-background);--_border:var(--radio-button-selected-border-color)}.kds-radio__ring{box-sizing:border-box;border:2px solid var(--radio-button-default-border-color);border-radius:var(--radius-full);flex:none;place-items:center;width:20px;height:20px;display:grid}.kds-radio--selected .kds-radio__ring{border-color:var(--radio-button-selected-foreground)}.kds-radio--selected .kds-radio__ring:after{content:"";border-radius:var(--radius-full);background-color:var(--radio-button-selected-foreground);width:10px;height:10px}.kds-radio .kds-choice__text,.kds-radio-group .kds-choice__text{gap:var(--space-2xs);flex-direction:column;flex:1;min-width:0;display:flex}.kds-radio .kds-choice__label,.kds-radio-group .kds-choice__label{color:var(--radio-button-foreground);font-family:var(--radio-button-font-family), system-ui, sans-serif;font-size:var(--radio-button-font-size);font-weight:var(--radio-button-font-weight);line-height:var(--radio-button-line-height)}.kds-radio .kds-choice__details,.kds-radio-group .kds-choice__details{color:var(--radio-button-foreground-subtle);font-family:var(--radio-button-details-font-family), system-ui, sans-serif;font-size:var(--radio-button-details-font-size);font-weight:var(--radio-button-details-font-weight);line-height:var(--radio-button-details-line-height)}.kds-radio-group{border:0;flex-direction:column;min-width:0;margin:0;padding:0;display:flex}.kds-radio-group>legend{margin-bottom:var(--radio-button-module-margin);color:var(--radio-button-module-title-foreground);font-family:var(--radio-button-module-title-font-family), system-ui, sans-serif;font-size:var(--radio-button-module-title-font-size);font-weight:var(--radio-button-module-title-font-weight);line-height:var(--radio-button-module-title-line-height);letter-spacing:var(--radio-button-module-title-letter-spacing);text-transform:uppercase;padding:0}.kds-radio-group>.kds-choice-group__options{gap:var(--radio-button-module-gap);flex-direction:column;display:flex}`})))()}var y,b,x;function init_radio$1(){return(init_radio$1=e((()=>{l(),init_radio(),c(),g(),y=0,b=class KdsRadioGroup{title=d();ariaLabel=d();name=d(`kds-radio-group-${y++}`);value=p(null);onChange=()=>{};onTouched=()=>{};select(e){this.value.set(e),this.onChange(e)}writeValue(e){this.value.set(e)}registerOnChange(e){this.onChange=e}registerOnTouched(e){this.onTouched=e}static propDecorators={title:[{type:t,args:[{isSignal:!0,alias:`title`,required:!1,transform:void 0}]}],ariaLabel:[{type:t,args:[{isSignal:!0,alias:`ariaLabel`,required:!1,transform:void 0}]}],name:[{type:t,args:[{isSignal:!0,alias:`name`,required:!1,transform:void 0}]}],value:[{type:t,args:[{isSignal:!0,alias:`value`,required:!1}]},{type:a,args:[`valueChange`]}]}},b=u([s({selector:`kds-radio-group`,standalone:!0,encapsulation:i.None,changeDetection:f.OnPush,providers:[{provide:_,useExisting:r(()=>b),multi:!0}],template:`
+    <fieldset class="kds-radio-group" role="radiogroup" [attr.aria-label]="title() ? null : ariaLabel() ?? null">
+      @if (title()) {
+        <legend>{{ title() }}</legend>
+      }
+      <div class="kds-choice-group__options"><ng-content /></div>
+    </fieldset>
+  `,styles:[v]})],b),x=class KdsRadio{group=n(b);value=d.required();label=d.required();details=d();selected=o(()=>this.group.value()===this.value());static propDecorators={value:[{type:t,args:[{isSignal:!0,alias:`value`,required:!0,transform:void 0}]}],label:[{type:t,args:[{isSignal:!0,alias:`label`,required:!0,transform:void 0}]}],details:[{type:t,args:[{isSignal:!0,alias:`details`,required:!1,transform:void 0}]}]}},x=u([s({selector:`kds-radio`,standalone:!0,encapsulation:i.None,changeDetection:f.OnPush,host:{class:`kds-radio-host`},template:`
+    <label class="kds-radio" [class.kds-radio--selected]="selected()">
+      <input type="radio" [name]="group.name()" [value]="value()" [checked]="selected()" (change)="group.select(value())" (blur)="group.onTouched()" />
+      <span class="kds-radio__ring" aria-hidden="true"></span>
+      <span class="kds-choice__text">
+        <span class="kds-choice__label">{{ label() }}</span>
+        @if (details()) {
+          <span class="kds-choice__details">{{ details() }}</span>
+        }
+      </span>
+    </label>
+  `})],x)})))()}var S,C,w;function init_radio_stories(){return(init_radio_stories=e((()=>{h(),init_radio$1(),S={title:`Components/Radio Button`,tags:[`autodocs`],decorators:[m({imports:[x,b]}),e=>{let t=e();return{...t,template:`<div style="max-width: 344px">${t.template}</div>`}}],parameters:{docs:{description:{component:["Mutually exclusive selection, grouped in a module with a title. Mirrors the Figma `radio buttons module` and `.radio button` (status default | selected, optional details).",``,"- Native radios sharing a `name`: arrow keys move the selection. The title is the group name (`<fieldset>` + `<legend>`); without it, pass `ariaLabel`.","- Works with `[(value)]`, `ngModel` and reactive forms.",`- The selected option changes background, border and indicator, so it does not rely on colour alone.`].join(`
+`)}}}},C={render:()=>({props:{moment:`arrival`},template:`
+      <kds-radio-group title="¿Cuándo quieres que te lo sirvamos?" [(value)]="moment">
+        <kds-radio value="arrival" label="Listo al llegar" details="Preparado para cuando llegues al restaurante." />
+        <kds-radio value="second" label="Segundo plato" details="Te lo serviremos después de los platos iniciales." />
+      </kds-radio-group>
+      <p style="margin-top: var(--space-md); font: 12px/1.4 var(--font-caption-font-family); color: var(--color-on-canvas-subtle)">Valor: {{ moment }}</p>`})},w=[`Module`],C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`{
+  render: () => ({
+    props: {
+      moment: 'arrival'
+    },
+    template: \`
+      <kds-radio-group title="¿Cuándo quieres que te lo sirvamos?" [(value)]="moment">
+        <kds-radio value="arrival" label="Listo al llegar" details="Preparado para cuando llegues al restaurante." />
+        <kds-radio value="second" label="Segundo plato" details="Te lo serviremos después de los platos iniciales." />
+      </kds-radio-group>
+      <p style="margin-top: var(--space-md); font: 12px/1.4 var(--font-caption-font-family); color: var(--color-on-canvas-subtle)">Valor: {{ moment }}</p>\`
+  })
+}`,...C.parameters?.docs?.source}}}})))()}init_radio_stories();export{C as Module,w as __namedExportsOrder,S as default};

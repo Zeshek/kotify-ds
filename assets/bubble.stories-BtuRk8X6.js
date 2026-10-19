@@ -1,6 +1,0 @@
-import{n as e}from"./rolldown-runtime-vtgMY1y5.js";import{r as t,t as n}from"./dist-BQq3Uu71.js";import{n as r,t as i}from"./bubble-DO19Ehmg.js";var a,o,s,c;function init_bubble_stories(){return(init_bubble_stories=e((()=>{n(),r(),a={title:`Components/Bubble`,tags:[`autodocs`],decorators:[t({imports:[i]})],parameters:{docs:{description:{component:["Small circular counter, for example the number of items in the Order bar. Mirrors the Figma `bubble` (no variants, 24 px).",``,`- Not interactive. The surrounding control must give the number its meaning for assistive technology.`,`- Two-digit numbers widen the bubble instead of clipping.`].join(`
-`)}}},args:{count:3},render:e=>({props:e,template:`<kds-bubble>{{ count }}</kds-bubble>`})},o={},s={args:{count:12}},c=[`Playground`,`TwoDigits`],o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{}`,...o.parameters?.docs?.source}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    count: 12
-  }
-}`,...s.parameters?.docs?.source}}}})))()}init_bubble_stories();export{o as Playground,s as TwoDigits,c as __namedExportsOrder,a as default};
