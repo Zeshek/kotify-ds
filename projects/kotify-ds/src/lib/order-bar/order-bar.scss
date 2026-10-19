@@ -26,9 +26,8 @@
   text-align: left;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  // Raw value in Figma (0 25 50 −12, black 25 %): a floating elevation that has
-  // no Kotify token yet. See the open question in AGENTS.md.
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+  // Kotify effect style elevation/floating (floats above scrolling content).
+  box-shadow: var(--elevation-floating);
 
   @include motion.press-motion;
   @include motion.focus-ring;

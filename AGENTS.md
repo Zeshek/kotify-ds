@@ -197,11 +197,12 @@ version of that page as authoritative.
   icons are exported from Figma to `src/icons/`. The navigation variant
   keeps `surface/base` on hover and pressed (motion is its feedback) and
   uses the `elevation/raised` shadow.
-- **Elevation:** Kotify has a single shadow, the effect style
-  `elevation/raised` (`--elevation-raised` in code), used by the cards and
-  the navigation IconButton. Use it for anything raised above the canvas;
-  do not create per-component shadows or a size scale without a
-  design-system decision. The `shadows/*` and `focus/*` effect styles in
+- **Elevation:** Kotify has two shadows, both Figma effect styles:
+  `elevation/raised` (`--elevation-raised`) for elements resting on the
+  canvas (cards, navigation IconButton, Time Picker containers) and
+  `elevation/floating` (`--elevation-floating`) for elements that float above
+  scrolling content (the Order bar). Do not create per-component shadows or
+  more levels without a design-system decision. The `shadows/*` and `focus/*` effect styles in
   the file belong to the third-party kit and are not Kotify DS.
 - **Primary disabled:** the label stays at 90 % opacity (other variants
   use 50 %) because 50 % did not meet legibility contrast on the disabled
@@ -225,6 +226,12 @@ version of that page as authoritative.
   or selection patterns.
 - Counter must respect limits supplied by the product/data flow. Do not
   invent minimums, maximums, stock, or quantity rules.
+- **card/time-slot** only shows the chosen slot: it is not interactive and has
+  no selected state.
+- **Time Picker:** the hour is fixed by the slot; the minutes are a wheel that
+  behaves like the iOS alarm picker (momentum, snap to a row, rows that curve
+  away and fade towards the edges, mouse drag on desktop). The selected state
+  is the centred minute. With `prefers-reduced-motion` it stays flat.
 - Only interactive cards receive interactive behavior. Preserve
   independent actions inside cards. The pressed treatment is a scale to
   0.98 (≈100–150 ms ease-out), returning to 1.0, without shifting layout;
@@ -313,20 +320,15 @@ Found while implementing the components. The code mirrors Figma (or uses the
 equal semantic token where Figma binds a primitive) and these stay open until
 they are fixed in Figma. Do not "fix" them in code on your own.
 
-- **Contrast:** `color/on surface/subtle` (neutral-500) is 3.92:1 on white,
-  below 4.5:1 for 12–14 px text. Used by checkbox details, card subtle text,
-  input placeholders, time picker titles and the counter description.
 - **Radio Button:** option details bind `page header/foreground` instead of
   `radio button/foreground-subtle`.
 - **Checkbox:** the default card binds `radio button/default/*` tokens (same
   values); the box radius binds the primitive `border-radius/rounded-4`, so
   `checkbox/box/radius` (8) is unused.
 - **card/time-slot:** background binds the primitive `colors/white`; the border
-  is a raw `#e7e5e4` (code uses `color/border/base`). The contract mentions a
-  selected state, but no selected variant exists.
-- **Order bar:** raw floating shadow (0 25 50 −12, black 25 %), no token yet;
-  the module contains a detached copy of the bar instead of an instance; the
-  horizontal padding binds the primitive `spacing/5`.
+  is a raw `#e7e5e4` (code uses `color/border/base`).
+- **Order bar:** the module contains a detached copy of the bar instead of an
+  instance; the horizontal padding binds the primitive `spacing/5`.
 - **Time Picker:** the fades are a raw canvas colour (`#faf7f2`) over the white
   container.
 - **Page Header:** the description recommends `font/h1` for the title, but the
@@ -396,6 +398,14 @@ A change is ready for review when:
     containers use `elevation/raised` (same values, were raw).
   - Order bar and the selection components (Pills, Checkbox, Radio) use the
     semantic focus ring; the Order bar also has the button motion.
+  - `colors/neutral/500` darkened from `#858078` to `#757069`, the lightest
+    value of its hue that gives secondary text (`color/on surface/subtle`)
+    4.5:1 on every background where it appears, keeping it lighter than
+    neutral-600 so the hierarchy with the main text holds.
+  - Effect style `elevation/floating` created (0 25 50 −12, black 25 %) and
+    applied to the Order bar.
+  - card/time-slot is display only (description fixed in Figma); the Time
+    Picker minutes behave like an iOS wheel (description updated in Figma).
   - Effect style `elevation/raised` created in Figma with the card shadow
     and applied to the cards and the navigation IconButton (whose shadow
     had drifted: second layer spread 0 instead of −1).

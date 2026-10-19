@@ -18,7 +18,7 @@
   --colors-neutral-200: #e4e1da;
   --colors-neutral-300: #d0ccc3;
   --colors-neutral-400: #aaa59c;
-  --colors-neutral-500: #858078;
+  --colors-neutral-500: #757069;
   --colors-neutral-600: #625e58;
   --colors-neutral-700: #46433f;
   --colors-neutral-800: #33312e;
@@ -601,4 +601,5 @@
 
   /* Effects (Figma effect styles) */
   --elevation-raised: 0 1px 2px -1px rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+  --elevation-floating: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }

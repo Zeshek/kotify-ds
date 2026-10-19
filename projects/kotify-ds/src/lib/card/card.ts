@@ -110,22 +110,22 @@ export class KdsOrderCard {
 }
 
 /**
- * card/time-slot — one 15-minute slot to choose. It is a button: the whole card
- * is the single action (pressed: scale 0.98). The availability badge comes from
- * the product. Figma defines no selected state yet, so none is drawn.
+ * card/time-slot — shows the 15-minute slot the customer chose and its
+ * availability. Display only: not interactive and without a selected state
+ * (the exact minute is chosen in the Time Picker).
  *
  * ```html
- * <button kdsTimeSlot start="13:00" end="13:15" status="Disponible" statusVariant="positive" (click)="pick(slot)"></button>
+ * <kds-time-slot-card start="13:00" end="13:15" status="Disponible" statusVariant="positive" />
  * ```
  */
 @Component({
-  selector: 'button[kdsTimeSlot]',
+  selector: 'kds-time-slot-card',
   standalone: true,
   imports: [KdsBadge],
   styleUrl: './card.scss',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'kds-card kds-time-slot-card', type: 'button' },
+  host: { class: 'kds-card kds-time-slot-card' },
   template: `
     <span class="kds-time-slot-card__time">
       <span class="kds-time-slot-card__start">{{ start() }}</span>

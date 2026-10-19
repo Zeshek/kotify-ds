@@ -33,8 +33,8 @@ const meta: Meta = {
         component: [
           'The Card family of the ordering flow: product, order, time-slot, upsell, checkout (with its line items) and reservation. All share `card/*` tokens and the `elevation/raised` shadow.',
           '',
-          '- Cards with their own actions (product, upsell, order with counter) are **not** a single control; only their buttons act.',
-          '- **Time-slot** is the one interactive card: it is a button, with the documented pressed treatment (scale 0.98).',
+          '- No card is a single control: product, upsell and order (with counter) act only through their own buttons.',
+          '- **Time-slot** only shows the chosen slot; it is not interactive. The exact minute is chosen in the Time Picker.',
           '- Separators use the card divider stroke; there is no Divider component.',
           '- Prices, totals, availability and the QR come from the product. The cards never compute or invent them.',
         ].join('\n'),
@@ -68,8 +68,8 @@ export const Order: Story = {
 export const TimeSlot: Story = {
   render: () => ({
     template: wrap(344, `
-      <button kdsTimeSlot start="13:00" end="13:15" status="Disponible" statusVariant="positive"></button>
-      <button kdsTimeSlot start="13:15" end="13:30" status="Últimas mesas" statusVariant="warning"></button>`),
+      <kds-time-slot-card start="13:00" end="13:15" status="Disponible" statusVariant="positive" />
+      <kds-time-slot-card start="13:15" end="13:30" status="Últimas mesas" statusVariant="warning" />`),
   }),
 };
 

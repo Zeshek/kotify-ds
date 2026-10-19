@@ -169,31 +169,13 @@
   line-height: var(--card-order-unit-price-line-height);
 }
 
-// ── card/time-slot (interactive) ───────────────────────────────────────────
+// ── card/time-slot (display only) ─────────────────────────────────────────
 .kds-time-slot-card {
   align-items: center;
   justify-content: space-between;
   gap: var(--card-gap);
-  width: 100%;
-  margin: 0;
   padding: var(--card-p);
   border: 1px solid var(--color-border-base);
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-
-  // Documented card interaction: pressed scale 0.98, ~120 ms ease-out.
-  transition: transform 120ms ease-out;
-
-  &:active { transform: scale(0.98); }
-
-  @media (prefers-reduced-motion: reduce) {
-    transition: none;
-    &:active { transform: none; }
-  }
-
-  @include motion.focus-ring;
 }
 
 .kds-time-slot-card__time {

@@ -1,27 +1,31 @@
 import {
-  AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewEncapsulation, computed, effect, forwardRef,
-  input, model, viewChild,
+  AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnDestroy, ViewEncapsulation, computed, effect,
+  forwardRef, input, model, signal, viewChild,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 let nextId = 0;
 const ROW = 48; // time picker/container/number/fixed-height
+const TILT = 32; // degrees per row away from the centre (wheel curvature)
+const FADE = 0.4; // opacity lost per row away from the centre
 
 /**
- * Kotify DS Time Picker — fine-tunes the arrival time inside a slot.
+ * Kotify DS Time Picker — fine-tunes the arrival time inside the chosen slot.
  *
  * ```html
  * <kds-time-picker [hour]="13" [minutes]="[15, 16, 17, …, 29]" [(value)]="minute" ariaLabel="Hora de llegada" />
  * ```
  *
- * Contract (Figma, time picker): fixed hour column and a minutes drum with three
- * visible rows; the centred row is the selection (highlight + weight 600, the
- * others 400). Fixed widths come from Figma. The product supplies the hour and
- * the list of minutes (for example the minutes of the chosen 15-minute slot); the
- * component never creates intervals or availability.
+ * Contract (Figma, time picker): the hour is fixed by the slot; the minutes are
+ * a wheel that behaves like the iOS alarm picker. It scrolls with momentum,
+ * snaps to a row, and the rows curve away and fade towards the edges. The
+ * centred minute is the selection (highlight + weight 600; the others 400).
+ * Fixed widths come from Figma. The product supplies the hour and the minutes;
+ * the component never creates intervals or availability.
  *
- * Interaction: scroll or swipe the drum (it snaps to a row), click a minute, or
- * focus the list and use ↑ ↓ Home End. Exposed as a listbox.
+ * Interaction: swipe or scroll the wheel, drag it with the mouse, click a
+ * minute, or focus it and use ↑ ↓ Home End. Exposed as a listbox. With
+ * `prefers-reduced-motion` the wheel stays flat and moves without animation.
  */
 @Component({
   selector: 'kds-time-picker',
@@ -52,19 +56,23 @@ const ROW = 48; // time picker/container/number/fixed-height
             role="listbox"
             tabindex="0"
             [attr.aria-labelledby]="id + '-m'"
-            [attr.aria-activedescendant]="selectedIndex() >= 0 ? id + '-o' + selectedIndex() : null"
+            [attr.aria-activedescendant]="id + '-o' + selectedIndex()"
             (scroll)="onScroll()"
             (keydown)="onKey($event)"
             (blur)="onTouched()"
+            (pointerdown)="onPointerDown($event)"
+            (pointermove)="onPointerMove($event)"
+            (pointerup)="onPointerUp($event)"
+            (pointercancel)="onPointerUp($event)"
           >
             @for (m of minutes(); track m; let i = $index) {
               <div
                 class="kds-tp__number kds-tp__option"
                 role="option"
                 [id]="id + '-o' + i"
-                [class.kds-tp__number--selected]="i === selectedIndex()"
+                [class.kds-tp__number--selected]="i === liveIndex()"
                 [attr.aria-selected]="i === selectedIndex()"
-                (click)="choose(i, true)"
+                (click)="onOptionClick(i)"
               >{{ pad(m) }}</div>
             }
           </div>
@@ -75,7 +83,7 @@ const ROW = 48; // time picker/container/number/fixed-height
     </div>
   `,
 })
-export class KdsTimePicker implements ControlValueAccessor, AfterViewInit {
+export class KdsTimePicker implements ControlValueAccessor, AfterViewInit, OnDestroy {
   /** Hour shown in the fixed column (from the chosen slot). */
   readonly hour = input.required<number>();
   /** Minutes offered by the product, in order. */
@@ -88,32 +96,83 @@ export class KdsTimePicker implements ControlValueAccessor, AfterViewInit {
   readonly value = model<number | null>(null);
 
   protected readonly id = `kds-tp-${nextId++}`;
+  /** Committed selection (value). */
   protected readonly selectedIndex = computed(() => {
     const i = this.minutes().indexOf(this.value() as number);
     return i >= 0 ? i : 0;
   });
+  /** Row under the highlight right now, updated while the wheel moves. */
+  protected readonly liveIndex = signal(0);
+
   private readonly drum = viewChild.required<ElementRef<HTMLElement>>('drum');
-  private scrollTimer: ReturnType<typeof setTimeout> | undefined;
+  private settleTimer: ReturnType<typeof setTimeout> | undefined;
+  private paintFrame = 0;
+  private inertiaFrame = 0;
+  private drag: { id: number; startY: number; startTop: number; moved: boolean; samples: { t: number; y: number }[] } | null = null;
+  private suppressClick = false;
   private onChange: (v: number) => void = () => {};
   protected onTouched: () => void = () => {};
 
   constructor() {
-    // Keep the drum aligned with the value when it changes from outside.
+    // Keep the wheel aligned with the value when it changes from outside.
     effect(() => {
       const i = this.selectedIndex();
-      queueMicrotask(() => this.scrollTo(i, false));
+      queueMicrotask(() => {
+        if (!this.drag && !this.inertiaFrame) this.scrollTo(i, false);
+      });
     });
   }
 
   ngAfterViewInit(): void {
     this.scrollTo(this.selectedIndex(), false);
+    this.paint();
+  }
+
+  ngOnDestroy(): void {
+    clearTimeout(this.settleTimer);
+    cancelAnimationFrame(this.paintFrame);
+    cancelAnimationFrame(this.inertiaFrame);
   }
 
   protected pad(n: number): string {
     return String(n).padStart(2, '0');
   }
 
-  protected choose(i: number, scroll: boolean): void {
+  // ── Wheel rendering ─────────────────────────────────────────────────────
+  protected onScroll(): void {
+    cancelAnimationFrame(this.paintFrame);
+    this.paintFrame = requestAnimationFrame(() => this.paint());
+    clearTimeout(this.settleTimer);
+    if (!this.drag && !this.inertiaFrame) this.settleTimer = setTimeout(() => this.settle(), 110);
+  }
+
+  /** Curves and fades each row by its distance to the centre, like a drum. */
+  private paint(): void {
+    const el = this.drum().nativeElement;
+    const pos = el.scrollTop / ROW;
+    const flat = this.reducedMotion();
+    el.querySelectorAll<HTMLElement>('.kds-tp__option').forEach((o, i) => {
+      const d = i - pos;
+      const a = Math.min(Math.abs(d), 1.75);
+      o.style.transform = flat ? '' : `perspective(240px) rotateX(${(-d * TILT).toFixed(2)}deg)`;
+      o.style.opacity = flat ? '' : String(Math.max(0, 1 - a * FADE));
+    });
+    const live = this.clamp(Math.round(pos));
+    if (live !== this.liveIndex()) this.liveIndex.set(live);
+  }
+
+  /** Commits the centred row once the wheel has stopped. */
+  private settle(): void {
+    this.choose(this.clamp(Math.round(this.drum().nativeElement.scrollTop / ROW)), false);
+  }
+
+  // ── Selection ───────────────────────────────────────────────────────────
+  protected onOptionClick(i: number): void {
+    if (this.suppressClick) return;
+    this.choose(i, true);
+  }
+
+  private choose(i: number, scroll: boolean): void {
     const m = this.minutes()[i];
     if (m === undefined) return;
     if (m !== this.value()) {
@@ -123,28 +182,85 @@ export class KdsTimePicker implements ControlValueAccessor, AfterViewInit {
     if (scroll) this.scrollTo(i, true);
   }
 
-  protected onScroll(): void {
-    clearTimeout(this.scrollTimer);
-    this.scrollTimer = setTimeout(() => {
-      const i = Math.round(this.drum().nativeElement.scrollTop / ROW);
-      this.choose(Math.min(Math.max(i, 0), this.minutes().length - 1), false);
-    }, 120);
-  }
-
   protected onKey(e: KeyboardEvent): void {
     const last = this.minutes().length - 1;
     const i = this.selectedIndex();
-    const next = { ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: last }[e.key];
+    const next = ({ ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: last } as Record<string, number>)[e.key];
     if (next === undefined) return;
     e.preventDefault();
-    this.choose(Math.min(Math.max(next, 0), last), true);
+    this.choose(this.clamp(next), true);
   }
 
+  // ── Mouse drag with momentum (touch uses native scrolling) ──────────────
+  protected onPointerDown(e: PointerEvent): void {
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    const el = this.drum().nativeElement;
+    cancelAnimationFrame(this.inertiaFrame);
+    this.inertiaFrame = 0;
+    clearTimeout(this.settleTimer);
+    this.drag = { id: e.pointerId, startY: e.clientY, startTop: el.scrollTop, moved: false, samples: [{ t: performance.now(), y: e.clientY }] };
+    el.setPointerCapture(e.pointerId);
+    el.classList.add('kds-tp__drum--dragging');
+  }
+
+  protected onPointerMove(e: PointerEvent): void {
+    if (!this.drag || e.pointerId !== this.drag.id) return;
+    const dy = e.clientY - this.drag.startY;
+    if (Math.abs(dy) > 3) this.drag.moved = true;
+    this.drum().nativeElement.scrollTop = this.drag.startTop - dy;
+    this.drag.samples.push({ t: performance.now(), y: e.clientY });
+    if (this.drag.samples.length > 6) this.drag.samples.shift();
+  }
+
+  protected onPointerUp(e: PointerEvent): void {
+    if (!this.drag || e.pointerId !== this.drag.id) return;
+    const { samples, moved } = this.drag;
+    this.drag = null;
+    this.suppressClick = moved;
+    setTimeout(() => (this.suppressClick = false));
+    const first = samples[0];
+    const last = samples[samples.length - 1];
+    const dt = Math.max(last.t - first.t, 1);
+    let v = -(last.y - first.y) / dt; // px per ms, positive = scroll down
+    if (this.reducedMotion() || Math.abs(v) < 0.05) return this.finishDrag();
+    const el = this.drum().nativeElement;
+    const max = el.scrollHeight - el.clientHeight;
+    const step = () => {
+      v *= 0.95;
+      el.scrollTop = Math.min(Math.max(el.scrollTop + v * 16, 0), max);
+      const atEdge = el.scrollTop <= 0 || el.scrollTop >= max;
+      if (Math.abs(v) > 0.05 && !atEdge) this.inertiaFrame = requestAnimationFrame(step);
+      else this.finishDrag();
+    };
+    this.inertiaFrame = requestAnimationFrame(step);
+  }
+
+  private finishDrag(): void {
+    cancelAnimationFrame(this.inertiaFrame);
+    this.inertiaFrame = 0;
+    const el = this.drum().nativeElement;
+    el.classList.remove('kds-tp__drum--dragging');
+    const i = this.clamp(Math.round(el.scrollTop / ROW));
+    this.scrollTo(i, true);
+    this.choose(i, false);
+  }
+
+  // ── Helpers ─────────────────────────────────────────────────────────────
   private scrollTo(i: number, smooth: boolean): void {
     const el = this.drum().nativeElement;
-    const reduce = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-    if (Math.abs(el.scrollTop - i * ROW) < 1) return;
-    el.scrollTo({ top: i * ROW, behavior: smooth && !reduce ? 'smooth' : 'auto' });
+    if (Math.abs(el.scrollTop - i * ROW) < 1) {
+      this.paint();
+      return;
+    }
+    el.scrollTo({ top: i * ROW, behavior: smooth && !this.reducedMotion() ? 'smooth' : 'auto' });
+  }
+
+  private clamp(i: number): number {
+    return Math.min(Math.max(i, 0), Math.max(this.minutes().length - 1, 0));
+  }
+
+  private reducedMotion(): boolean {
+    return !!globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   }
 
   writeValue(v: number | null): void { this.value.set(v); }

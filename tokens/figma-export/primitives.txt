@@ -15,7 +15,7 @@ colors/neutral/100|C|#f5f5f5|
 colors/neutral/200|C|#e4e1da|
 colors/neutral/300|C|#d0ccc3|
 colors/neutral/400|C|#aaa59c|
-colors/neutral/500|C|#858078|
+colors/neutral/500|C|#757069|
 colors/neutral/600|C|#625e58|
 colors/neutral/700|C|#46433f|
 colors/neutral/800|C|#33312e|

@@ -175,7 +175,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--colors-neutral-500",
     "aliasOf": null,
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Primitives",
@@ -1651,7 +1651,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--color-on-surface-subtle",
     "aliasOf": "Primitives/colors/neutral/500",
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Semantics",
@@ -3100,7 +3100,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--card-foreground-subtle",
     "aliasOf": "Semantics/color/on surface/subtle",
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Component",
@@ -3964,7 +3964,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--counter-foreground-subtle",
     "aliasOf": "Semantics/color/on surface/subtle",
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Component",
@@ -4135,7 +4135,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--time-picker-foreground-subtle",
     "aliasOf": "Semantics/color/on surface/subtle",
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Component",
@@ -4189,7 +4189,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--time-picker-container-selected-highlight",
     "aliasOf": "Semantics/color/on surface/subtle",
     "opacity": 12,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Component",
@@ -4369,7 +4369,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--input-default-foreground",
     "aliasOf": "Semantics/color/on surface/subtle",
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Component",
@@ -5170,7 +5170,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--radio-button-foreground-subtle",
     "aliasOf": "Semantics/color/on surface/subtle",
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Component",
@@ -5179,7 +5179,7 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "css": "--checkbox-foreground-subtle",
     "aliasOf": "Semantics/color/on surface/subtle",
     "opacity": null,
-    "resolved": "#858078"
+    "resolved": "#757069"
   },
   {
     "collection": "Component",

@@ -131,7 +131,7 @@
       "$type": "color",
       "css": "--colors-neutral-500",
       "scopes": [],
-      "$value": "#858078"
+      "$value": "#757069"
     },
     "colors/neutral/600": {
       "$type": "color",
@@ -5127,6 +5127,11 @@
       "$type": "shadow",
       "css": "--elevation-raised",
       "$value": "0 1px 2px -1px rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%)"
+    },
+    "elevation/floating": {
+      "$type": "shadow",
+      "css": "--elevation-floating",
+      "$value": "0 25px 50px -12px rgb(0 0 0 / 25%)"
     }
   }
 }

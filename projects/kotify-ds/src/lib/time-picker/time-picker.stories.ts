@@ -10,10 +10,11 @@ const meta: Meta = {
     docs: {
       description: {
         component: [
-          'Fine-tunes the arrival time inside a slot. Mirrors the Figma `time picker`: fixed hour column and a minutes drum with three visible rows.',
+          'Fine-tunes the arrival time inside the chosen slot. Mirrors the Figma `time picker`: fixed hour column and a minutes wheel with three visible rows that behaves like the iOS alarm picker (momentum, snap, rows that curve away and fade).',
           '',
           '- The product supplies the hour and the minutes (in this example, the minutes of the 13:15–13:30 slot). The component never creates intervals or availability.',
-          '- Scroll or swipe the drum (it snaps), click a minute, or focus the list and use ↑ ↓ Home End. Exposed as a listbox.',
+          '- Swipe or scroll the wheel, drag it with the mouse, click a minute, or focus it and use ↑ ↓ Home End. The centred minute is highlighted while it moves and committed when it stops. Exposed as a listbox.',
+          '- With `prefers-reduced-motion` the wheel stays flat and moves without animation.',
           '- Selected number: weight 600 (token). Others: 400, intentionally unbound (see AGENTS.md).',
         ].join('\n'),
       },

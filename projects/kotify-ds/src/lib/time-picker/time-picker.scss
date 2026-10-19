@@ -102,6 +102,23 @@
 .kds-tp__option {
   scroll-snap-align: center;
   cursor: pointer;
+  // Curvature and fade are set per row from the scroll position (iOS-style wheel).
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.kds-tp__drum {
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  overscroll-behavior: contain;
+}
+
+// While dragging with the mouse, snapping is paused so the wheel follows the pointer.
+.kds-tp__drum--dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
 }
 
 .kds-tp__fade {
