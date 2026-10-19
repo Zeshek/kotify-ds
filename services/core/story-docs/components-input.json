@@ -1,0 +1,27 @@
+{
+  "components": {
+    "components-input": {
+      "id": "components-input",
+      "name": "Input",
+      "path": "./projects/kotify-ds/src/lib/input/input.stories.ts",
+      "stories": {
+        "components-input--default": {
+          "id": "components-input--default",
+          "name": "Default"
+        },
+        "components-input--filled": {
+          "id": "components-input--filled",
+          "name": "Filled"
+        },
+        "components-input--email": {
+          "id": "components-input--email",
+          "name": "Email"
+        },
+        "components-input--hidden-title": {
+          "id": "components-input--hidden-title",
+          "name": "Hidden Title"
+        }
+      }
+    }
+  }
+}

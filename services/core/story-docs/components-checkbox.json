@@ -1,0 +1,23 @@
+{
+  "components": {
+    "components-checkbox": {
+      "id": "components-checkbox",
+      "name": "Checkbox",
+      "path": "./projects/kotify-ds/src/lib/checkbox/checkbox.stories.ts",
+      "stories": {
+        "components-checkbox--single": {
+          "id": "components-checkbox--single",
+          "name": "Single"
+        },
+        "components-checkbox--without-details": {
+          "id": "components-checkbox--without-details",
+          "name": "Without Details"
+        },
+        "components-checkbox--module": {
+          "id": "components-checkbox--module",
+          "name": "Module"
+        }
+      }
+    }
+  }
+}

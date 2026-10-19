@@ -1,0 +1,15 @@
+{
+  "components": {
+    "components-radio-button": {
+      "id": "components-radio-button",
+      "name": "RadioButton",
+      "path": "./projects/kotify-ds/src/lib/radio/radio.stories.ts",
+      "stories": {
+        "components-radio-button--module": {
+          "id": "components-radio-button--module",
+          "name": "Module"
+        }
+      }
+    }
+  }
+}

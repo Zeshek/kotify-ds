@@ -1,0 +1,19 @@
+{
+  "components": {
+    "components-text-field": {
+      "id": "components-text-field",
+      "name": "TextField",
+      "path": "./projects/kotify-ds/src/lib/text-field/text-field.stories.ts",
+      "stories": {
+        "components-text-field--default": {
+          "id": "components-text-field--default",
+          "name": "Default"
+        },
+        "components-text-field--filled": {
+          "id": "components-text-field--filled",
+          "name": "Filled"
+        }
+      }
+    }
+  }
+}

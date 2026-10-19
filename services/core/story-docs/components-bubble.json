@@ -1,0 +1,19 @@
+{
+  "components": {
+    "components-bubble": {
+      "id": "components-bubble",
+      "name": "Bubble",
+      "path": "./projects/kotify-ds/src/lib/bubble/bubble.stories.ts",
+      "stories": {
+        "components-bubble--playground": {
+          "id": "components-bubble--playground",
+          "name": "Playground"
+        },
+        "components-bubble--two-digits": {
+          "id": "components-bubble--two-digits",
+          "name": "Two Digits"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "components": {
+    "components-time-picker": {
+      "id": "components-time-picker",
+      "name": "TimePicker",
+      "path": "./projects/kotify-ds/src/lib/time-picker/time-picker.stories.ts",
+      "stories": {
+        "components-time-picker--slot": {
+          "id": "components-time-picker--slot",
+          "name": "Slot"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "components": {
+    "components-page-header": {
+      "id": "components-page-header",
+      "name": "PageHeader",
+      "path": "./projects/kotify-ds/src/lib/page-header/page-header.stories.ts",
+      "stories": {
+        "components-page-header--default": {
+          "id": "components-page-header--default",
+          "name": "Default"
+        },
+        "components-page-header--title-only": {
+          "id": "components-page-header--title-only",
+          "name": "Title Only"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "components": {
+    "components-pills": {
+      "id": "components-pills",
+      "name": "Pills",
+      "path": "./projects/kotify-ds/src/lib/pills/pills.stories.ts",
+      "stories": {
+        "components-pills--interactive": {
+          "id": "components-pills--interactive",
+          "name": "Interactive"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "components": {
+    "components-badge": {
+      "id": "components-badge",
+      "name": "Badge",
+      "path": "./projects/kotify-ds/src/lib/badge/badge.stories.ts",
+      "stories": {
+        "components-badge--playground": {
+          "id": "components-badge--playground",
+          "name": "Playground"
+        },
+        "components-badge--all-variants": {
+          "id": "components-badge--all-variants",
+          "name": "All Variants"
+        }
+      }
+    }
+  }
+}

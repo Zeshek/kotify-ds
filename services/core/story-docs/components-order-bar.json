@@ -1,0 +1,15 @@
+{
+  "components": {
+    "components-order-bar": {
+      "id": "components-order-bar",
+      "name": "OrderBar",
+      "path": "./projects/kotify-ds/src/lib/order-bar/order-bar.stories.ts",
+      "stories": {
+        "components-order-bar--default": {
+          "id": "components-order-bar--default",
+          "name": "Default"
+        }
+      }
+    }
+  }
+}

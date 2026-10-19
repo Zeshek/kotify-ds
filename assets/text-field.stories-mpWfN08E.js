@@ -1,0 +1,27 @@
+import{n as e}from"./rolldown-runtime-vtgMY1y5.js";import{A as t,H as n,I as r,M as i,T as a,_ as o,m as s,nt as c,rt as l,v as u,w as d,y as f}from"./angular-platform-B5gdVsrC.js";import{r as p,t as m}from"./dist-BbAR0bsP.js";import{n as h,t as g}from"./forms-B0qry6Ve.js";var _;function init_text_field(){return(init_text_field=e((()=>{_=`.kds-text-field{gap:var(--input-title-gap);flex-direction:column;min-width:0;display:flex}.kds-text-field .kds-field__title{color:var(--input-title-foreground);font-family:var(--input-title-font-family), system-ui, sans-serif;font-size:var(--input-title-font-size);font-weight:var(--input-title-font-weight);line-height:var(--input-title-line-height);letter-spacing:var(--input-title-letter-spacing);text-transform:uppercase}.kds-text-field .kds-field__title--hidden{clip:rect(0 0 0 0);white-space:nowrap;width:1px;height:1px;margin:-1px;position:absolute;overflow:hidden}.kds-text-field .kds-field__control{box-sizing:border-box;width:100%;padding:var(--input-p);border:var(--input-border-width) solid var(--input-default-border-color);border-radius:var(--input-radius);background-color:var(--input-background);color:var(--input-filled-foreground);font-family:var(--input-font-family), system-ui, sans-serif;font-size:var(--input-font-size);font-weight:var(--input-font-weight);line-height:var(--input-line-height);caret-color:var(--input-focus-border-color);outline:none;margin:0}.kds-text-field .kds-field__control::placeholder{color:var(--input-default-foreground);opacity:1}.kds-text-field .kds-field__control:not(:placeholder-shown){border-color:var(--input-filled-border-color)}.kds-text-field .kds-field__control:focus{border-color:var(--input-focus-border-color);color:var(--input-focus-foreground)}.kds-text-field textarea.kds-field__control{min-height:calc(var(--text-field-min-height) + 24px + 2 * var(--input-p) + 2 * var(--input-border-width));resize:vertical}`})))()}var v,y;function init_text_field$1(){return(init_text_field$1=e((()=>{l(),init_text_field(),o(),h(),v=0,y=class KdsTextField{label=u.required();hideLabel=u(!1,{transform:s});placeholder=u();name=u();rows=u(2);maxlength=u();describedBy=u();value=f(``);id=`kds-text-field-${v++}`;onChange=()=>{};onTouched=()=>{};update(e){let t=e.target.value;this.value.set(t),this.onChange(t)}writeValue(e){this.value.set(e??``)}registerOnChange(e){this.onChange=e}registerOnTouched(e){this.onTouched=e}static propDecorators={label:[{type:t,args:[{isSignal:!0,alias:`label`,required:!0,transform:void 0}]}],hideLabel:[{type:t,args:[{isSignal:!0,alias:`hideLabel`,required:!1,transform:void 0}]}],placeholder:[{type:t,args:[{isSignal:!0,alias:`placeholder`,required:!1,transform:void 0}]}],name:[{type:t,args:[{isSignal:!0,alias:`name`,required:!1,transform:void 0}]}],rows:[{type:t,args:[{isSignal:!0,alias:`rows`,required:!1,transform:void 0}]}],maxlength:[{type:t,args:[{isSignal:!0,alias:`maxlength`,required:!1,transform:void 0}]}],describedBy:[{type:t,args:[{isSignal:!0,alias:`describedBy`,required:!1,transform:void 0}]}],value:[{type:t,args:[{isSignal:!0,alias:`value`,required:!1}]},{type:i,args:[`valueChange`]}]}},y=c([a({selector:`kds-text-field`,standalone:!0,encapsulation:r.None,changeDetection:d.OnPush,providers:[{provide:g,useExisting:n(()=>y),multi:!0}],host:{class:`kds-text-field`},template:`
+    <label class="kds-field__title" [class.kds-field__title--hidden]="hideLabel()" [for]="id">{{ label() }}</label>
+    <textarea
+      class="kds-field__control"
+      [id]="id"
+      [name]="name() ?? null"
+      [rows]="rows()"
+      [placeholder]="placeholder() ?? ''"
+      [attr.maxlength]="maxlength() ?? null"
+      [attr.aria-describedby]="describedBy() ?? null"
+      [value]="value()"
+      (input)="update($event)"
+      (blur)="onTouched()"
+    ></textarea>
+  `,styles:[_]})],y)})))()}var b,x,S,C;function init_text_field_stories(){return(init_text_field_stories=e((()=>{m(),init_text_field$1(),b={title:`Components/Text Field`,tags:[`autodocs`],decorators:[p({imports:[y]}),e=>{let t=e();return{...t,template:`<div style="max-width: 342px">${t.template}</div>`}}],parameters:{docs:{description:{component:["Multi-line text entry with a persistent title, for reviews or notes. Mirrors the Figma `text field`: status default | filled | focus; title optional.",``,"- Minimum height from `text field/min-height`; the native handle resizes it vertically.",`- Same label and description rules as Input.`].join(`
+`)}}}},x={render:()=>({template:`<kds-text-field label="Valoración" placeholder="Escribe aquí tu opinión" />`})},S={render:()=>({props:{v:`Muy buen restaurante, definitivamente volvería.`},template:`<kds-text-field label="Valoración" [(value)]="v" />`})},C=[`Default`,`Filled`],x.parameters={...x.parameters,docs:{...x.parameters?.docs,source:{originalSource:`{
+  render: () => ({
+    template: \`<kds-text-field label="Valoración" placeholder="Escribe aquí tu opinión" />\`
+  })
+}`,...x.parameters?.docs?.source}}},S.parameters={...S.parameters,docs:{...S.parameters?.docs,source:{originalSource:`{
+  render: () => ({
+    props: {
+      v: 'Muy buen restaurante, definitivamente volvería.'
+    },
+    template: \`<kds-text-field label="Valoración" [(value)]="v" />\`
+  })
+}`,...S.parameters?.docs?.source}}}})))()}init_text_field_stories();export{x as Default,S as Filled,C as __namedExportsOrder,b as default};

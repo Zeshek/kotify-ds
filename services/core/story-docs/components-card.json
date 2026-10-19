@@ -1,0 +1,35 @@
+{
+  "components": {
+    "components-card": {
+      "id": "components-card",
+      "name": "Card",
+      "path": "./projects/kotify-ds/src/lib/card/card.stories.ts",
+      "stories": {
+        "components-card--product": {
+          "id": "components-card--product",
+          "name": "Product"
+        },
+        "components-card--order": {
+          "id": "components-card--order",
+          "name": "Order"
+        },
+        "components-card--time-slot": {
+          "id": "components-card--time-slot",
+          "name": "Time Slot"
+        },
+        "components-card--upsell": {
+          "id": "components-card--upsell",
+          "name": "Upsell"
+        },
+        "components-card--checkout": {
+          "id": "components-card--checkout",
+          "name": "Checkout"
+        },
+        "components-card--reservation": {
+          "id": "components-card--reservation",
+          "name": "Reservation"
+        }
+      }
+    }
+  }
+}

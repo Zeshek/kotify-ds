@@ -1,0 +1,19 @@
+{
+  "components": {
+    "components-counter": {
+      "id": "components-counter",
+      "name": "Counter",
+      "path": "./projects/kotify-ds/src/lib/counter/counter.stories.ts",
+      "stories": {
+        "components-counter--on-card": {
+          "id": "components-counter--on-card",
+          "name": "On Card"
+        },
+        "components-counter--on-canvas": {
+          "id": "components-counter--on-canvas",
+          "name": "On Canvas"
+        }
+      }
+    }
+  }
+}
