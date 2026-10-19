@@ -1,0 +1,96 @@
+// Kotify DS Button — every value comes from Component tokens (button/*),
+// which alias Semantics. See tokens.css (generated from Figma).
+
+.kds-button {
+  // Per-variant custom properties set below; defaults = primary.
+  --_bg: var(--button-variant-primary-default-background);
+  --_bg-hover: var(--button-variant-primary-hover-background);
+  --_bg-pressed: var(--button-variant-primary-pressed-background);
+  --_bg-disabled: var(--button-variant-primary-disabled-background);
+  --_fg: var(--button-variant-primary-foreground);
+  --_fg-disabled: var(--button-variant-primary-disabled-foreground);
+
+  // Layout: hugs content, centred label, padding-based sizing (no fixed height).
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+
+  background-color: var(--_bg);
+  color: var(--_fg);
+
+  // Large is the Figma default size.
+  padding: var(--button-size-large-py) var(--button-size-large-px);
+  border-radius: var(--button-size-large-radius);
+  font-family: var(--button-size-large-font-family), system-ui, sans-serif;
+  font-size: var(--button-size-large-font-size);
+  font-weight: var(--button-size-large-font-weight);
+  line-height: var(--button-size-large-line-height);
+
+  &:hover:not(:disabled) {
+    background-color: var(--_bg-hover);
+  }
+
+  &:active:not(:disabled) {
+    background-color: var(--_bg-pressed);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--_bg-disabled);
+    color: var(--_fg-disabled);
+  }
+
+  // Code-only keyboard focus treatment (no Figma focus variant exists).
+  // Uses the semantic on-canvas colour for maximum contrast on the canvas.
+  &:focus-visible {
+    outline: 2px solid var(--color-on-canvas-default);
+    outline-offset: 2px;
+  }
+
+  // ── Sizes ────────────────────────────────────────────────────────────────
+  &.kds-button--small {
+    padding: var(--button-size-small-py) var(--button-size-small-px);
+    border-radius: var(--button-size-small-radius);
+    font-family: var(--button-size-small-font-family), system-ui, sans-serif;
+    font-size: var(--button-size-small-font-size);
+    font-weight: var(--button-size-small-font-weight);
+    line-height: var(--button-size-small-line-height);
+  }
+
+  // ── Variants ─────────────────────────────────────────────────────────────
+  &.kds-button--secondary {
+    --_bg: var(--button-variant-secondary-default-background);
+    --_bg-hover: var(--button-variant-secondary-hover-background);
+    --_bg-pressed: var(--button-variant-secondary-pressed-background);
+    --_bg-disabled: var(--button-variant-secondary-disabled-background);
+    --_fg: var(--button-variant-secondary-foreground);
+    --_fg-disabled: var(--button-variant-secondary-disabled-foreground);
+  }
+
+  &.kds-button--ghost {
+    --_bg: var(--button-variant-ghost-default-background);
+    --_bg-hover: var(--button-variant-ghost-hover-background);
+    --_bg-pressed: var(--button-variant-ghost-pressed-background);
+    // Figma binds the disabled ghost fill to default-background (not disabled-background).
+    --_bg-disabled: var(--button-variant-ghost-default-background);
+    --_fg: var(--button-variant-ghost-foreground);
+    --_fg-disabled: var(--button-variant-ghost-disabled-foreground);
+  }
+
+  &.kds-button--destructive {
+    --_bg: var(--button-variant-destructive-default-background);
+    --_bg-hover: var(--button-variant-destructive-hover-background);
+    --_bg-pressed: var(--button-variant-destructive-pressed-background);
+    // Figma binds the disabled destructive fill to default-background (not disabled-background).
+    --_bg-disabled: var(--button-variant-destructive-default-background);
+    --_fg: var(--button-variant-destructive-foreground);
+    --_fg-disabled: var(--button-variant-destructive-disabled-foreground);
+  }
+}

@@ -1,0 +1,334 @@
+button/variant/primary/default-background|C|@S:color/primary/base|FILL,TSE
+button/variant/primary/hover-background|C|@S:color/primary/hover|FILL,TSE
+button/variant/primary/pressed-background|C|@S:color/primary/pressed|FILL,TSE
+button/variant/primary/foreground|C|@S:color/on primary/default|FILL,TSE
+button/variant/primary/disabled-background|C|@S:color/primary/base~50|FILL,TSE
+button/variant/primary/disabled-foreground|C|@S:color/on primary/default~90|FILL,TSE
+button/variant/secondary/default-background|C|@S:color/surface/subtle|FILL,TSE
+button/variant/secondary/hover-background|C|@S:color/surface/subtle|FILL,TSE
+button/variant/secondary/pressed-background|C|@S:color/surface/subtle|FILL,TSE
+button/variant/secondary/foreground|C|@S:color/on canvas/default|FILL,TSE
+button/variant/secondary/disabled-background|C|@S:color/surface/subtle~50|FILL,TSE
+button/variant/secondary/disabled-foreground|C|@S:color/on canvas/default~50|FILL,TSE
+button/size/large/px|F|@S:space/xl|WIDTH_HEIGHT,GAP
+button/size/large/py|F|@S:space/md|WIDTH_HEIGHT,GAP
+button/size/large/radius|F|@S:radius/2xl|CORNER_RADIUS
+button/size/large/font-family|S|@S:font/label-1/font-family|FONT_FAMILY
+button/size/large/font-size|F|@S:font/label-1/font-size|FONT_SIZE
+button/size/large/font-weight|F|@S:font/label-1/font-weight|FONT_WEIGHT
+button/size/large/line-height|F|@S:font/label-1/line-height|LINE_HEIGHT
+button/size/small/px|F|@S:space/base|WIDTH_HEIGHT,GAP
+button/size/small/py|F|@S:space/xs|WIDTH_HEIGHT,GAP
+button/size/small/radius|F|@S:radius/full|CORNER_RADIUS
+button/size/small/font-family|S|@S:font/label-2/font-family|FONT_FAMILY
+button/size/small/font-size|F|@S:font/label-2/font-size|FONT_SIZE
+button/size/small/line-height|F|@S:font/label-2/line-height|LINE_HEIGHT
+button/size/small/font-weight|F|@S:font/label-2/font-weight|FONT_WEIGHT
+button/variant/ghost/default-background|C|@S:color/on canvas/default~0|FILL,TSE
+button/variant/ghost/hover-background|C|@S:color/on canvas/default~4|FILL,TSE
+button/variant/ghost/pressed-background|C|@S:color/on canvas/default~8|FILL,TSE
+button/variant/ghost/foreground|C|@S:color/on canvas/subtle|FILL,TSE
+button/variant/ghost/disabled-background|C|@S:color/on canvas/default~0|FILL,TSE
+button/variant/ghost/disabled-foreground|C|@S:color/on canvas/subtle~50|FILL,TSE
+button/variant/destructive/default-background|C|@S:color/feedback/negative-subtle|FILL,TSE
+button/variant/destructive/hover-background|C|@S:color/feedback/negative-subtle|FILL,TSE
+button/variant/destructive/pressed-background|C|@S:color/feedback/negative-subtle|FILL,TSE
+button/variant/destructive/foreground|C|@S:color/feedback/on-negative-subtle|FILL,TSE
+button/variant/destructive/disabled-background|C|@S:color/feedback/negative-subtle~50|FILL,TSE
+button/variant/destructive/disabled-foreground|C|@S:color/feedback/on-negative-subtle~50|FILL,TSE
+iconbutton/variant/default/default-background|C|@S:color/secondary/base|FILL,TSE
+iconbutton/variant/default/hover-background|C|@S:color/secondary/hover|FILL,TSE
+iconbutton/variant/default/pressed-background|C|@S:color/secondary/pressed|FILL,TSE
+iconbutton/variant/default/foreground|C|@S:color/on secondary/default|FILL,TSE
+iconbutton/variant/default/disabled-background|C|@S:color/secondary/base~50|FILL,TSE
+iconbutton/variant/default/disabled-foreground|C|@S:color/on secondary/default~50|FILL,TSE
+iconbutton/variant/navigation/default-background|C|@S:color/surface/base|FILL,TSE
+iconbutton/variant/navigation/hover-background|C|@S:color/surface/base|FILL,TSE
+iconbutton/variant/navigation/pressed-background|C|@S:color/surface/base|FILL,TSE
+iconbutton/variant/navigation/foreground|C|@S:color/on surface/default|FILL,TSE
+iconbutton/variant/navigation/disabled-background|C|@S:color/surface/base~50|FILL,TSE
+iconbutton/variant/navigation/disabled-foreground|C|@S:color/on surface/default~50|FILL,TSE
+iconbutton/size/large/p|F|@S:space/md|WIDTH_HEIGHT,GAP
+iconbutton/size/large/radius|F|@S:radius/full|CORNER_RADIUS
+iconbutton/size/medium/p|F|@S:space/sm|WIDTH_HEIGHT,GAP
+iconbutton/size/medium/radius|F|@S:radius/full|CORNER_RADIUS
+iconbutton/size/large/icon-size|F|@S:space/xl|WIDTH_HEIGHT
+iconbutton/size/medium/icon-size|F|@S:space/lg|WIDTH_HEIGHT
+iconbutton/size/small/p|F|@S:space/2xs|WIDTH_HEIGHT,GAP
+iconbutton/size/small/radius|F|@S:radius/full|CORNER_RADIUS
+iconbutton/size/small/icon-size|F|@S:space/lg|WIDTH_HEIGHT
+badge/variant/primary/default-background|C|@S:color/primary/base|FILL,TSE
+badge/variant/primary/default-foreground|C|@S:color/on primary/default|FILL,TSE
+badge/variant/positive/default-background|C|@S:color/feedback/positive|FILL,TSE
+badge/variant/positive/default-foreground|C|@S:color/feedback/on-positive|FILL,TSE
+badge/variant/positive/subtle-background|C|@S:color/feedback/positive-subtle|FILL,TSE
+badge/variant/positive/subtle-foreground|C|@S:color/feedback/on-positive-subtle|FILL,TSE
+badge/variant/warning/default-background|C|@S:color/feedback/warning|FILL,TSE
+badge/variant/warning/default-foreground|C|@S:color/feedback/on-warning|FILL,TSE
+badge/variant/warning/subtle-background|C|@S:color/feedback/warning-subtle|FILL,TSE
+badge/variant/warning/subtle-foreground|C|@S:color/feedback/on-warning-subtle|FILL,TSE
+badge/variant/negative/default-background|C|@S:color/feedback/negative|FILL,TSE
+badge/variant/negative/default-foreground|C|@S:color/feedback/on-negative|FILL,TSE
+badge/variant/negative/subtle-background|C|@S:color/feedback/negative-subtle|FILL,TSE
+badge/variant/negative/subtle-foreground|C|@S:color/feedback/on-negative-subtle|FILL,TSE
+badge/px|F|@S:space/sm|WIDTH_HEIGHT,GAP
+badge/py|F|@S:space/2xs|WIDTH_HEIGHT,GAP
+badge/radius|F|@S:radius/full|CORNER_RADIUS
+badge/font-family|S|@S:font/label-1/font-family|FONT_FAMILY
+badge/font-size|F|@S:font/caption/font-size|FONT_SIZE
+badge/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+badge/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+badge/min-width|F|@S:space/xl|WIDTH_HEIGHT
+card/background|C|@S:color/surface/base|FILL,TSE
+card/foreground|C|@S:color/on surface/default|FILL,TSE
+card/foreground-subtle|C|@S:color/on surface/subtle|FILL,TSE
+card/p|F|@S:space/md|WIDTH_HEIGHT,GAP
+card/gap|F|@S:space/base|WIDTH_HEIGHT,GAP
+card/radius|F|@S:radius/2xl|CORNER_RADIUS
+card/product/title/font-family|S|@S:font/h2/font-family|FONT_FAMILY
+card/product/title/font-size|F|@S:font/h2/font-size|FONT_SIZE
+card/product/title/line-height|F|@S:font/h2/line-height|LINE_HEIGHT
+card/product/title/font-weight|F|@S:font/h2/font-weight|FONT_WEIGHT
+card/product/description/font-family|S|@S:font/body-2/font-family|FONT_FAMILY
+card/product/description/font-size|F|@S:font/body-2/font-size|FONT_SIZE
+card/product/description/line-height|F|@S:font/body-2/line-height|LINE_HEIGHT
+card/product/description/font-weight|F|@S:font/body-2/font-weight|FONT_WEIGHT
+card/product/price/font-family|S|@S:font/h2/font-family|FONT_FAMILY
+card/product/price/font-size|F|@S:font/h2/font-size|FONT_SIZE
+card/product/price/line-height|F|@S:font/h2/line-height|LINE_HEIGHT
+card/product/price/font-weight|F|@S:font/h2/font-weight|FONT_WEIGHT
+card/gap-tiny|F|@S:space/2xs|WIDTH_HEIGHT,GAP
+card/order/title/font-family|S|@S:font/h2/font-family|FONT_FAMILY
+card/order/title/font-size|F|@S:font/h2/font-size|FONT_SIZE
+card/order/title/line-height|F|@S:font/h2/line-height|LINE_HEIGHT
+card/order/title/font-weight|F|@S:font/h2/font-weight|FONT_WEIGHT
+card/order/unit price/font-family|S|@S:font/body-2/font-family|FONT_FAMILY
+card/order/unit price/font-size|F|@S:font/body-2/font-size|FONT_SIZE
+card/order/unit price/line-height|F|@S:font/body-2/line-height|LINE_HEIGHT
+card/order/unit price/font-weight|F|@S:font/body-2/font-weight|FONT_WEIGHT
+card/order/total price/font-family|S|@S:font/h2/font-family|FONT_FAMILY
+card/order/total price/font-size|F|@S:font/h2/font-size|FONT_SIZE
+card/order/total price/line-height|F|@S:font/h2/line-height|LINE_HEIGHT
+card/order/total price/font-weight|F|@S:font/h2/font-weight|FONT_WEIGHT
+card/divider|C|@S:color/border/subtle|FILL,TSE
+card/time-slot/start/font-family|S|@S:font/h2/font-family|FONT_FAMILY
+card/time-slot/start/font-size|F|@S:font/h2/font-size|FONT_SIZE
+card/time-slot/start/line-height|F|@S:font/h2/line-height|LINE_HEIGHT
+card/time-slot/start/font-weight|F|@S:font/h2/font-weight|FONT_WEIGHT
+card/time-slot/end/font-family|S|@S:font/body-2/font-family|FONT_FAMILY
+card/time-slot/end/font-size|F|@S:font/body-2/font-size|FONT_SIZE
+card/time-slot/end/line-height|F|@S:font/body-2/line-height|LINE_HEIGHT
+card/time-slot/end/font-weight|F|@S:font/body-2/font-weight|FONT_WEIGHT
+card/upsell/title/font-family|S|@S:font/h3/font-family|FONT_FAMILY
+card/upsell/title/font-size|F|@S:font/h3/font-size|FONT_SIZE
+card/upsell/title/line-height|F|@S:font/h3/line-height|LINE_HEIGHT
+card/upsell/title/font-weight|F|@S:font/h3/font-weight|FONT_WEIGHT
+card/upsell/price/font-family|S|@S:font/h3/font-family|FONT_FAMILY
+card/upsell/price/font-size|F|@S:font/h3/font-size|FONT_SIZE
+card/upsell/price/line-height|F|@S:font/h3/line-height|LINE_HEIGHT
+card/upsell/price/font-weight|F|@S:font/h3/font-weight|FONT_WEIGHT
+card/checkout/title/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+card/checkout/title/font-size|F|@S:font/caption/font-size|FONT_SIZE
+card/checkout/title/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+card/checkout/title/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+card/checkout/name/font-family|S|@S:font/body-2/font-family|FONT_FAMILY
+card/checkout/name/font-size|F|@S:font/body-2/font-size|FONT_SIZE
+card/checkout/name/line-height|F|@S:font/body-2/line-height|LINE_HEIGHT
+card/checkout/name/font-weight|F|@S:font/body-2/font-weight|FONT_WEIGHT
+card/checkout/value/font-family|S|@S:font/body-2/font-family|FONT_FAMILY
+card/checkout/value/font-size|F|@S:font/body-2/font-size|FONT_SIZE
+card/checkout/value/line-height|F|@S:font/body-2/line-height|LINE_HEIGHT
+card/checkout/value/font-weight|F|@S:font/body-2/font-weight-emphasis|FONT_WEIGHT
+card/checkout/total/font-family|S|@S:font/h2/font-family|FONT_FAMILY
+card/checkout/total/font-size|F|@S:font/h2/font-size|FONT_SIZE
+card/checkout/total/line-height|F|@S:font/h2/line-height|LINE_HEIGHT
+card/checkout/total/font-weight|F|@S:font/h2/font-weight|FONT_WEIGHT
+card/checkout/title/letter-spacing|F|@S:font/caption/letter spacing|LETTER_SPACING
+card/reservation/title/font-family|S|@S:font/display-3/font-family|FONT_FAMILY
+card/reservation/title/font-size|F|@S:font/display-3/font-size|FONT_SIZE
+card/reservation/title/line-height|F|@S:font/display-3/line-height|LINE_HEIGHT
+card/reservation/title/font-weight|F|@S:font/display-3/font-weight|FONT_WEIGHT
+card/reservation/details/font-family|S|@S:font/body-1/font-family|FONT_FAMILY
+card/reservation/details/font-size|F|@S:font/body-1/font-size|FONT_SIZE
+card/reservation/details/line-height|F|@S:font/body-1/line-height|LINE_HEIGHT
+card/reservation/details/font-weight|F|@S:font/body-1/font-weight|FONT_WEIGHT
+card/reservation/code/font-family|S|@S:font/body-2/font-family|FONT_FAMILY
+card/reservation/code/font-size|F|@S:font/body-2/font-size|FONT_SIZE
+card/reservation/code/line-height|F|@S:font/body-2/line-height|LINE_HEIGHT
+card/reservation/code/font-weight|F|@S:font/body-2/font-weight|FONT_WEIGHT
+card/checkout/details/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+card/checkout/details/font-size|F|@S:font/caption/font-size|FONT_SIZE
+card/checkout/details/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+card/checkout/details/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+card/accent|C|@S:color/primary/base|FILL,TSE
+counter/on card/font-family|S|@S:font/body-1/font-family|FONT_FAMILY
+counter/on card/font-size|F|@S:font/body-1/font-size|FONT_SIZE
+counter/on card/line-height|F|@S:font/body-1/line-height|LINE_HEIGHT
+counter/on card/font-weight|F|@S:font/body-1/font-weight-emphasis|FONT_WEIGHT
+counter/gap|F|@S:space/base|WIDTH_HEIGHT,GAP
+counter/foreground|C|@S:color/on surface/default|FILL,TSE
+card/divider-height|F|@S:space/minimum|WIDTH_HEIGHT
+card/order/details/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+card/order/details/font-size|F|@S:font/caption/font-size|FONT_SIZE
+card/order/details/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+card/order/details/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+counter/on canvas/number/font-family|S|@S:font/display-1/font-family|FONT_FAMILY
+counter/on canvas/number/font-size|F|@S:font/display-1/font-size|FONT_SIZE
+counter/on canvas/number/line-height|F|@S:font/display-1/line-height|LINE_HEIGHT
+counter/on canvas/number/font-weight|F|@S:font/display-1/font-weight|FONT_WEIGHT
+counter/on canvas/gap|F|@S:space/huge|WIDTH_HEIGHT,GAP
+counter/foreground-subtle|C|@S:color/on surface/subtle|FILL,TSE
+counter/on canvas/description/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+counter/on canvas/description/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+counter/on canvas/description/font-size|F|@S:font/caption/font-size|FONT_SIZE
+counter/on canvas/description/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+counter/on canvas/description/letter-spacing|F|@S:font/caption/letter spacing|LETTER_SPACING
+counter/on canvas/text-gap|F|@S:space/base|WIDTH_HEIGHT,GAP
+time picker/gap|F|@S:space/base|WIDTH_HEIGHT,GAP
+time picker/foreground|C|@S:color/on surface/default|FILL,TSE
+time picker/container/margin|F|@S:space/sm|WIDTH_HEIGHT,GAP
+time picker/container/number/font-family|S|@S:font/h1/font-family|FONT_FAMILY
+time picker/container/number/font-weight|F|@S:font/h1/font-weight|FONT_WEIGHT
+time picker/container/number/font-size|F|@S:font/h1/font-size|FONT_SIZE
+time picker/container/number/line-height|F|@S:font/h1/line-height|LINE_HEIGHT
+time picker/title/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+time picker/title/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+time picker/title/font-size|F|@S:font/caption/font-size|FONT_SIZE
+time picker/title/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+time picker/title/letter-spacing|F|@S:font/caption/letter spacing|LETTER_SPACING
+time picker/foreground-subtle|C|@S:color/on surface/subtle|FILL,TSE
+time picker/container/background|C|@S:color/surface/base|FILL,TSE
+time picker/container/p|F|@S:space/base|WIDTH_HEIGHT,GAP
+time picker/container/number/fixed-width|F|60|WIDTH_HEIGHT
+time picker/container/number/fixed-height|F|48|WIDTH_HEIGHT
+time picker/container/radius|F|@S:radius/2xl|CORNER_RADIUS
+time picker/container/selected-highlight|C|@S:color/on surface/subtle~12|FILL,TSE
+time picker/container/selected-highlight-radius|F|@S:radius/lg|CORNER_RADIUS
+button/on-canvas-px|F|@S:space/lg|WIDTH_HEIGHT,GAP
+button/on-canvas-p-top|F|@S:space/md|WIDTH_HEIGHT,GAP
+button/on-canvas-p-bottom|F|@S:space/2xl|WIDTH_HEIGHT,GAP
+pills/selected/background|C|@S:color/secondary/base|FILL,TSE
+pills/selected/foreground|C|@S:color/on secondary/default|FILL,TSE
+pills/default/background|C|@S:color/surface/base|FILL,TSE
+pills/default/foreground|C|@S:color/on surface/default|FILL,TSE
+pills/px|F|@S:space/md|WIDTH_HEIGHT,GAP
+pills/py|F|@S:space/sm|WIDTH_HEIGHT,GAP
+pills/radius|F|@S:radius/full|CORNER_RADIUS
+pills/font-family|S|@S:font/label-2/font-family|FONT_FAMILY
+pills/font-size|F|@S:font/label-2/font-size|FONT_SIZE
+pills/line-height|F|@S:font/label-2/line-height|LINE_HEIGHT
+pills/font-weight|F|@S:font/label-2/font-weight|FONT_WEIGHT
+pills/default/border-color|C|@S:color/border/base|FILL,TSE
+pills/default/border-width|F|@S:space/minimum|WIDTH_HEIGHT
+pills/module-gap|F|@S:space/sm|WIDTH_HEIGHT,GAP
+input/background|C|@S:color/surface/base|FILL,TSE
+input/default/foreground|C|@S:color/on surface/subtle|FILL,TSE
+input/default/border-color|C|@S:color/border/base|FILL,TSE
+input/border-width|F|@S:space/minimum|WIDTH_HEIGHT
+input/filled/foreground|C|@S:color/on surface/default|FILL,TSE
+input/p|F|@S:space/base|WIDTH_HEIGHT,GAP
+input/radius|F|@S:radius/lg|CORNER_RADIUS
+input/font-family|S|@S:font/label-2/font-family|FONT_FAMILY
+input/font-size|F|@S:font/label-2/font-size|FONT_SIZE
+input/line-height|F|@S:font/label-2/line-height|LINE_HEIGHT
+input/font-weight|F|@S:font/label-2/font-weight|FONT_WEIGHT
+input/focus/foreground|C|@S:color/on surface/default|FILL,TSE
+input/focus/border-color|C|@S:color/primary/base|FILL,TSE
+input/filled/border-color|C|@S:color/border/base|FILL,TSE
+input/title/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+input/title/font-size|F|@S:font/caption/font-size|FONT_SIZE
+input/title/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+input/title/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+input/title/letter-spacing|F|@S:font/caption/letter spacing|LETTER_SPACING
+input/title/foreground|C|@S:color/on canvas/subtle|FILL,TSE
+input/title/gap|F|@S:space/xs|WIDTH_HEIGHT,GAP
+text field/min-height|F|48|WIDTH_HEIGHT
+page header/metadata/font-family|S|@S:font/body-2/font-family|FONT_FAMILY
+page header/metadata/font-size|F|@S:font/body-2/font-size|FONT_SIZE
+page header/metadata/line-height|F|@S:font/body-2/line-height|LINE_HEIGHT
+page header/px|F|@S:space/md|WIDTH_HEIGHT,GAP
+page header/metadata/font-weight|F|@S:font/body-2/font-weight|FONT_WEIGHT
+page header/title/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+page header/title/font-size|F|@S:font/caption/font-size|FONT_SIZE
+page header/title/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+page header/title/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+page header/title/letter-spacing|F|@S:font/caption/letter spacing|LETTER_SPACING
+page header/py|F|@S:space/base|WIDTH_HEIGHT,GAP
+page header/foreground|C|@S:color/on canvas/subtle|FILL,TSE
+page header/background|C|@S:color/canvas|FILL,TSE
+radio button/default/background|C|@S:color/surface/base|FILL,TSE
+radio button/foreground|C|@S:color/on surface/default|FILL,TSE
+radio button/default/border-color|C|@S:color/border/base|FILL,TSE
+radio button/border-width|F|@S:space/minimum|WIDTH_HEIGHT
+radio button/selected/background|C|@S:color/primary/container|FILL,TSE
+radio button/selected/foreground|C|@S:color/on primary/container|FILL,TSE
+radio button/module-gap|F|@S:space/sm|WIDTH_HEIGHT,GAP
+radio button/p|F|@S:space/md|WIDTH_HEIGHT,GAP
+radio button/radius|F|@S:radius/lg|CORNER_RADIUS
+radio button/font-family|S|@S:font/label-2/font-family|FONT_FAMILY
+radio button/font-size|F|@S:font/label-2/font-size|FONT_SIZE
+radio button/line-height|F|@S:font/label-2/line-height|LINE_HEIGHT
+radio button/font-weight|F|@S:font/label-2/font-weight|FONT_WEIGHT
+radio button/module-margin|F|@S:space/base|WIDTH_HEIGHT,GAP
+radio button/gap|F|@S:space/base|WIDTH_HEIGHT,GAP
+radio button/selected/border-color|C|@S:color/on primary/container|FILL,TSE
+radio button/details/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+radio button/details/font-size|F|@S:font/caption/font-size|FONT_SIZE
+radio button/details/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+radio button/details/font-weight|F|@S:font/caption/font-weight|FONT_WEIGHT
+radio button/module title/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+radio button/module title/font-size|F|@S:font/caption/font-size|FONT_SIZE
+radio button/module title/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+radio button/module title/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+radio button/module title/letter spacing|F|@S:font/caption/letter spacing|LETTER_SPACING
+radio button/module title/foreground|C|@S:color/on canvas/subtle|FILL,TSE
+checkbox/module-gap|F|@S:space/sm|WIDTH_HEIGHT,GAP
+checkbox/module-margin|F|@S:space/base|WIDTH_HEIGHT,GAP
+checkbox/p|F|@S:space/md|WIDTH_HEIGHT,GAP
+checkbox/gap|F|@S:space/base|WIDTH_HEIGHT,GAP
+checkbox/radius|F|@S:radius/lg|CORNER_RADIUS
+checkbox/border-width|F|@S:space/minimum|WIDTH_HEIGHT
+checkbox/font-family|S|@S:font/label-2/font-family|FONT_FAMILY
+checkbox/font-size|F|@S:font/label-2/font-size|FONT_SIZE
+checkbox/line-height|F|@S:font/label-2/line-height|LINE_HEIGHT
+checkbox/font-weight|F|@S:font/label-2/font-weight|FONT_WEIGHT
+checkbox/module title/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+checkbox/module title/font-size|F|@S:font/caption/font-size|FONT_SIZE
+checkbox/module title/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+checkbox/module title/font-weight|F|@S:font/caption/font-weight-emphasis|FONT_WEIGHT
+checkbox/module title/letter spacing|F|@S:font/caption/letter spacing|LETTER_SPACING
+checkbox/module title/foreground|C|@S:color/on canvas/subtle|FILL,TSE
+checkbox/details/font-family|S|@S:font/caption/font-family|FONT_FAMILY
+checkbox/details/font-size|F|@S:font/caption/font-size|FONT_SIZE
+checkbox/details/line-height|F|@S:font/caption/line-height|LINE_HEIGHT
+checkbox/background|C|@S:color/surface/base|FILL,TSE
+checkbox/details/font-weight|F|@S:font/caption/font-weight|FONT_WEIGHT
+checkbox/foreground|C|@S:color/on surface/default|FILL,TSE
+checkbox/border-color|C|@S:color/border/base|FILL,TSE
+checkbox/selected|C|@S:color/on primary/container|FILL,TSE
+badge/variant/primary/subtle-background|C|@S:color/primary/container|FILL,TSE
+badge/variant/primary/subtle-foreground|C|@S:color/on primary/container|FILL,TSE
+checkbox/box/radius|F|@S:radius/md|CORNER_RADIUS
+checkbox/box/border-color|C|@S:color/border/strong|FILL,TSE
+checkbox/box/border-width|F|@S:space/minimum|WIDTH_HEIGHT
+radio button/foreground-subtle|C|@S:color/on surface/subtle|FILL,TSE
+checkbox/foreground-subtle|C|@S:color/on surface/subtle|FILL,TSE
+order bar/module-px|F|@S:space/lg|WIDTH_HEIGHT,GAP
+order bar/module-p-bottom|F|@S:space/2xl|WIDTH_HEIGHT,GAP
+order bar/px|F|@S:space/lg|WIDTH_HEIGHT,GAP
+order bar/radius|F|@S:radius/2xl|CORNER_RADIUS
+order bar/foreground|C|@S:color/on secondary/default|FILL,TSE
+order bar/font-family|S|@S:font/label-1/font-family|FONT_FAMILY
+order bar/font-size|F|@S:font/label-1/font-size|FONT_SIZE
+order bar/line-height|F|@S:font/label-1/line-height|LINE_HEIGHT
+order bar/font-weight|F|@S:font/label-1/font-weight|FONT_WEIGHT
+order bar/background|C|@S:color/secondary/base|FILL,TSE
+bubble/size|F|@S:space/xl|WIDTH_HEIGHT
+bubble/radius|F|@S:radius/full|CORNER_RADIUS
+bubble/number/font-family|S|@S:font/label-2/font-family|FONT_FAMILY
+bubble/number/font-size|F|@S:font/label-2/font-size|FONT_SIZE
+bubble/number/line-height|F|@S:font/label-2/line-height|LINE_HEIGHT
+bubble/number/font-weight|F|@S:font/label-2/font-weight|FONT_WEIGHT
+bubble/background|C|@S:color/primary/base|FILL,TSE
+bubble/foreground|C|@S:color/on primary/default|FILL,TSE
+order bar/py|F|@S:space/md|WIDTH_HEIGHT,GAP

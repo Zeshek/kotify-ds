@@ -1,0 +1,5099 @@
+{
+  "$description": "Kotify DS tokens exported from Figma (file a2v6x5b3ALVaR5Us1fdNGB). Figma is the source of truth.",
+  "Primitives": {
+    "border-radius/rounded-0": {
+      "$type": "number",
+      "css": "--border-radius-rounded-0",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 0
+    },
+    "border-radius/rounded-6": {
+      "$type": "number",
+      "css": "--border-radius-rounded-6",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 6
+    },
+    "border-radius/rounded-4": {
+      "$type": "number",
+      "css": "--border-radius-rounded-4",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 4
+    },
+    "border-radius/rounded-8": {
+      "$type": "number",
+      "css": "--border-radius-rounded-8",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 8
+    },
+    "border-radius/rounded-12": {
+      "$type": "number",
+      "css": "--border-radius-rounded-12",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 12
+    },
+    "border-radius/rounded-14": {
+      "$type": "number",
+      "css": "--border-radius-rounded-14",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 14
+    },
+    "border-radius/rounded-16": {
+      "$type": "number",
+      "css": "--border-radius-rounded-16",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 16
+    },
+    "border-radius/rounded-20": {
+      "$type": "number",
+      "css": "--border-radius-rounded-20",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 20
+    },
+    "border-radius/rounded-1000": {
+      "$type": "number",
+      "css": "--border-radius-rounded-1000",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 1000
+    },
+    "border-width/border": {
+      "$type": "number",
+      "css": "--border-width-border",
+      "scopes": [
+        "STROKE_FLOAT"
+      ],
+      "$value": 1
+    },
+    "border-width/border-0,5": {
+      "$type": "number",
+      "css": "--border-width-border-0-5",
+      "scopes": [
+        "STROKE_FLOAT"
+      ],
+      "$value": 0.5
+    },
+    "border-width/border-2": {
+      "$type": "number",
+      "css": "--border-width-border-2",
+      "scopes": [
+        "STROKE_FLOAT"
+      ],
+      "$value": 2
+    },
+    "colors/neutral/50": {
+      "$type": "color",
+      "css": "--colors-neutral-50",
+      "scopes": [],
+      "$value": "#fafafa"
+    },
+    "colors/neutral/100": {
+      "$type": "color",
+      "css": "--colors-neutral-100",
+      "scopes": [],
+      "$value": "#f5f5f5"
+    },
+    "colors/neutral/200": {
+      "$type": "color",
+      "css": "--colors-neutral-200",
+      "scopes": [],
+      "$value": "#e4e1da"
+    },
+    "colors/neutral/300": {
+      "$type": "color",
+      "css": "--colors-neutral-300",
+      "scopes": [],
+      "$value": "#d0ccc3"
+    },
+    "colors/neutral/400": {
+      "$type": "color",
+      "css": "--colors-neutral-400",
+      "scopes": [],
+      "$value": "#aaa59c"
+    },
+    "colors/neutral/500": {
+      "$type": "color",
+      "css": "--colors-neutral-500",
+      "scopes": [],
+      "$value": "#858078"
+    },
+    "colors/neutral/600": {
+      "$type": "color",
+      "css": "--colors-neutral-600",
+      "scopes": [],
+      "$value": "#625e58"
+    },
+    "colors/neutral/700": {
+      "$type": "color",
+      "css": "--colors-neutral-700",
+      "scopes": [],
+      "$value": "#46433f"
+    },
+    "colors/neutral/800": {
+      "$type": "color",
+      "css": "--colors-neutral-800",
+      "scopes": [],
+      "$value": "#33312e"
+    },
+    "colors/neutral/900": {
+      "$type": "color",
+      "css": "--colors-neutral-900",
+      "scopes": [],
+      "$value": "#242321"
+    },
+    "colors/neutral/950": {
+      "$type": "color",
+      "css": "--colors-neutral-950",
+      "scopes": [],
+      "$value": "#131313"
+    },
+    "colors/red/50": {
+      "$type": "color",
+      "css": "--colors-red-50",
+      "scopes": [],
+      "$value": "#fef2f2"
+    },
+    "colors/red/100": {
+      "$type": "color",
+      "css": "--colors-red-100",
+      "scopes": [],
+      "$value": "#ffe2e2"
+    },
+    "colors/red/200": {
+      "$type": "color",
+      "css": "--colors-red-200",
+      "scopes": [],
+      "$value": "#ffc9c9"
+    },
+    "colors/red/300": {
+      "$type": "color",
+      "css": "--colors-red-300",
+      "scopes": [],
+      "$value": "#ffa2a2"
+    },
+    "colors/red/400": {
+      "$type": "color",
+      "css": "--colors-red-400",
+      "scopes": [],
+      "$value": "#ff6467"
+    },
+    "colors/red/500": {
+      "$type": "color",
+      "css": "--colors-red-500",
+      "scopes": [],
+      "$value": "#fb2c36"
+    },
+    "colors/red/600": {
+      "$type": "color",
+      "css": "--colors-red-600",
+      "scopes": [],
+      "$value": "#e7000b"
+    },
+    "colors/red/700": {
+      "$type": "color",
+      "css": "--colors-red-700",
+      "scopes": [],
+      "$value": "#c10007"
+    },
+    "colors/red/800": {
+      "$type": "color",
+      "css": "--colors-red-800",
+      "scopes": [],
+      "$value": "#9f0712"
+    },
+    "colors/red/900": {
+      "$type": "color",
+      "css": "--colors-red-900",
+      "scopes": [],
+      "$value": "#82181a"
+    },
+    "colors/red/950": {
+      "$type": "color",
+      "css": "--colors-red-950",
+      "scopes": [],
+      "$value": "#460809"
+    },
+    "colors/orange/50": {
+      "$type": "color",
+      "css": "--colors-orange-50",
+      "scopes": [],
+      "$value": "#faf7f2"
+    },
+    "colors/orange/100": {
+      "$type": "color",
+      "css": "--colors-orange-100",
+      "scopes": [],
+      "$value": "#fff7ed"
+    },
+    "colors/orange/200": {
+      "$type": "color",
+      "css": "--colors-orange-200",
+      "scopes": [],
+      "$value": "#f7c7ae"
+    },
+    "colors/orange/300": {
+      "$type": "color",
+      "css": "--colors-orange-300",
+      "scopes": [],
+      "$value": "#ef9d76"
+    },
+    "colors/orange/400": {
+      "$type": "color",
+      "css": "--colors-orange-400",
+      "scopes": [],
+      "$value": "#e36d3a"
+    },
+    "colors/orange/500": {
+      "$type": "color",
+      "css": "--colors-orange-500",
+      "scopes": [],
+      "$value": "#c3420d"
+    },
+    "colors/orange/600": {
+      "$type": "color",
+      "css": "--colors-orange-600",
+      "scopes": [],
+      "$value": "#a9380a"
+    },
+    "colors/orange/700": {
+      "$type": "color",
+      "css": "--colors-orange-700",
+      "scopes": [],
+      "$value": "#8c2e08"
+    },
+    "colors/orange/800": {
+      "$type": "color",
+      "css": "--colors-orange-800",
+      "scopes": [],
+      "$value": "#702306"
+    },
+    "colors/orange/900": {
+      "$type": "color",
+      "css": "--colors-orange-900",
+      "scopes": [],
+      "$value": "#4f1804"
+    },
+    "colors/orange/950": {
+      "$type": "color",
+      "css": "--colors-orange-950",
+      "scopes": [],
+      "$value": "#321005"
+    },
+    "colors/amber/50": {
+      "$type": "color",
+      "css": "--colors-amber-50",
+      "scopes": [],
+      "$value": "#fffbeb"
+    },
+    "colors/amber/100": {
+      "$type": "color",
+      "css": "--colors-amber-100",
+      "scopes": [],
+      "$value": "#fef3c6"
+    },
+    "colors/amber/200": {
+      "$type": "color",
+      "css": "--colors-amber-200",
+      "scopes": [],
+      "$value": "#fee685"
+    },
+    "colors/amber/300": {
+      "$type": "color",
+      "css": "--colors-amber-300",
+      "scopes": [],
+      "$value": "#ffd230"
+    },
+    "colors/amber/400": {
+      "$type": "color",
+      "css": "--colors-amber-400",
+      "scopes": [],
+      "$value": "#ffb900"
+    },
+    "colors/amber/500": {
+      "$type": "color",
+      "css": "--colors-amber-500",
+      "scopes": [],
+      "$value": "#fe9a00"
+    },
+    "colors/amber/600": {
+      "$type": "color",
+      "css": "--colors-amber-600",
+      "scopes": [],
+      "$value": "#e17100"
+    },
+    "colors/amber/700": {
+      "$type": "color",
+      "css": "--colors-amber-700",
+      "scopes": [],
+      "$value": "#bb4d00"
+    },
+    "colors/amber/800": {
+      "$type": "color",
+      "css": "--colors-amber-800",
+      "scopes": [],
+      "$value": "#973c00"
+    },
+    "colors/amber/900": {
+      "$type": "color",
+      "css": "--colors-amber-900",
+      "scopes": [],
+      "$value": "#7b3306"
+    },
+    "colors/amber/950": {
+      "$type": "color",
+      "css": "--colors-amber-950",
+      "scopes": [],
+      "$value": "#461901"
+    },
+    "colors/green/50": {
+      "$type": "color",
+      "css": "--colors-green-50",
+      "scopes": [],
+      "$value": "#f0fdf4"
+    },
+    "colors/green/100": {
+      "$type": "color",
+      "css": "--colors-green-100",
+      "scopes": [],
+      "$value": "#dcfce7"
+    },
+    "colors/green/200": {
+      "$type": "color",
+      "css": "--colors-green-200",
+      "scopes": [],
+      "$value": "#b9f8cf"
+    },
+    "colors/green/300": {
+      "$type": "color",
+      "css": "--colors-green-300",
+      "scopes": [],
+      "$value": "#7bf1a8"
+    },
+    "colors/green/400": {
+      "$type": "color",
+      "css": "--colors-green-400",
+      "scopes": [],
+      "$value": "#05df72"
+    },
+    "colors/green/500": {
+      "$type": "color",
+      "css": "--colors-green-500",
+      "scopes": [],
+      "$value": "#00c950"
+    },
+    "colors/green/600": {
+      "$type": "color",
+      "css": "--colors-green-600",
+      "scopes": [],
+      "$value": "#00a63e"
+    },
+    "colors/green/700": {
+      "$type": "color",
+      "css": "--colors-green-700",
+      "scopes": [],
+      "$value": "#008236"
+    },
+    "colors/green/800": {
+      "$type": "color",
+      "css": "--colors-green-800",
+      "scopes": [],
+      "$value": "#016630"
+    },
+    "colors/green/900": {
+      "$type": "color",
+      "css": "--colors-green-900",
+      "scopes": [],
+      "$value": "#0d542b"
+    },
+    "colors/green/950": {
+      "$type": "color",
+      "css": "--colors-green-950",
+      "scopes": [],
+      "$value": "#032e15"
+    },
+    "colors/blue/50": {
+      "$type": "color",
+      "css": "--colors-blue-50",
+      "scopes": [],
+      "$value": "#eff6ff"
+    },
+    "colors/blue/100": {
+      "$type": "color",
+      "css": "--colors-blue-100",
+      "scopes": [],
+      "$value": "#dbeafe"
+    },
+    "colors/blue/200": {
+      "$type": "color",
+      "css": "--colors-blue-200",
+      "scopes": [],
+      "$value": "#bedbff"
+    },
+    "colors/blue/300": {
+      "$type": "color",
+      "css": "--colors-blue-300",
+      "scopes": [],
+      "$value": "#8ec5ff"
+    },
+    "colors/blue/400": {
+      "$type": "color",
+      "css": "--colors-blue-400",
+      "scopes": [],
+      "$value": "#51a2ff"
+    },
+    "colors/blue/500": {
+      "$type": "color",
+      "css": "--colors-blue-500",
+      "scopes": [],
+      "$value": "#2b7fff"
+    },
+    "colors/blue/600": {
+      "$type": "color",
+      "css": "--colors-blue-600",
+      "scopes": [],
+      "$value": "#155dfc"
+    },
+    "colors/blue/700": {
+      "$type": "color",
+      "css": "--colors-blue-700",
+      "scopes": [],
+      "$value": "#1447e6"
+    },
+    "colors/blue/800": {
+      "$type": "color",
+      "css": "--colors-blue-800",
+      "scopes": [],
+      "$value": "#193cb8"
+    },
+    "colors/blue/900": {
+      "$type": "color",
+      "css": "--colors-blue-900",
+      "scopes": [],
+      "$value": "#1c398e"
+    },
+    "colors/blue/950": {
+      "$type": "color",
+      "css": "--colors-blue-950",
+      "scopes": [],
+      "$value": "#162456"
+    },
+    "colors/white": {
+      "$type": "color",
+      "css": "--colors-white",
+      "scopes": [],
+      "$value": "#ffffff"
+    },
+    "colors/black": {
+      "$type": "color",
+      "css": "--colors-black",
+      "scopes": [],
+      "$value": "#000011"
+    },
+    "spacing/0": {
+      "$type": "number",
+      "css": "--spacing-0",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 0
+    },
+    "spacing/0,5": {
+      "$type": "number",
+      "css": "--spacing-0-5",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 2
+    },
+    "spacing/1": {
+      "$type": "number",
+      "css": "--spacing-1",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 4
+    },
+    "spacing/1,5": {
+      "$type": "number",
+      "css": "--spacing-1-5",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 6
+    },
+    "spacing/2": {
+      "$type": "number",
+      "css": "--spacing-2",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 8
+    },
+    "spacing/2,5": {
+      "$type": "number",
+      "css": "--spacing-2-5",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 10
+    },
+    "spacing/3": {
+      "$type": "number",
+      "css": "--spacing-3",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 12
+    },
+    "spacing/3,5": {
+      "$type": "number",
+      "css": "--spacing-3-5",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 14
+    },
+    "spacing/4": {
+      "$type": "number",
+      "css": "--spacing-4",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 16
+    },
+    "spacing/5": {
+      "$type": "number",
+      "css": "--spacing-5",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 20
+    },
+    "spacing/6": {
+      "$type": "number",
+      "css": "--spacing-6",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 24
+    },
+    "spacing/7": {
+      "$type": "number",
+      "css": "--spacing-7",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 28
+    },
+    "spacing/8": {
+      "$type": "number",
+      "css": "--spacing-8",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 32
+    },
+    "spacing/9": {
+      "$type": "number",
+      "css": "--spacing-9",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 36
+    },
+    "spacing/10": {
+      "$type": "number",
+      "css": "--spacing-10",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 40
+    },
+    "spacing/11": {
+      "$type": "number",
+      "css": "--spacing-11",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 44
+    },
+    "spacing/12": {
+      "$type": "number",
+      "css": "--spacing-12",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 48
+    },
+    "spacing/14": {
+      "$type": "number",
+      "css": "--spacing-14",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 56
+    },
+    "spacing/16": {
+      "$type": "number",
+      "css": "--spacing-16",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 64
+    },
+    "spacing/20": {
+      "$type": "number",
+      "css": "--spacing-20",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 80
+    },
+    "spacing/24": {
+      "$type": "number",
+      "css": "--spacing-24",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 96
+    },
+    "spacing/28": {
+      "$type": "number",
+      "css": "--spacing-28",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 112
+    },
+    "spacing/32": {
+      "$type": "number",
+      "css": "--spacing-32",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 128
+    },
+    "spacing/36": {
+      "$type": "number",
+      "css": "--spacing-36",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 144
+    },
+    "spacing/40": {
+      "$type": "number",
+      "css": "--spacing-40",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 160
+    },
+    "spacing/44": {
+      "$type": "number",
+      "css": "--spacing-44",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 176
+    },
+    "spacing/48": {
+      "$type": "number",
+      "css": "--spacing-48",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 192
+    },
+    "spacing/52": {
+      "$type": "number",
+      "css": "--spacing-52",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 208
+    },
+    "spacing/56": {
+      "$type": "number",
+      "css": "--spacing-56",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 224
+    },
+    "spacing/60": {
+      "$type": "number",
+      "css": "--spacing-60",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 240
+    },
+    "spacing/64": {
+      "$type": "number",
+      "css": "--spacing-64",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 256
+    },
+    "spacing/72": {
+      "$type": "number",
+      "css": "--spacing-72",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 288
+    },
+    "spacing/80": {
+      "$type": "number",
+      "css": "--spacing-80",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 320
+    },
+    "spacing/96": {
+      "$type": "number",
+      "css": "--spacing-96",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 384
+    },
+    "border-radius/rounded-24": {
+      "$type": "number",
+      "css": "--border-radius-rounded-24",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": 24
+    },
+    "font/size/text-xs": {
+      "$type": "number",
+      "css": "--font-size-text-xs",
+      "scopes": [],
+      "$value": 12
+    },
+    "font/size/text-sm": {
+      "$type": "number",
+      "css": "--font-size-text-sm",
+      "scopes": [],
+      "$value": 14
+    },
+    "font/size/text-base": {
+      "$type": "number",
+      "css": "--font-size-text-base",
+      "scopes": [],
+      "$value": 16
+    },
+    "font/size/text-lg": {
+      "$type": "number",
+      "css": "--font-size-text-lg",
+      "scopes": [],
+      "$value": 20
+    },
+    "font/size/text-xl": {
+      "$type": "number",
+      "css": "--font-size-text-xl",
+      "scopes": [],
+      "$value": 24
+    },
+    "font/size/text-2xl": {
+      "$type": "number",
+      "css": "--font-size-text-2xl",
+      "scopes": [],
+      "$value": 32
+    },
+    "font/weight/font-normal": {
+      "$type": "number",
+      "css": "--font-weight-font-normal",
+      "scopes": [],
+      "$value": 400
+    },
+    "font/weight/font-medium": {
+      "$type": "number",
+      "css": "--font-weight-font-medium",
+      "scopes": [],
+      "$value": 500
+    },
+    "font/weight/font-semibold": {
+      "$type": "number",
+      "css": "--font-weight-font-semibold",
+      "scopes": [],
+      "$value": 600
+    },
+    "font/weight/font-bold": {
+      "$type": "number",
+      "css": "--font-weight-font-bold",
+      "scopes": [],
+      "$value": 700
+    },
+    "font/line-height/leading-3,5": {
+      "$type": "number",
+      "css": "--font-line-height-leading-3-5",
+      "scopes": [],
+      "$value": 14
+    },
+    "font/line-height/leading-4": {
+      "$type": "number",
+      "css": "--font-line-height-leading-4",
+      "scopes": [],
+      "$value": 16
+    },
+    "font/line-height/leading-5": {
+      "$type": "number",
+      "css": "--font-line-height-leading-5",
+      "scopes": [],
+      "$value": 20
+    },
+    "font/line-height/leading-6": {
+      "$type": "number",
+      "css": "--font-line-height-leading-6",
+      "scopes": [],
+      "$value": 24
+    },
+    "font/line-height/leading-7": {
+      "$type": "number",
+      "css": "--font-line-height-leading-7",
+      "scopes": [],
+      "$value": 28
+    },
+    "font/weight/font-thin": {
+      "$type": "number",
+      "css": "--font-weight-font-thin",
+      "scopes": [],
+      "$value": 100
+    },
+    "font/weight/font-extralight": {
+      "$type": "number",
+      "css": "--font-weight-font-extralight",
+      "scopes": [],
+      "$value": 200
+    },
+    "font/weight/font-light": {
+      "$type": "number",
+      "css": "--font-weight-font-light",
+      "scopes": [],
+      "$value": 300
+    },
+    "font/weight/font-extrabold": {
+      "$type": "number",
+      "css": "--font-weight-font-extrabold",
+      "scopes": [],
+      "$value": 800
+    },
+    "font/weight/font-black": {
+      "$type": "number",
+      "css": "--font-weight-font-black",
+      "scopes": [],
+      "$value": 900
+    },
+    "font/line-height/leading-8": {
+      "$type": "number",
+      "css": "--font-line-height-leading-8",
+      "scopes": [],
+      "$value": 32
+    },
+    "font/line-height/leading-10": {
+      "$type": "number",
+      "css": "--font-line-height-leading-10",
+      "scopes": [],
+      "$value": 40
+    },
+    "font/leading/leading-none": {
+      "$type": "number",
+      "css": "--font-leading-leading-none",
+      "scopes": [],
+      "$value": 100
+    },
+    "font/leading/leading-tight": {
+      "$type": "number",
+      "css": "--font-leading-leading-tight",
+      "scopes": [],
+      "$value": 125
+    },
+    "font/leading/leading-snug": {
+      "$type": "number",
+      "css": "--font-leading-leading-snug",
+      "scopes": [],
+      "$value": 137.5
+    },
+    "font/leading/leading-normal": {
+      "$type": "number",
+      "css": "--font-leading-leading-normal",
+      "scopes": [],
+      "$value": 150
+    },
+    "font/leading/leading-relaxed": {
+      "$type": "number",
+      "css": "--font-leading-leading-relaxed",
+      "scopes": [],
+      "$value": 162.5
+    },
+    "font/leading/leading-loose": {
+      "$type": "number",
+      "css": "--font-leading-leading-loose",
+      "scopes": [],
+      "$value": 200
+    },
+    "font/tracking/tracking-tighter": {
+      "$type": "number",
+      "css": "--font-tracking-tracking-tighter",
+      "scopes": [],
+      "$value": -5
+    },
+    "font/tracking/tracking-tight": {
+      "$type": "number",
+      "css": "--font-tracking-tracking-tight",
+      "scopes": [],
+      "$value": -2.5
+    },
+    "font/tracking/tracking-normal": {
+      "$type": "number",
+      "css": "--font-tracking-tracking-normal",
+      "scopes": [],
+      "$value": 0
+    },
+    "font/tracking/tracking-wide": {
+      "$type": "number",
+      "css": "--font-tracking-tracking-wide",
+      "scopes": [],
+      "$value": 2.5
+    },
+    "font/tracking/tracking-wider": {
+      "$type": "number",
+      "css": "--font-tracking-tracking-wider",
+      "scopes": [],
+      "$value": 5
+    },
+    "font/tracking/tracking-widest": {
+      "$type": "number",
+      "css": "--font-tracking-tracking-widest",
+      "scopes": [],
+      "$value": 10
+    },
+    "font/line-height/leading-4,5": {
+      "$type": "number",
+      "css": "--font-line-height-leading-4-5",
+      "scopes": [],
+      "$value": 18
+    },
+    "font/family/font-sans": {
+      "$type": "string",
+      "css": "--font-family-font-sans",
+      "scopes": [],
+      "$value": "Inter"
+    },
+    "font/family/font-serif": {
+      "$type": "string",
+      "css": "--font-family-font-serif",
+      "scopes": [],
+      "$value": "Lora"
+    },
+    "spacing/0,25": {
+      "$type": "number",
+      "css": "--spacing-0-25",
+      "scopes": [
+        "GAP"
+      ],
+      "$value": 1
+    },
+    "font/size/text-huge": {
+      "$type": "number",
+      "css": "--font-size-text-huge",
+      "scopes": [],
+      "$value": 60
+    },
+    "font/line-height/leading-15": {
+      "$type": "number",
+      "css": "--font-line-height-leading-15",
+      "scopes": [],
+      "$value": 60
+    }
+  },
+  "Semantics": {
+    "color/canvas": {
+      "$type": "color",
+      "css": "--color-canvas",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "$value": "{Primitives.colors/orange/50}"
+    },
+    "color/on canvas/default": {
+      "$type": "color",
+      "css": "--color-on-canvas-default",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/950}"
+    },
+    "color/primary/base": {
+      "$type": "color",
+      "css": "--color-primary-base",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/orange/500}"
+    },
+    "color/on primary/default": {
+      "$type": "color",
+      "css": "--color-on-primary-default",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/white}"
+    },
+    "radius/sm": {
+      "$type": "number",
+      "css": "--radius-sm",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-6}"
+    },
+    "radius/md": {
+      "$type": "number",
+      "css": "--radius-md",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-8}"
+    },
+    "radius/lg": {
+      "$type": "number",
+      "css": "--radius-lg",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-12}"
+    },
+    "radius/xl": {
+      "$type": "number",
+      "css": "--radius-xl",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-14}"
+    },
+    "radius/2xl": {
+      "$type": "number",
+      "css": "--radius-2xl",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-16}"
+    },
+    "radius/3xl": {
+      "$type": "number",
+      "css": "--radius-3xl",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-20}"
+    },
+    "radius/4xl": {
+      "$type": "number",
+      "css": "--radius-4xl",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-24}"
+    },
+    "radius/none": {
+      "$type": "number",
+      "css": "--radius-none",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-0}"
+    },
+    "radius/full": {
+      "$type": "number",
+      "css": "--radius-full",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Primitives.border-radius/rounded-1000}"
+    },
+    "color/primary/hover": {
+      "$type": "color",
+      "css": "--color-primary-hover",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/orange/600}"
+    },
+    "color/primary/pressed": {
+      "$type": "color",
+      "css": "--color-primary-pressed",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/orange/700}"
+    },
+    "color/secondary/base": {
+      "$type": "color",
+      "css": "--color-secondary-base",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/950}"
+    },
+    "color/secondary/hover": {
+      "$type": "color",
+      "css": "--color-secondary-hover",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/800}"
+    },
+    "color/secondary/pressed": {
+      "$type": "color",
+      "css": "--color-secondary-pressed",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/900}"
+    },
+    "color/on secondary/default": {
+      "$type": "color",
+      "css": "--color-on-secondary-default",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/white}"
+    },
+    "color/surface/base": {
+      "$type": "color",
+      "css": "--color-surface-base",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/white}"
+    },
+    "color/surface/subtle": {
+      "$type": "color",
+      "css": "--color-surface-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/100}"
+    },
+    "color/on surface/default": {
+      "$type": "color",
+      "css": "--color-on-surface-default",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/950}"
+    },
+    "color/border/base": {
+      "$type": "color",
+      "css": "--color-border-base",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/200}"
+    },
+    "color/border/strong": {
+      "$type": "color",
+      "css": "--color-border-strong",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/300}"
+    },
+    "color/border/pressed": {
+      "$type": "color",
+      "css": "--color-border-pressed",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/900}"
+    },
+    "color/feedback/positive": {
+      "$type": "color",
+      "css": "--color-feedback-positive",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/green/700}"
+    },
+    "color/on surface/subtle": {
+      "$type": "color",
+      "css": "--color-on-surface-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/500}"
+    },
+    "color/feedback/on-positive": {
+      "$type": "color",
+      "css": "--color-feedback-on-positive",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/white}"
+    },
+    "color/feedback/negative": {
+      "$type": "color",
+      "css": "--color-feedback-negative",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/red/700}"
+    },
+    "color/feedback/on-negative": {
+      "$type": "color",
+      "css": "--color-feedback-on-negative",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/white}"
+    },
+    "color/feedback/warning": {
+      "$type": "color",
+      "css": "--color-feedback-warning",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/amber/500}"
+    },
+    "color/feedback/on-warning": {
+      "$type": "color",
+      "css": "--color-feedback-on-warning",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/950}"
+    },
+    "color/feedback/positive-subtle": {
+      "$type": "color",
+      "css": "--color-feedback-positive-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/green/50}"
+    },
+    "color/feedback/on-positive-subtle": {
+      "$type": "color",
+      "css": "--color-feedback-on-positive-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/green/700}"
+    },
+    "color/feedback/negative-subtle": {
+      "$type": "color",
+      "css": "--color-feedback-negative-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/red/50}"
+    },
+    "color/feedback/on-negative-subtle": {
+      "$type": "color",
+      "css": "--color-feedback-on-negative-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/red/700}"
+    },
+    "color/feedback/warning-subtle": {
+      "$type": "color",
+      "css": "--color-feedback-warning-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/amber/50}"
+    },
+    "color/feedback/on-warning-subtle": {
+      "$type": "color",
+      "css": "--color-feedback-on-warning-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/amber/700}"
+    },
+    "space/none": {
+      "$type": "number",
+      "css": "--space-none",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/0}"
+    },
+    "space/2xs": {
+      "$type": "number",
+      "css": "--space-2xs",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/1}"
+    },
+    "space/sm": {
+      "$type": "number",
+      "css": "--space-sm",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/2}"
+    },
+    "space/base": {
+      "$type": "number",
+      "css": "--space-base",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/3}"
+    },
+    "space/md": {
+      "$type": "number",
+      "css": "--space-md",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/4}"
+    },
+    "space/xl": {
+      "$type": "number",
+      "css": "--space-xl",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/6}"
+    },
+    "space/2xl": {
+      "$type": "number",
+      "css": "--space-2xl",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/8}"
+    },
+    "font/display-3/font-family": {
+      "$type": "string",
+      "css": "--font-display-3-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-serif}"
+    },
+    "font/display-3/font-size": {
+      "$type": "number",
+      "css": "--font-display-3-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-xl}"
+    },
+    "font/display-3/line-height": {
+      "$type": "number",
+      "css": "--font-display-3-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-8}"
+    },
+    "font/display-3/font-weight": {
+      "$type": "number",
+      "css": "--font-display-3-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-normal}"
+    },
+    "font/h2/font-family": {
+      "$type": "string",
+      "css": "--font-h2-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/h2/font-size": {
+      "$type": "number",
+      "css": "--font-h2-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-base}"
+    },
+    "font/h2/line-height": {
+      "$type": "number",
+      "css": "--font-h2-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-6}"
+    },
+    "font/h2/font-weight": {
+      "$type": "number",
+      "css": "--font-h2-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-semibold}"
+    },
+    "font/h1/font-family": {
+      "$type": "string",
+      "css": "--font-h1-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/h1/font-size": {
+      "$type": "number",
+      "css": "--font-h1-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-lg}"
+    },
+    "font/h1/line-height": {
+      "$type": "number",
+      "css": "--font-h1-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-7}"
+    },
+    "font/h1/font-weight": {
+      "$type": "number",
+      "css": "--font-h1-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-semibold}"
+    },
+    "font/body-1/font-family": {
+      "$type": "string",
+      "css": "--font-body-1-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/body-1/font-size": {
+      "$type": "number",
+      "css": "--font-body-1-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-base}"
+    },
+    "font/body-1/line-height": {
+      "$type": "number",
+      "css": "--font-body-1-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-6}"
+    },
+    "font/body-1/font-weight": {
+      "$type": "number",
+      "css": "--font-body-1-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-normal}"
+    },
+    "font/body-2/font-family": {
+      "$type": "string",
+      "css": "--font-body-2-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/body-2/font-size": {
+      "$type": "number",
+      "css": "--font-body-2-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-sm}"
+    },
+    "font/body-2/line-height": {
+      "$type": "number",
+      "css": "--font-body-2-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-5}"
+    },
+    "font/body-2/font-weight": {
+      "$type": "number",
+      "css": "--font-body-2-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-normal}"
+    },
+    "font/label-1/font-family": {
+      "$type": "string",
+      "css": "--font-label-1-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/label-1/font-size": {
+      "$type": "number",
+      "css": "--font-label-1-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-base}"
+    },
+    "font/label-1/line-height": {
+      "$type": "number",
+      "css": "--font-label-1-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-6}"
+    },
+    "font/label-1/font-weight": {
+      "$type": "number",
+      "css": "--font-label-1-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-medium}"
+    },
+    "font/label-2/font-family": {
+      "$type": "string",
+      "css": "--font-label-2-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/label-2/font-size": {
+      "$type": "number",
+      "css": "--font-label-2-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-sm}"
+    },
+    "font/label-2/line-height": {
+      "$type": "number",
+      "css": "--font-label-2-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-5}"
+    },
+    "font/label-2/font-weight": {
+      "$type": "number",
+      "css": "--font-label-2-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-medium}"
+    },
+    "font/caption/font-family": {
+      "$type": "string",
+      "css": "--font-caption-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/caption/font-size": {
+      "$type": "number",
+      "css": "--font-caption-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-xs}"
+    },
+    "font/caption/line-height": {
+      "$type": "number",
+      "css": "--font-caption-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-4}"
+    },
+    "font/caption/font-weight-emphasis": {
+      "$type": "number",
+      "css": "--font-caption-font-weight-emphasis",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-semibold}"
+    },
+    "color/on canvas/subtle": {
+      "$type": "color",
+      "css": "--color-on-canvas-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/600}"
+    },
+    "space/lg": {
+      "$type": "number",
+      "css": "--space-lg",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/5}"
+    },
+    "space/xs": {
+      "$type": "number",
+      "css": "--space-xs",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/1,5}"
+    },
+    "color/border/subtle": {
+      "$type": "color",
+      "css": "--color-border-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/neutral/100}"
+    },
+    "font/h3/font-family": {
+      "$type": "string",
+      "css": "--font-h3-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-sans}"
+    },
+    "font/h3/font-size": {
+      "$type": "number",
+      "css": "--font-h3-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-sm}"
+    },
+    "font/h3/line-height": {
+      "$type": "number",
+      "css": "--font-h3-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-5}"
+    },
+    "font/h3/font-weight": {
+      "$type": "number",
+      "css": "--font-h3-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-semibold}"
+    },
+    "font/body-1/font-weight-emphasis": {
+      "$type": "number",
+      "css": "--font-body-1-font-weight-emphasis",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-medium}"
+    },
+    "font/body-2/font-weight-emphasis": {
+      "$type": "number",
+      "css": "--font-body-2-font-weight-emphasis",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-medium}"
+    },
+    "font/caption/letter spacing": {
+      "$type": "number",
+      "css": "--font-caption-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Primitives.spacing/0,25}"
+    },
+    "space/minimum": {
+      "$type": "number",
+      "css": "--space-minimum",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/0,25}"
+    },
+    "font/display-1/font-family": {
+      "$type": "string",
+      "css": "--font-display-1-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-serif}"
+    },
+    "font/display-1/font-size": {
+      "$type": "number",
+      "css": "--font-display-1-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-huge}"
+    },
+    "font/display-1/line-height": {
+      "$type": "number",
+      "css": "--font-display-1-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-15}"
+    },
+    "font/display-1/font-weight": {
+      "$type": "number",
+      "css": "--font-display-1-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-normal}"
+    },
+    "space/huge": {
+      "$type": "number",
+      "css": "--space-huge",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Primitives.spacing/10}"
+    },
+    "font/display-2/font-family": {
+      "$type": "string",
+      "css": "--font-display-2-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Primitives.font/family/font-serif}"
+    },
+    "font/display-2/font-size": {
+      "$type": "number",
+      "css": "--font-display-2-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Primitives.font/size/text-2xl}"
+    },
+    "font/display-2/line-height": {
+      "$type": "number",
+      "css": "--font-display-2-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Primitives.font/line-height/leading-10}"
+    },
+    "font/display-2/font-weight": {
+      "$type": "number",
+      "css": "--font-display-2-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-normal}"
+    },
+    "color/on primary/container": {
+      "$type": "color",
+      "css": "--color-on-primary-container",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/orange/500}"
+    },
+    "color/primary/container": {
+      "$type": "color",
+      "css": "--color-primary-container",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Primitives.colors/orange/100}"
+    },
+    "font/caption/font-weight": {
+      "$type": "number",
+      "css": "--font-caption-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Primitives.font/weight/font-normal}"
+    }
+  },
+  "Component": {
+    "button/variant/primary/default-background": {
+      "$type": "color",
+      "css": "--button-variant-primary-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/base}"
+    },
+    "button/variant/primary/hover-background": {
+      "$type": "color",
+      "css": "--button-variant-primary-hover-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/hover}"
+    },
+    "button/variant/primary/pressed-background": {
+      "$type": "color",
+      "css": "--button-variant-primary-pressed-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/pressed}"
+    },
+    "button/variant/primary/foreground": {
+      "$type": "color",
+      "css": "--button-variant-primary-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/default}"
+    },
+    "button/variant/primary/disabled-background": {
+      "$type": "color",
+      "css": "--button-variant-primary-disabled-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/base}",
+      "opacity": 50
+    },
+    "button/variant/primary/disabled-foreground": {
+      "$type": "color",
+      "css": "--button-variant-primary-disabled-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/default}",
+      "opacity": 90
+    },
+    "button/variant/secondary/default-background": {
+      "$type": "color",
+      "css": "--button-variant-secondary-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/subtle}"
+    },
+    "button/variant/secondary/hover-background": {
+      "$type": "color",
+      "css": "--button-variant-secondary-hover-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/subtle}"
+    },
+    "button/variant/secondary/pressed-background": {
+      "$type": "color",
+      "css": "--button-variant-secondary-pressed-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/subtle}"
+    },
+    "button/variant/secondary/foreground": {
+      "$type": "color",
+      "css": "--button-variant-secondary-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/default}"
+    },
+    "button/variant/secondary/disabled-background": {
+      "$type": "color",
+      "css": "--button-variant-secondary-disabled-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/subtle}",
+      "opacity": 50
+    },
+    "button/variant/secondary/disabled-foreground": {
+      "$type": "color",
+      "css": "--button-variant-secondary-disabled-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/default}",
+      "opacity": 50
+    },
+    "button/size/large/px": {
+      "$type": "number",
+      "css": "--button-size-large-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/xl}"
+    },
+    "button/size/large/py": {
+      "$type": "number",
+      "css": "--button-size-large-py",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "button/size/large/radius": {
+      "$type": "number",
+      "css": "--button-size-large-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/2xl}"
+    },
+    "button/size/large/font-family": {
+      "$type": "string",
+      "css": "--button-size-large-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-1/font-family}"
+    },
+    "button/size/large/font-size": {
+      "$type": "number",
+      "css": "--button-size-large-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-1/font-size}"
+    },
+    "button/size/large/font-weight": {
+      "$type": "number",
+      "css": "--button-size-large-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-1/font-weight}"
+    },
+    "button/size/large/line-height": {
+      "$type": "number",
+      "css": "--button-size-large-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-1/line-height}"
+    },
+    "button/size/small/px": {
+      "$type": "number",
+      "css": "--button-size-small-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "button/size/small/py": {
+      "$type": "number",
+      "css": "--button-size-small-py",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/xs}"
+    },
+    "button/size/small/radius": {
+      "$type": "number",
+      "css": "--button-size-small-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/full}"
+    },
+    "button/size/small/font-family": {
+      "$type": "string",
+      "css": "--button-size-small-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-2/font-family}"
+    },
+    "button/size/small/font-size": {
+      "$type": "number",
+      "css": "--button-size-small-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-2/font-size}"
+    },
+    "button/size/small/line-height": {
+      "$type": "number",
+      "css": "--button-size-small-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/line-height}"
+    },
+    "button/size/small/font-weight": {
+      "$type": "number",
+      "css": "--button-size-small-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/font-weight}"
+    },
+    "button/variant/ghost/default-background": {
+      "$type": "color",
+      "css": "--button-variant-ghost-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/default}",
+      "opacity": 0
+    },
+    "button/variant/ghost/hover-background": {
+      "$type": "color",
+      "css": "--button-variant-ghost-hover-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/default}",
+      "opacity": 4
+    },
+    "button/variant/ghost/pressed-background": {
+      "$type": "color",
+      "css": "--button-variant-ghost-pressed-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/default}",
+      "opacity": 8
+    },
+    "button/variant/ghost/foreground": {
+      "$type": "color",
+      "css": "--button-variant-ghost-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/subtle}"
+    },
+    "button/variant/ghost/disabled-background": {
+      "$type": "color",
+      "css": "--button-variant-ghost-disabled-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/default}",
+      "opacity": 0
+    },
+    "button/variant/ghost/disabled-foreground": {
+      "$type": "color",
+      "css": "--button-variant-ghost-disabled-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/subtle}",
+      "opacity": 50
+    },
+    "button/variant/destructive/default-background": {
+      "$type": "color",
+      "css": "--button-variant-destructive-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/negative-subtle}"
+    },
+    "button/variant/destructive/hover-background": {
+      "$type": "color",
+      "css": "--button-variant-destructive-hover-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/negative-subtle}"
+    },
+    "button/variant/destructive/pressed-background": {
+      "$type": "color",
+      "css": "--button-variant-destructive-pressed-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/negative-subtle}"
+    },
+    "button/variant/destructive/foreground": {
+      "$type": "color",
+      "css": "--button-variant-destructive-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-negative-subtle}"
+    },
+    "button/variant/destructive/disabled-background": {
+      "$type": "color",
+      "css": "--button-variant-destructive-disabled-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/negative-subtle}",
+      "opacity": 50
+    },
+    "button/variant/destructive/disabled-foreground": {
+      "$type": "color",
+      "css": "--button-variant-destructive-disabled-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-negative-subtle}",
+      "opacity": 50
+    },
+    "iconbutton/variant/default/default-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-default-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/secondary/base}"
+    },
+    "iconbutton/variant/default/hover-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-default-hover-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/secondary/hover}"
+    },
+    "iconbutton/variant/default/pressed-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-default-pressed-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/secondary/pressed}"
+    },
+    "iconbutton/variant/default/foreground": {
+      "$type": "color",
+      "css": "--iconbutton-variant-default-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on secondary/default}"
+    },
+    "iconbutton/variant/default/disabled-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-default-disabled-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/secondary/base}",
+      "opacity": 50
+    },
+    "iconbutton/variant/default/disabled-foreground": {
+      "$type": "color",
+      "css": "--iconbutton-variant-default-disabled-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on secondary/default}",
+      "opacity": 50
+    },
+    "iconbutton/variant/navigation/default-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-navigation-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "iconbutton/variant/navigation/hover-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-navigation-hover-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "iconbutton/variant/navigation/pressed-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-navigation-pressed-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "iconbutton/variant/navigation/foreground": {
+      "$type": "color",
+      "css": "--iconbutton-variant-navigation-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "iconbutton/variant/navigation/disabled-background": {
+      "$type": "color",
+      "css": "--iconbutton-variant-navigation-disabled-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}",
+      "opacity": 50
+    },
+    "iconbutton/variant/navigation/disabled-foreground": {
+      "$type": "color",
+      "css": "--iconbutton-variant-navigation-disabled-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}",
+      "opacity": 50
+    },
+    "iconbutton/size/large/p": {
+      "$type": "number",
+      "css": "--iconbutton-size-large-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "iconbutton/size/large/radius": {
+      "$type": "number",
+      "css": "--iconbutton-size-large-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/full}"
+    },
+    "iconbutton/size/medium/p": {
+      "$type": "number",
+      "css": "--iconbutton-size-medium-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/sm}"
+    },
+    "iconbutton/size/medium/radius": {
+      "$type": "number",
+      "css": "--iconbutton-size-medium-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/full}"
+    },
+    "iconbutton/size/large/icon-size": {
+      "$type": "number",
+      "css": "--iconbutton-size-large-icon-size",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/xl}"
+    },
+    "iconbutton/size/medium/icon-size": {
+      "$type": "number",
+      "css": "--iconbutton-size-medium-icon-size",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/lg}"
+    },
+    "iconbutton/size/small/p": {
+      "$type": "number",
+      "css": "--iconbutton-size-small-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/2xs}"
+    },
+    "iconbutton/size/small/radius": {
+      "$type": "number",
+      "css": "--iconbutton-size-small-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/full}"
+    },
+    "iconbutton/size/small/icon-size": {
+      "$type": "number",
+      "css": "--iconbutton-size-small-icon-size",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/lg}"
+    },
+    "badge/variant/primary/default-background": {
+      "$type": "color",
+      "css": "--badge-variant-primary-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/base}"
+    },
+    "badge/variant/primary/default-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-primary-default-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/default}"
+    },
+    "badge/variant/positive/default-background": {
+      "$type": "color",
+      "css": "--badge-variant-positive-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/positive}"
+    },
+    "badge/variant/positive/default-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-positive-default-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-positive}"
+    },
+    "badge/variant/positive/subtle-background": {
+      "$type": "color",
+      "css": "--badge-variant-positive-subtle-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/positive-subtle}"
+    },
+    "badge/variant/positive/subtle-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-positive-subtle-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-positive-subtle}"
+    },
+    "badge/variant/warning/default-background": {
+      "$type": "color",
+      "css": "--badge-variant-warning-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/warning}"
+    },
+    "badge/variant/warning/default-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-warning-default-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-warning}"
+    },
+    "badge/variant/warning/subtle-background": {
+      "$type": "color",
+      "css": "--badge-variant-warning-subtle-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/warning-subtle}"
+    },
+    "badge/variant/warning/subtle-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-warning-subtle-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-warning-subtle}"
+    },
+    "badge/variant/negative/default-background": {
+      "$type": "color",
+      "css": "--badge-variant-negative-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/negative}"
+    },
+    "badge/variant/negative/default-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-negative-default-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-negative}"
+    },
+    "badge/variant/negative/subtle-background": {
+      "$type": "color",
+      "css": "--badge-variant-negative-subtle-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/negative-subtle}"
+    },
+    "badge/variant/negative/subtle-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-negative-subtle-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/feedback/on-negative-subtle}"
+    },
+    "badge/px": {
+      "$type": "number",
+      "css": "--badge-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/sm}"
+    },
+    "badge/py": {
+      "$type": "number",
+      "css": "--badge-py",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/2xs}"
+    },
+    "badge/radius": {
+      "$type": "number",
+      "css": "--badge-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/full}"
+    },
+    "badge/font-family": {
+      "$type": "string",
+      "css": "--badge-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-1/font-family}"
+    },
+    "badge/font-size": {
+      "$type": "number",
+      "css": "--badge-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "badge/line-height": {
+      "$type": "number",
+      "css": "--badge-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "badge/font-weight": {
+      "$type": "number",
+      "css": "--badge-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "badge/min-width": {
+      "$type": "number",
+      "css": "--badge-min-width",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/xl}"
+    },
+    "card/background": {
+      "$type": "color",
+      "css": "--card-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "card/foreground": {
+      "$type": "color",
+      "css": "--card-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "card/foreground-subtle": {
+      "$type": "color",
+      "css": "--card-foreground-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/subtle}"
+    },
+    "card/p": {
+      "$type": "number",
+      "css": "--card-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "card/gap": {
+      "$type": "number",
+      "css": "--card-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "card/radius": {
+      "$type": "number",
+      "css": "--card-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/2xl}"
+    },
+    "card/product/title/font-family": {
+      "$type": "string",
+      "css": "--card-product-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h2/font-family}"
+    },
+    "card/product/title/font-size": {
+      "$type": "number",
+      "css": "--card-product-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h2/font-size}"
+    },
+    "card/product/title/line-height": {
+      "$type": "number",
+      "css": "--card-product-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/line-height}"
+    },
+    "card/product/title/font-weight": {
+      "$type": "number",
+      "css": "--card-product-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/font-weight}"
+    },
+    "card/product/description/font-family": {
+      "$type": "string",
+      "css": "--card-product-description-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-2/font-family}"
+    },
+    "card/product/description/font-size": {
+      "$type": "number",
+      "css": "--card-product-description-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-2/font-size}"
+    },
+    "card/product/description/line-height": {
+      "$type": "number",
+      "css": "--card-product-description-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/line-height}"
+    },
+    "card/product/description/font-weight": {
+      "$type": "number",
+      "css": "--card-product-description-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/font-weight}"
+    },
+    "card/product/price/font-family": {
+      "$type": "string",
+      "css": "--card-product-price-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h2/font-family}"
+    },
+    "card/product/price/font-size": {
+      "$type": "number",
+      "css": "--card-product-price-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h2/font-size}"
+    },
+    "card/product/price/line-height": {
+      "$type": "number",
+      "css": "--card-product-price-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/line-height}"
+    },
+    "card/product/price/font-weight": {
+      "$type": "number",
+      "css": "--card-product-price-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/font-weight}"
+    },
+    "card/gap-tiny": {
+      "$type": "number",
+      "css": "--card-gap-tiny",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/2xs}"
+    },
+    "card/order/title/font-family": {
+      "$type": "string",
+      "css": "--card-order-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h2/font-family}"
+    },
+    "card/order/title/font-size": {
+      "$type": "number",
+      "css": "--card-order-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h2/font-size}"
+    },
+    "card/order/title/line-height": {
+      "$type": "number",
+      "css": "--card-order-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/line-height}"
+    },
+    "card/order/title/font-weight": {
+      "$type": "number",
+      "css": "--card-order-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/font-weight}"
+    },
+    "card/order/unit price/font-family": {
+      "$type": "string",
+      "css": "--card-order-unit-price-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-2/font-family}"
+    },
+    "card/order/unit price/font-size": {
+      "$type": "number",
+      "css": "--card-order-unit-price-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-2/font-size}"
+    },
+    "card/order/unit price/line-height": {
+      "$type": "number",
+      "css": "--card-order-unit-price-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/line-height}"
+    },
+    "card/order/unit price/font-weight": {
+      "$type": "number",
+      "css": "--card-order-unit-price-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/font-weight}"
+    },
+    "card/order/total price/font-family": {
+      "$type": "string",
+      "css": "--card-order-total-price-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h2/font-family}"
+    },
+    "card/order/total price/font-size": {
+      "$type": "number",
+      "css": "--card-order-total-price-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h2/font-size}"
+    },
+    "card/order/total price/line-height": {
+      "$type": "number",
+      "css": "--card-order-total-price-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/line-height}"
+    },
+    "card/order/total price/font-weight": {
+      "$type": "number",
+      "css": "--card-order-total-price-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/font-weight}"
+    },
+    "card/divider": {
+      "$type": "color",
+      "css": "--card-divider",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/border/subtle}"
+    },
+    "card/time-slot/start/font-family": {
+      "$type": "string",
+      "css": "--card-time-slot-start-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h2/font-family}"
+    },
+    "card/time-slot/start/font-size": {
+      "$type": "number",
+      "css": "--card-time-slot-start-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h2/font-size}"
+    },
+    "card/time-slot/start/line-height": {
+      "$type": "number",
+      "css": "--card-time-slot-start-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/line-height}"
+    },
+    "card/time-slot/start/font-weight": {
+      "$type": "number",
+      "css": "--card-time-slot-start-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/font-weight}"
+    },
+    "card/time-slot/end/font-family": {
+      "$type": "string",
+      "css": "--card-time-slot-end-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-2/font-family}"
+    },
+    "card/time-slot/end/font-size": {
+      "$type": "number",
+      "css": "--card-time-slot-end-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-2/font-size}"
+    },
+    "card/time-slot/end/line-height": {
+      "$type": "number",
+      "css": "--card-time-slot-end-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/line-height}"
+    },
+    "card/time-slot/end/font-weight": {
+      "$type": "number",
+      "css": "--card-time-slot-end-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/font-weight}"
+    },
+    "card/upsell/title/font-family": {
+      "$type": "string",
+      "css": "--card-upsell-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h3/font-family}"
+    },
+    "card/upsell/title/font-size": {
+      "$type": "number",
+      "css": "--card-upsell-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h3/font-size}"
+    },
+    "card/upsell/title/line-height": {
+      "$type": "number",
+      "css": "--card-upsell-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h3/line-height}"
+    },
+    "card/upsell/title/font-weight": {
+      "$type": "number",
+      "css": "--card-upsell-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h3/font-weight}"
+    },
+    "card/upsell/price/font-family": {
+      "$type": "string",
+      "css": "--card-upsell-price-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h3/font-family}"
+    },
+    "card/upsell/price/font-size": {
+      "$type": "number",
+      "css": "--card-upsell-price-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h3/font-size}"
+    },
+    "card/upsell/price/line-height": {
+      "$type": "number",
+      "css": "--card-upsell-price-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h3/line-height}"
+    },
+    "card/upsell/price/font-weight": {
+      "$type": "number",
+      "css": "--card-upsell-price-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h3/font-weight}"
+    },
+    "card/checkout/title/font-family": {
+      "$type": "string",
+      "css": "--card-checkout-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "card/checkout/title/font-size": {
+      "$type": "number",
+      "css": "--card-checkout-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "card/checkout/title/line-height": {
+      "$type": "number",
+      "css": "--card-checkout-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "card/checkout/title/font-weight": {
+      "$type": "number",
+      "css": "--card-checkout-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "card/checkout/name/font-family": {
+      "$type": "string",
+      "css": "--card-checkout-name-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-2/font-family}"
+    },
+    "card/checkout/name/font-size": {
+      "$type": "number",
+      "css": "--card-checkout-name-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-2/font-size}"
+    },
+    "card/checkout/name/line-height": {
+      "$type": "number",
+      "css": "--card-checkout-name-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/line-height}"
+    },
+    "card/checkout/name/font-weight": {
+      "$type": "number",
+      "css": "--card-checkout-name-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/font-weight}"
+    },
+    "card/checkout/value/font-family": {
+      "$type": "string",
+      "css": "--card-checkout-value-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-2/font-family}"
+    },
+    "card/checkout/value/font-size": {
+      "$type": "number",
+      "css": "--card-checkout-value-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-2/font-size}"
+    },
+    "card/checkout/value/line-height": {
+      "$type": "number",
+      "css": "--card-checkout-value-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/line-height}"
+    },
+    "card/checkout/value/font-weight": {
+      "$type": "number",
+      "css": "--card-checkout-value-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/font-weight-emphasis}"
+    },
+    "card/checkout/total/font-family": {
+      "$type": "string",
+      "css": "--card-checkout-total-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h2/font-family}"
+    },
+    "card/checkout/total/font-size": {
+      "$type": "number",
+      "css": "--card-checkout-total-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h2/font-size}"
+    },
+    "card/checkout/total/line-height": {
+      "$type": "number",
+      "css": "--card-checkout-total-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/line-height}"
+    },
+    "card/checkout/total/font-weight": {
+      "$type": "number",
+      "css": "--card-checkout-total-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h2/font-weight}"
+    },
+    "card/checkout/title/letter-spacing": {
+      "$type": "number",
+      "css": "--card-checkout-title-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Semantics.font/caption/letter spacing}"
+    },
+    "card/reservation/title/font-family": {
+      "$type": "string",
+      "css": "--card-reservation-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/display-3/font-family}"
+    },
+    "card/reservation/title/font-size": {
+      "$type": "number",
+      "css": "--card-reservation-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/display-3/font-size}"
+    },
+    "card/reservation/title/line-height": {
+      "$type": "number",
+      "css": "--card-reservation-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/display-3/line-height}"
+    },
+    "card/reservation/title/font-weight": {
+      "$type": "number",
+      "css": "--card-reservation-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/display-3/font-weight}"
+    },
+    "card/reservation/details/font-family": {
+      "$type": "string",
+      "css": "--card-reservation-details-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-1/font-family}"
+    },
+    "card/reservation/details/font-size": {
+      "$type": "number",
+      "css": "--card-reservation-details-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-1/font-size}"
+    },
+    "card/reservation/details/line-height": {
+      "$type": "number",
+      "css": "--card-reservation-details-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-1/line-height}"
+    },
+    "card/reservation/details/font-weight": {
+      "$type": "number",
+      "css": "--card-reservation-details-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-1/font-weight}"
+    },
+    "card/reservation/code/font-family": {
+      "$type": "string",
+      "css": "--card-reservation-code-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-2/font-family}"
+    },
+    "card/reservation/code/font-size": {
+      "$type": "number",
+      "css": "--card-reservation-code-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-2/font-size}"
+    },
+    "card/reservation/code/line-height": {
+      "$type": "number",
+      "css": "--card-reservation-code-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/line-height}"
+    },
+    "card/reservation/code/font-weight": {
+      "$type": "number",
+      "css": "--card-reservation-code-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/font-weight}"
+    },
+    "card/checkout/details/font-family": {
+      "$type": "string",
+      "css": "--card-checkout-details-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "card/checkout/details/font-size": {
+      "$type": "number",
+      "css": "--card-checkout-details-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "card/checkout/details/line-height": {
+      "$type": "number",
+      "css": "--card-checkout-details-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "card/checkout/details/font-weight": {
+      "$type": "number",
+      "css": "--card-checkout-details-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "card/accent": {
+      "$type": "color",
+      "css": "--card-accent",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/base}"
+    },
+    "counter/on card/font-family": {
+      "$type": "string",
+      "css": "--counter-on-card-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-1/font-family}"
+    },
+    "counter/on card/font-size": {
+      "$type": "number",
+      "css": "--counter-on-card-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-1/font-size}"
+    },
+    "counter/on card/line-height": {
+      "$type": "number",
+      "css": "--counter-on-card-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-1/line-height}"
+    },
+    "counter/on card/font-weight": {
+      "$type": "number",
+      "css": "--counter-on-card-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-1/font-weight-emphasis}"
+    },
+    "counter/gap": {
+      "$type": "number",
+      "css": "--counter-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "counter/foreground": {
+      "$type": "color",
+      "css": "--counter-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "card/divider-height": {
+      "$type": "number",
+      "css": "--card-divider-height",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/minimum}"
+    },
+    "card/order/details/font-family": {
+      "$type": "string",
+      "css": "--card-order-details-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "card/order/details/font-size": {
+      "$type": "number",
+      "css": "--card-order-details-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "card/order/details/line-height": {
+      "$type": "number",
+      "css": "--card-order-details-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "card/order/details/font-weight": {
+      "$type": "number",
+      "css": "--card-order-details-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "counter/on canvas/number/font-family": {
+      "$type": "string",
+      "css": "--counter-on-canvas-number-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/display-1/font-family}"
+    },
+    "counter/on canvas/number/font-size": {
+      "$type": "number",
+      "css": "--counter-on-canvas-number-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/display-1/font-size}"
+    },
+    "counter/on canvas/number/line-height": {
+      "$type": "number",
+      "css": "--counter-on-canvas-number-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/display-1/line-height}"
+    },
+    "counter/on canvas/number/font-weight": {
+      "$type": "number",
+      "css": "--counter-on-canvas-number-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/display-1/font-weight}"
+    },
+    "counter/on canvas/gap": {
+      "$type": "number",
+      "css": "--counter-on-canvas-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/huge}"
+    },
+    "counter/foreground-subtle": {
+      "$type": "color",
+      "css": "--counter-foreground-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/subtle}"
+    },
+    "counter/on canvas/description/font-family": {
+      "$type": "string",
+      "css": "--counter-on-canvas-description-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "counter/on canvas/description/font-weight": {
+      "$type": "number",
+      "css": "--counter-on-canvas-description-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "counter/on canvas/description/font-size": {
+      "$type": "number",
+      "css": "--counter-on-canvas-description-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "counter/on canvas/description/line-height": {
+      "$type": "number",
+      "css": "--counter-on-canvas-description-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "counter/on canvas/description/letter-spacing": {
+      "$type": "number",
+      "css": "--counter-on-canvas-description-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Semantics.font/caption/letter spacing}"
+    },
+    "counter/on canvas/text-gap": {
+      "$type": "number",
+      "css": "--counter-on-canvas-text-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "time picker/gap": {
+      "$type": "number",
+      "css": "--time-picker-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "time picker/foreground": {
+      "$type": "color",
+      "css": "--time-picker-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "time picker/container/margin": {
+      "$type": "number",
+      "css": "--time-picker-container-margin",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/sm}"
+    },
+    "time picker/container/number/font-family": {
+      "$type": "string",
+      "css": "--time-picker-container-number-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/h1/font-family}"
+    },
+    "time picker/container/number/font-weight": {
+      "$type": "number",
+      "css": "--time-picker-container-number-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/h1/font-weight}"
+    },
+    "time picker/container/number/font-size": {
+      "$type": "number",
+      "css": "--time-picker-container-number-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/h1/font-size}"
+    },
+    "time picker/container/number/line-height": {
+      "$type": "number",
+      "css": "--time-picker-container-number-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/h1/line-height}"
+    },
+    "time picker/title/font-family": {
+      "$type": "string",
+      "css": "--time-picker-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "time picker/title/font-weight": {
+      "$type": "number",
+      "css": "--time-picker-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "time picker/title/font-size": {
+      "$type": "number",
+      "css": "--time-picker-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "time picker/title/line-height": {
+      "$type": "number",
+      "css": "--time-picker-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "time picker/title/letter-spacing": {
+      "$type": "number",
+      "css": "--time-picker-title-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Semantics.font/caption/letter spacing}"
+    },
+    "time picker/foreground-subtle": {
+      "$type": "color",
+      "css": "--time-picker-foreground-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/subtle}"
+    },
+    "time picker/container/background": {
+      "$type": "color",
+      "css": "--time-picker-container-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "time picker/container/p": {
+      "$type": "number",
+      "css": "--time-picker-container-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "time picker/container/number/fixed-width": {
+      "$type": "number",
+      "css": "--time-picker-container-number-fixed-width",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": 60
+    },
+    "time picker/container/number/fixed-height": {
+      "$type": "number",
+      "css": "--time-picker-container-number-fixed-height",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": 48
+    },
+    "time picker/container/radius": {
+      "$type": "number",
+      "css": "--time-picker-container-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/2xl}"
+    },
+    "time picker/container/selected-highlight": {
+      "$type": "color",
+      "css": "--time-picker-container-selected-highlight",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/subtle}",
+      "opacity": 12
+    },
+    "time picker/container/selected-highlight-radius": {
+      "$type": "number",
+      "css": "--time-picker-container-selected-highlight-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/lg}"
+    },
+    "button/on-canvas-px": {
+      "$type": "number",
+      "css": "--button-on-canvas-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/lg}"
+    },
+    "button/on-canvas-p-top": {
+      "$type": "number",
+      "css": "--button-on-canvas-p-top",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "button/on-canvas-p-bottom": {
+      "$type": "number",
+      "css": "--button-on-canvas-p-bottom",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/2xl}"
+    },
+    "pills/selected/background": {
+      "$type": "color",
+      "css": "--pills-selected-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/secondary/base}"
+    },
+    "pills/selected/foreground": {
+      "$type": "color",
+      "css": "--pills-selected-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on secondary/default}"
+    },
+    "pills/default/background": {
+      "$type": "color",
+      "css": "--pills-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "pills/default/foreground": {
+      "$type": "color",
+      "css": "--pills-default-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "pills/px": {
+      "$type": "number",
+      "css": "--pills-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "pills/py": {
+      "$type": "number",
+      "css": "--pills-py",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/sm}"
+    },
+    "pills/radius": {
+      "$type": "number",
+      "css": "--pills-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/full}"
+    },
+    "pills/font-family": {
+      "$type": "string",
+      "css": "--pills-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-2/font-family}"
+    },
+    "pills/font-size": {
+      "$type": "number",
+      "css": "--pills-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-2/font-size}"
+    },
+    "pills/line-height": {
+      "$type": "number",
+      "css": "--pills-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/line-height}"
+    },
+    "pills/font-weight": {
+      "$type": "number",
+      "css": "--pills-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/font-weight}"
+    },
+    "pills/default/border-color": {
+      "$type": "color",
+      "css": "--pills-default-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/border/base}"
+    },
+    "pills/default/border-width": {
+      "$type": "number",
+      "css": "--pills-default-border-width",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/minimum}"
+    },
+    "pills/module-gap": {
+      "$type": "number",
+      "css": "--pills-module-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/sm}"
+    },
+    "input/background": {
+      "$type": "color",
+      "css": "--input-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "input/default/foreground": {
+      "$type": "color",
+      "css": "--input-default-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/subtle}"
+    },
+    "input/default/border-color": {
+      "$type": "color",
+      "css": "--input-default-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/border/base}"
+    },
+    "input/border-width": {
+      "$type": "number",
+      "css": "--input-border-width",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/minimum}"
+    },
+    "input/filled/foreground": {
+      "$type": "color",
+      "css": "--input-filled-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "input/p": {
+      "$type": "number",
+      "css": "--input-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "input/radius": {
+      "$type": "number",
+      "css": "--input-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/lg}"
+    },
+    "input/font-family": {
+      "$type": "string",
+      "css": "--input-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-2/font-family}"
+    },
+    "input/font-size": {
+      "$type": "number",
+      "css": "--input-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-2/font-size}"
+    },
+    "input/line-height": {
+      "$type": "number",
+      "css": "--input-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/line-height}"
+    },
+    "input/font-weight": {
+      "$type": "number",
+      "css": "--input-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/font-weight}"
+    },
+    "input/focus/foreground": {
+      "$type": "color",
+      "css": "--input-focus-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "input/focus/border-color": {
+      "$type": "color",
+      "css": "--input-focus-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/base}"
+    },
+    "input/filled/border-color": {
+      "$type": "color",
+      "css": "--input-filled-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/border/base}"
+    },
+    "input/title/font-family": {
+      "$type": "string",
+      "css": "--input-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "input/title/font-size": {
+      "$type": "number",
+      "css": "--input-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "input/title/line-height": {
+      "$type": "number",
+      "css": "--input-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "input/title/font-weight": {
+      "$type": "number",
+      "css": "--input-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "input/title/letter-spacing": {
+      "$type": "number",
+      "css": "--input-title-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Semantics.font/caption/letter spacing}"
+    },
+    "input/title/foreground": {
+      "$type": "color",
+      "css": "--input-title-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/subtle}"
+    },
+    "input/title/gap": {
+      "$type": "number",
+      "css": "--input-title-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/xs}"
+    },
+    "text field/min-height": {
+      "$type": "number",
+      "css": "--text-field-min-height",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": 48
+    },
+    "page header/metadata/font-family": {
+      "$type": "string",
+      "css": "--page-header-metadata-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/body-2/font-family}"
+    },
+    "page header/metadata/font-size": {
+      "$type": "number",
+      "css": "--page-header-metadata-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/body-2/font-size}"
+    },
+    "page header/metadata/line-height": {
+      "$type": "number",
+      "css": "--page-header-metadata-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/line-height}"
+    },
+    "page header/px": {
+      "$type": "number",
+      "css": "--page-header-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "page header/metadata/font-weight": {
+      "$type": "number",
+      "css": "--page-header-metadata-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/body-2/font-weight}"
+    },
+    "page header/title/font-family": {
+      "$type": "string",
+      "css": "--page-header-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "page header/title/font-size": {
+      "$type": "number",
+      "css": "--page-header-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "page header/title/line-height": {
+      "$type": "number",
+      "css": "--page-header-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "page header/title/font-weight": {
+      "$type": "number",
+      "css": "--page-header-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "page header/title/letter-spacing": {
+      "$type": "number",
+      "css": "--page-header-title-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Semantics.font/caption/letter spacing}"
+    },
+    "page header/py": {
+      "$type": "number",
+      "css": "--page-header-py",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "page header/foreground": {
+      "$type": "color",
+      "css": "--page-header-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/subtle}"
+    },
+    "page header/background": {
+      "$type": "color",
+      "css": "--page-header-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/canvas}"
+    },
+    "radio button/default/background": {
+      "$type": "color",
+      "css": "--radio-button-default-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "radio button/foreground": {
+      "$type": "color",
+      "css": "--radio-button-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "radio button/default/border-color": {
+      "$type": "color",
+      "css": "--radio-button-default-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/border/base}"
+    },
+    "radio button/border-width": {
+      "$type": "number",
+      "css": "--radio-button-border-width",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/minimum}"
+    },
+    "radio button/selected/background": {
+      "$type": "color",
+      "css": "--radio-button-selected-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/container}"
+    },
+    "radio button/selected/foreground": {
+      "$type": "color",
+      "css": "--radio-button-selected-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/container}"
+    },
+    "radio button/module-gap": {
+      "$type": "number",
+      "css": "--radio-button-module-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/sm}"
+    },
+    "radio button/p": {
+      "$type": "number",
+      "css": "--radio-button-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "radio button/radius": {
+      "$type": "number",
+      "css": "--radio-button-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/lg}"
+    },
+    "radio button/font-family": {
+      "$type": "string",
+      "css": "--radio-button-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-2/font-family}"
+    },
+    "radio button/font-size": {
+      "$type": "number",
+      "css": "--radio-button-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-2/font-size}"
+    },
+    "radio button/line-height": {
+      "$type": "number",
+      "css": "--radio-button-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/line-height}"
+    },
+    "radio button/font-weight": {
+      "$type": "number",
+      "css": "--radio-button-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/font-weight}"
+    },
+    "radio button/module-margin": {
+      "$type": "number",
+      "css": "--radio-button-module-margin",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "radio button/gap": {
+      "$type": "number",
+      "css": "--radio-button-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "radio button/selected/border-color": {
+      "$type": "color",
+      "css": "--radio-button-selected-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/container}"
+    },
+    "radio button/details/font-family": {
+      "$type": "string",
+      "css": "--radio-button-details-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "radio button/details/font-size": {
+      "$type": "number",
+      "css": "--radio-button-details-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "radio button/details/line-height": {
+      "$type": "number",
+      "css": "--radio-button-details-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "radio button/details/font-weight": {
+      "$type": "number",
+      "css": "--radio-button-details-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight}"
+    },
+    "radio button/module title/font-family": {
+      "$type": "string",
+      "css": "--radio-button-module-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "radio button/module title/font-size": {
+      "$type": "number",
+      "css": "--radio-button-module-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "radio button/module title/line-height": {
+      "$type": "number",
+      "css": "--radio-button-module-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "radio button/module title/font-weight": {
+      "$type": "number",
+      "css": "--radio-button-module-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "radio button/module title/letter spacing": {
+      "$type": "number",
+      "css": "--radio-button-module-title-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Semantics.font/caption/letter spacing}"
+    },
+    "radio button/module title/foreground": {
+      "$type": "color",
+      "css": "--radio-button-module-title-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/subtle}"
+    },
+    "checkbox/module-gap": {
+      "$type": "number",
+      "css": "--checkbox-module-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/sm}"
+    },
+    "checkbox/module-margin": {
+      "$type": "number",
+      "css": "--checkbox-module-margin",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "checkbox/p": {
+      "$type": "number",
+      "css": "--checkbox-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    },
+    "checkbox/gap": {
+      "$type": "number",
+      "css": "--checkbox-gap",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/base}"
+    },
+    "checkbox/radius": {
+      "$type": "number",
+      "css": "--checkbox-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/lg}"
+    },
+    "checkbox/border-width": {
+      "$type": "number",
+      "css": "--checkbox-border-width",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/minimum}"
+    },
+    "checkbox/font-family": {
+      "$type": "string",
+      "css": "--checkbox-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-2/font-family}"
+    },
+    "checkbox/font-size": {
+      "$type": "number",
+      "css": "--checkbox-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-2/font-size}"
+    },
+    "checkbox/line-height": {
+      "$type": "number",
+      "css": "--checkbox-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/line-height}"
+    },
+    "checkbox/font-weight": {
+      "$type": "number",
+      "css": "--checkbox-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/font-weight}"
+    },
+    "checkbox/module title/font-family": {
+      "$type": "string",
+      "css": "--checkbox-module-title-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "checkbox/module title/font-size": {
+      "$type": "number",
+      "css": "--checkbox-module-title-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "checkbox/module title/line-height": {
+      "$type": "number",
+      "css": "--checkbox-module-title-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "checkbox/module title/font-weight": {
+      "$type": "number",
+      "css": "--checkbox-module-title-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight-emphasis}"
+    },
+    "checkbox/module title/letter spacing": {
+      "$type": "number",
+      "css": "--checkbox-module-title-letter-spacing",
+      "scopes": [
+        "LETTER_SPACING"
+      ],
+      "$value": "{Semantics.font/caption/letter spacing}"
+    },
+    "checkbox/module title/foreground": {
+      "$type": "color",
+      "css": "--checkbox-module-title-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on canvas/subtle}"
+    },
+    "checkbox/details/font-family": {
+      "$type": "string",
+      "css": "--checkbox-details-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/caption/font-family}"
+    },
+    "checkbox/details/font-size": {
+      "$type": "number",
+      "css": "--checkbox-details-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/caption/font-size}"
+    },
+    "checkbox/details/line-height": {
+      "$type": "number",
+      "css": "--checkbox-details-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/line-height}"
+    },
+    "checkbox/background": {
+      "$type": "color",
+      "css": "--checkbox-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/surface/base}"
+    },
+    "checkbox/details/font-weight": {
+      "$type": "number",
+      "css": "--checkbox-details-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/caption/font-weight}"
+    },
+    "checkbox/foreground": {
+      "$type": "color",
+      "css": "--checkbox-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/default}"
+    },
+    "checkbox/border-color": {
+      "$type": "color",
+      "css": "--checkbox-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/border/base}"
+    },
+    "checkbox/selected": {
+      "$type": "color",
+      "css": "--checkbox-selected",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/container}"
+    },
+    "badge/variant/primary/subtle-background": {
+      "$type": "color",
+      "css": "--badge-variant-primary-subtle-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/container}"
+    },
+    "badge/variant/primary/subtle-foreground": {
+      "$type": "color",
+      "css": "--badge-variant-primary-subtle-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/container}"
+    },
+    "checkbox/box/radius": {
+      "$type": "number",
+      "css": "--checkbox-box-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/md}"
+    },
+    "checkbox/box/border-color": {
+      "$type": "color",
+      "css": "--checkbox-box-border-color",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/border/strong}"
+    },
+    "checkbox/box/border-width": {
+      "$type": "number",
+      "css": "--checkbox-box-border-width",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/minimum}"
+    },
+    "radio button/foreground-subtle": {
+      "$type": "color",
+      "css": "--radio-button-foreground-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/subtle}"
+    },
+    "checkbox/foreground-subtle": {
+      "$type": "color",
+      "css": "--checkbox-foreground-subtle",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on surface/subtle}"
+    },
+    "order bar/module-px": {
+      "$type": "number",
+      "css": "--order-bar-module-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/lg}"
+    },
+    "order bar/module-p-bottom": {
+      "$type": "number",
+      "css": "--order-bar-module-p-bottom",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/2xl}"
+    },
+    "order bar/px": {
+      "$type": "number",
+      "css": "--order-bar-px",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/lg}"
+    },
+    "order bar/radius": {
+      "$type": "number",
+      "css": "--order-bar-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/2xl}"
+    },
+    "order bar/foreground": {
+      "$type": "color",
+      "css": "--order-bar-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on secondary/default}"
+    },
+    "order bar/font-family": {
+      "$type": "string",
+      "css": "--order-bar-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-1/font-family}"
+    },
+    "order bar/font-size": {
+      "$type": "number",
+      "css": "--order-bar-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-1/font-size}"
+    },
+    "order bar/line-height": {
+      "$type": "number",
+      "css": "--order-bar-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-1/line-height}"
+    },
+    "order bar/font-weight": {
+      "$type": "number",
+      "css": "--order-bar-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-1/font-weight}"
+    },
+    "order bar/background": {
+      "$type": "color",
+      "css": "--order-bar-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/secondary/base}"
+    },
+    "bubble/size": {
+      "$type": "number",
+      "css": "--bubble-size",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "$value": "{Semantics.space/xl}"
+    },
+    "bubble/radius": {
+      "$type": "number",
+      "css": "--bubble-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/full}"
+    },
+    "bubble/number/font-family": {
+      "$type": "string",
+      "css": "--bubble-number-font-family",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "$value": "{Semantics.font/label-2/font-family}"
+    },
+    "bubble/number/font-size": {
+      "$type": "number",
+      "css": "--bubble-number-font-size",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "$value": "{Semantics.font/label-2/font-size}"
+    },
+    "bubble/number/line-height": {
+      "$type": "number",
+      "css": "--bubble-number-line-height",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/line-height}"
+    },
+    "bubble/number/font-weight": {
+      "$type": "number",
+      "css": "--bubble-number-font-weight",
+      "scopes": [
+        "FONT_WEIGHT"
+      ],
+      "$value": "{Semantics.font/label-2/font-weight}"
+    },
+    "bubble/background": {
+      "$type": "color",
+      "css": "--bubble-background",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/primary/base}"
+    },
+    "bubble/foreground": {
+      "$type": "color",
+      "css": "--bubble-foreground",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL",
+        "TEXT_FILL",
+        "STROKE_COLOR",
+        "EFFECT_COLOR"
+      ],
+      "$value": "{Semantics.color/on primary/default}"
+    },
+    "order bar/py": {
+      "$type": "number",
+      "css": "--order-bar-py",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/md}"
+    }
+  }
+}

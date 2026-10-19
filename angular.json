@@ -1,0 +1,52 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "packageManager": "npm"
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "kotify-ds": {
+      "projectType": "library",
+      "root": "projects/kotify-ds",
+      "sourceRoot": "projects/kotify-ds/src",
+      "prefix": "kds",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/kotify-ds/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/kotify-ds/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/kotify-ds/tsconfig.spec.json"
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular-vite:start-storybook",
+          "options": {
+            "configDir": "projects/kotify-ds/.storybook",
+            "browserTarget": "kotify-ds:build",
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular-vite:build-storybook",
+          "options": {
+            "configDir": "projects/kotify-ds/.storybook",
+            "browserTarget": "kotify-ds:build",
+            "outputDir": "storybook-static"
+          }
+        }
+      }
+    }
+  }
+}

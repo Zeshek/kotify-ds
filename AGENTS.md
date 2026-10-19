@@ -227,17 +227,32 @@ When rebuilding or extending a prototype:
 
 ### Stack
 
-- **Framework:** Angular (the Kotify app will be built in Angular).
-- **Component workshop:** Storybook for Angular.
+- **Framework:** Angular (the Kotify app will be built in Angular). The
+  repository currently uses Angular 21 (LTS); moving to a newer major is
+  a routine `ng update`.
+- **Component workshop:** Storybook for Angular (`@storybook/angular-vite`).
 - **Tokens:** CSS custom properties generated from a Figma variable
-  export (pipeline based on Style Dictionary). No Tailwind for now.
+  export by `scripts/build-tokens.mjs` (see `tokens/README.md`). No
+  Tailwind for now.
+- **Components:** standalone Angular components with the `kds` prefix.
+  Controls attach to native elements where one exists (Button is
+  `button[kdsButton]`) so native semantics, keyboard behavior, and
+  `disabled` keep working.
 - **Scope order:** token pipeline and foundations first, then Button as
   the pilot component; validate before scaling to the other families.
 
 ### Token-to-code rules
 
 - Generate CSS custom properties from the Figma export; never write
-  token values by hand.
+  token values by hand. After updating the export, run `npm run tokens`.
+- Component styles reference **Component** tokens (for example
+  `--button-size-large-px`), not semantic or primitive tokens, wherever a
+  component token exists.
+- Figma aliases with opacity (for example a disabled background at 50 %)
+  are output as `color-mix(in srgb, var(--token) N%, transparent)`.
+- When a Figma component binds a different token than the one its name
+  suggests (for example a disabled state bound to the default-background
+  token), mirror the component binding and report the inconsistency.
 - Use the name in each variable's Figma **code syntax** (`WEB`) as the CSS
   custom property name. The pattern is the variable path in lowercase,
   with `/`, spaces, and commas replaced by `-` (for example
@@ -293,3 +308,5 @@ A change is ready for review when:
   - Caption letter-spacing alias to `spacing/0,25` documented as
     intentional, in Figma and here.
   - Code stack set: Angular, Storybook, CSS custom properties.
+  - Code repository created (github.com/Zeshek/kotify-ds) with the token
+    pipeline, Storybook foundations, and Button as the pilot component.
