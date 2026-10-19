@@ -2,7 +2,7 @@
 /**
  * Kotify DS — token build.
  *
- * Source:  tokens/figma-export/{primitives,semantics,component}.txt
+ * Source:  tokens/figma-export/{primitives,semantics,component,effects}.txt
  *          (raw export of the Figma variables, one line per variable:
  *           name|type|value|scopes — see tokens/README.md)
  * Output:  tokens/kotify.tokens.json                       (structured tokens, aliases preserved)
@@ -67,6 +67,20 @@ for (const tok of tokens.values()) {
   if (tok.alias && !tokens.has(tok.alias.id)) errors.push(`Broken alias: ${tok.collection}/${tok.name} → ${tok.alias.id}`);
 }
 
+// Kotify effect styles (Figma effect styles are not variables): name|LAYER;LAYER
+// LAYER = "DROP_SHADOW x y blur spread #rrggbb alpha%"
+const effects = readFileSync(join(exportDir, 'effects.txt'), 'utf8').split('\n').filter(Boolean).map((line) => {
+  const [name, layersRaw] = line.split('|');
+  const layers = layersRaw.split(';').map((l) => {
+    const [type, x, y, blur, spread, hex, alpha] = l.trim().split(/\s+/);
+    if (type !== 'DROP_SHADOW' && type !== 'INNER_SHADOW') errors.push(`Effect ${name}: unsupported layer ${type}`);
+    const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    const px = (v) => (Number(v) === 0 ? '0' : `${v}px`);
+    return `${type === 'INNER_SHADOW' ? 'inset ' : ''}${px(x)} ${px(y)} ${px(blur)} ${px(spread)} rgb(${r} ${g} ${b} / ${alpha}%)`;
+  });
+  return { name, css: cssName(name), value: layers.join(', ') };
+});
+
 if (errors.length) {
   console.error('Token build failed:\n- ' + errors.join('\n- '));
   process.exit(1);
@@ -113,6 +127,8 @@ for (const col of COLLECTIONS) {
   for (const tok of tokens.values()) if (tok.key === col.key) css += `  ${tok.css}: ${cssValue(tok)};\n`;
   css += '\n';
 }
+css += '  /* Effects (Figma effect styles) */\n';
+for (const e of effects) css += `  ${e.css}: ${e.value};\n`;
 css = css.trimEnd() + '\n}\n';
 
 // JSON (structured, aliases preserved)
@@ -130,6 +146,8 @@ for (const col of COLLECTIONS) {
     json[col.name][tok.name] = entry;
   }
 }
+
+json.Effects = Object.fromEntries(effects.map((e) => [e.name, { $type: 'shadow', css: e.css, $value: e.value }]));
 
 // TS metadata for Storybook
 const meta = [...tokens.values()].map((tok) => {
@@ -173,4 +191,4 @@ out('projects/kotify-ds/src/styles/tokens.css', css);
 out('projects/kotify-ds/src/foundations/tokens.generated.ts', ts);
 
 const counts = COLLECTIONS.map((c) => `${c.name} ${[...tokens.values()].filter((t) => t.key === c.key).length}`).join(', ');
-console.log(`Tokens OK — ${tokens.size} variables (${counts}). Hierarchy and aliases verified.`);
+console.log(`Tokens OK — ${tokens.size} variables (${counts}) + ${effects.length} effect style(s). Hierarchy and aliases verified.`);

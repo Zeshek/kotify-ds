@@ -196,9 +196,13 @@ version of that page as authoritative.
   `fill="currentColor"`, sized by `iconbutton/size/*/icon-size`. Kotify
   icons are exported from Figma to `src/icons/`. The navigation variant
   keeps `surface/base` on hover and pressed (motion is its feedback) and
-  has a two-layer drop shadow that is a raw value in Figma: there is no
-  Kotify shadow token yet. Mirror it and do not invent a token without a
-  design-system decision.
+  uses the `elevation/raised` shadow.
+- **Elevation:** Kotify has a single shadow, the effect style
+  `elevation/raised` (`--elevation-raised` in code), used by the cards and
+  the navigation IconButton. Use it for anything raised above the canvas;
+  do not create per-component shadows or a size scale without a
+  design-system decision. The `shadows/*` and `focus/*` effect styles in
+  the file belong to the third-party kit and are not Kotify DS.
 - **Primary disabled:** the label stays at 90 % opacity (other variants
   use 50 %) because 50 % did not meet legibility contrast on the disabled
   primary background. Do not "harmonise" it.
@@ -356,3 +360,6 @@ A change is ready for review when:
     Text Field resize icon bound to `input/default/foreground`.
   - IconButton implemented in code; Button and IconButton share the
     motion and focus mixins (`src/lib/styles/_motion.scss`).
+  - Effect style `elevation/raised` created in Figma with the card shadow
+    and applied to the cards and the navigation IconButton (whose shadow
+    had drifted: second layer spread 0 instead of −1).

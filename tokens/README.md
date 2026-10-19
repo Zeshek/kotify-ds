@@ -4,7 +4,7 @@ Los tokens se generan a partir de las variables del archivo de Figma **Kotify DS
 
 ## Flujo
 
-1. Exportar las variables de Figma a `figma-export/` (un archivo por colección).
+1. Exportar las variables de Figma a `figma-export/` (un archivo por colección) y los effect styles de Kotify a `figma-export/effects.txt` (`nombre|CAPA;CAPA`, con `CAPA = DROP_SHADOW x y blur spread #rrggbb alfa%`).
 2. `npm run tokens` valida el export y genera:
    - `projects/kotify-ds/src/styles/tokens.css`: CSS custom properties.
    - `tokens/kotify.tokens.json`: tokens estructurados, con aliases.
