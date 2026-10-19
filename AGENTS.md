@@ -339,3 +339,8 @@ A change is ready for review when:
     accessibility decision.
   - Motion (hover lift 2 px, pressed scale 0.98) extended to every
     button variant, and to IconButton when it is built.
+  - shadcncraft kit leftovers removed from the Figma file: the kit cover
+    on Base Components and the "Get the full kit" frame were deleted, and
+    the 32 kit Separator instances in the documentation frames were
+    detached. Icon sets (Lucide, Tabler, Phosphor) and the payment/platform
+    logos in Assets were kept.
