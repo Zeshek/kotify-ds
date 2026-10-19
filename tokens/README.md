@@ -10,7 +10,7 @@ Los tokens se generan a partir de las variables del archivo de Figma **Kotify DS
    - `tokens/kotify.tokens.json`: tokens estructurados, con aliases.
    - `projects/kotify-ds/src/foundations/tokens.generated.ts`: metadatos para Storybook.
 
-El script falla si cambia el número de variables esperado (155 / 104 / 334), si hay nombres duplicados, aliases rotos o referencias que se saltan la jerarquía **Primitives → Semantics → Component**. Si el recuento cambia a propósito, actualiza `expected` en `scripts/build-tokens.mjs`.
+El script falla si cambia el número de variables esperado (155 / 104 / 337), si hay nombres duplicados, aliases rotos o referencias que se saltan la jerarquía **Primitives → Semantics → Component**. Si el recuento cambia a propósito, actualiza `expected` en `scripts/build-tokens.mjs`.
 
 ## Formato del export
 

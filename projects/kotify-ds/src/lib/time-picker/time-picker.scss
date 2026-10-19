@@ -1,8 +1,7 @@
 // Kotify DS Time Picker — values from Component tokens (time picker/*).
 // Figma notes mirrored here:
 // - the unselected numbers are weight 400 and intentionally unbound;
-// - the top and bottom fades use the canvas colour (#faf7f2, raw in Figma) over
-//   the white container.
+// - the fades go from the container background to transparent.
 @use '../styles/motion' as motion;
 
 .kds-time-picker {
@@ -130,12 +129,12 @@
 
   &--top {
     top: 0;
-    background: linear-gradient(to bottom, var(--color-canvas), transparent);
+    background: linear-gradient(to bottom, var(--time-picker-container-background), transparent);
   }
 
   &--bottom {
     bottom: 0;
-    background: linear-gradient(to top, var(--color-canvas), transparent);
+    background: linear-gradient(to top, var(--time-picker-container-background), transparent);
   }
 }
 
@@ -150,6 +149,6 @@
   > svg {
     width: 4px;
     height: 19px;
-    fill: var(--color-border-base);
+    fill: var(--time-picker-separator);
   }
 }

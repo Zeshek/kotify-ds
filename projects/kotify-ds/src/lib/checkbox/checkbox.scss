@@ -1,8 +1,5 @@
 // Kotify DS Checkbox — values from Component tokens (checkbox/*).
-// Note: the Figma default variant borrows radio button/default/* tokens for the
-// card (same values as checkbox/background and checkbox/border-color), and the
-// box is a fixed 20 px vector (its radius is bound to the primitive
-// border-radius/rounded-4 in Figma, not to checkbox/box/radius = 8).
+// The box is fixed icon geometry (like the radio ring): only its colour is a token.
 @use '../styles/choice' as choice;
 
 .kds-checkbox-host { display: block; }

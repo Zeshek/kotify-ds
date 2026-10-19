@@ -1,9 +1,4 @@
 // Kotify DS Card family — values from Component tokens (card/*).
-// Figma notes mirrored or adapted here (see AGENTS.md / README for the list):
-// - several paddings bind primitives (spacing/3, spacing/4, spacing/5) or
-//   border-radius/rounded-12/16; the equal semantic or card tokens are used;
-// - card/time-slot binds colors/white and a raw border #e7e5e4; code uses
-//   card/background and color/border/base (nearest Kotify values).
 @use '../styles/motion' as motion;
 
 .kds-sr-only {
@@ -133,7 +128,7 @@
   height: 120px;
   max-width: 100%;
   object-fit: cover;
-  border-radius: var(--radius-lg);
+  border-radius: var(--card-product-image-radius);
 }
 
 // ── card/order ─────────────────────────────────────────────────────────────
@@ -175,7 +170,7 @@
   justify-content: space-between;
   gap: var(--card-gap);
   padding: var(--card-p);
-  border: 1px solid var(--color-border-base);
+  border: var(--card-time-slot-border-width) solid var(--card-time-slot-border-color);
 }
 
 .kds-time-slot-card__time {
@@ -319,7 +314,7 @@
 .kds-reservation-card {
   flex-direction: column;
   align-items: center;
-  padding: var(--space-lg);
+  padding: var(--card-reservation-p);
   text-align: center;
 }
 
@@ -361,7 +356,7 @@
   place-items: center;
   min-width: 147px;
   min-height: 147px;
-  padding: var(--space-md);
+  padding: var(--card-p);
   border-radius: var(--card-radius);
   background-color: var(--card-background);
   box-shadow: var(--elevation-raised);

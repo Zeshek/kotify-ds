@@ -4897,14 +4897,6 @@
       ],
       "$value": "{Semantics.color/on primary/container}"
     },
-    "checkbox/box/radius": {
-      "$type": "number",
-      "css": "--checkbox-box-radius",
-      "scopes": [
-        "CORNER_RADIUS"
-      ],
-      "$value": "{Semantics.radius/md}"
-    },
     "checkbox/box/border-color": {
       "$type": "color",
       "css": "--checkbox-box-border-color",
@@ -4916,14 +4908,6 @@
         "EFFECT_COLOR"
       ],
       "$value": "{Semantics.color/border/strong}"
-    },
-    "checkbox/box/border-width": {
-      "$type": "number",
-      "css": "--checkbox-box-border-width",
-      "scopes": [
-        "WIDTH_HEIGHT"
-      ],
-      "$value": "{Semantics.space/minimum}"
     },
     "radio button/foreground-subtle": {
       "$type": "color",
@@ -5120,6 +5104,48 @@
         "GAP"
       ],
       "$value": "{Semantics.space/md}"
+    },
+    "card/time-slot/border-color": {
+      "$type": "color",
+      "css": "--card-time-slot-border-color",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "$value": "{Semantics.color/border/base}"
+    },
+    "card/time-slot/border-width": {
+      "$type": "number",
+      "css": "--card-time-slot-border-width",
+      "scopes": [
+        "STROKE_FLOAT"
+      ],
+      "$value": "{Semantics.space/minimum}"
+    },
+    "card/reservation/p": {
+      "$type": "number",
+      "css": "--card-reservation-p",
+      "scopes": [
+        "WIDTH_HEIGHT",
+        "GAP"
+      ],
+      "$value": "{Semantics.space/lg}"
+    },
+    "card/product/image-radius": {
+      "$type": "number",
+      "css": "--card-product-image-radius",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "$value": "{Semantics.radius/lg}"
+    },
+    "time picker/separator": {
+      "$type": "color",
+      "css": "--time-picker-separator",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "$value": "{Semantics.color/border/base}"
     }
   },
   "Effects": {

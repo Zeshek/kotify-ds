@@ -308,9 +308,7 @@ checkbox/border-color|C|@S:color/border/base|FILL,TSE
 checkbox/selected|C|@S:color/on primary/container|FILL,TSE
 badge/variant/primary/subtle-background|C|@S:color/primary/container|FILL,TSE
 badge/variant/primary/subtle-foreground|C|@S:color/on primary/container|FILL,TSE
-checkbox/box/radius|F|@S:radius/md|CORNER_RADIUS
 checkbox/box/border-color|C|@S:color/border/strong|FILL,TSE
-checkbox/box/border-width|F|@S:space/minimum|WIDTH_HEIGHT
 radio button/foreground-subtle|C|@S:color/on surface/subtle|FILL,TSE
 checkbox/foreground-subtle|C|@S:color/on surface/subtle|FILL,TSE
 order bar/module-px|F|@S:space/lg|WIDTH_HEIGHT,GAP
@@ -332,3 +330,8 @@ bubble/number/font-weight|F|@S:font/label-2/font-weight|FONT_WEIGHT
 bubble/background|C|@S:color/primary/base|FILL,TSE
 bubble/foreground|C|@S:color/on primary/default|FILL,TSE
 order bar/py|F|@S:space/md|WIDTH_HEIGHT,GAP
+card/time-slot/border-color|C|@S:color/border/base|STROKE_COLOR
+card/time-slot/border-width|F|@S:space/minimum|STROKE_FLOAT
+card/reservation/p|F|@S:space/lg|WIDTH_HEIGHT,GAP
+card/product/image-radius|F|@S:radius/lg|CORNER_RADIUS
+time picker/separator|C|@S:color/border/base|FILL

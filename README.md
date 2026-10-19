@@ -27,7 +27,7 @@ Todos los componentes de la librería de Figma están implementados (pendientes 
 | Cards | `kds-product-card`, `kds-order-card`, `kds-time-slot-card`, `kds-upsell-card`, `kds-checkout-card`, `kds-reservation-card` | |
 | Iconos | `svg[kdsIcon]` (`more`, `less`, `arrow`) | |
 
-Tokens: 593 variables (Primitives 155, Semantics 104, Component 334) y 2 effect styles (`elevation/raised`, `elevation/floating`), generados desde Figma.
+Tokens: 596 variables (Primitives 155, Semantics 104, Component 337) y 2 effect styles (`elevation/raised`, `elevation/floating`), generados desde Figma.
 
 Storybook público: https://zeshek.github.io/kotify-ds/
 

@@ -314,28 +314,25 @@ When rebuilding or extending a prototype:
 - Integration with the product prototype and app screens waits until the
   prototype has been rebuilt with Kotify DS and validated.
 
-## Known Figma inconsistencies
+## Figma consistency rules (resolved 2026-10-19)
 
-Found while implementing the components. The code mirrors Figma (or uses the
-equal semantic token where Figma binds a primitive) and these stay open until
-they are fixed in Figma. Do not "fix" them in code on your own.
+The audit of all Kotify components found no remaining inconsistencies. Keep it
+that way:
 
-- **Radio Button:** option details bind `page header/foreground` instead of
-  `radio button/foreground-subtle`.
-- **Checkbox:** the default card binds `radio button/default/*` tokens (same
-  values); the box radius binds the primitive `border-radius/rounded-4`, so
-  `checkbox/box/radius` (8) is unused.
-- **card/time-slot:** background binds the primitive `colors/white`; the border
-  is a raw `#e7e5e4` (code uses `color/border/base`).
-- **Order bar:** the module contains a detached copy of the bar instead of an
-  instance; the horizontal padding binds the primitive `spacing/5`.
-- **Time Picker:** the fades are a raw canvas colour (`#faf7f2`) over the white
-  container.
-- **Page Header:** the description recommends `font/h1` for the title, but the
-  component binds caption tokens.
-- **Primitive bindings in components:** several card paddings and radii bind
-  `spacing/3`, `spacing/4`, `spacing/5`, `border-radius/rounded-12` and
-  `rounded-16` directly; Bubble binds `border-width/border` (it has no stroke).
+- Every value in a component comes from a token of that component, or from a
+  semantic token when no component token exists for it. Never bind a
+  primitive or another component's token inside a component.
+- Do not leave variables bound to properties with no visible effect (a stroke
+  weight without a stroke, row spacing without wrap).
+- Fixed icon geometry (the checkbox box, the radio ring, icons) is not
+  tokenised; only its colour is.
+- A component used inside another (for example `.order bar` in its module)
+  is always an instance, never a detached copy.
+- Kotify uses only its own effect styles (`elevation/*`). Gradients take
+  their colour from a token; a fully transparent end stop may stay raw.
+- Not yet decided (separate system decision): unchecked controls and input
+  borders use `color/border/base` / `color/border/strong`, 1.3–1.6:1 on
+  white, below the 3:1 that WCAG 1.4.11 asks for control boundaries.
 
 ## Definition of done
 
@@ -406,6 +403,15 @@ A change is ready for review when:
     applied to the Order bar.
   - card/time-slot is display only (description fixed in Figma); the Time
     Picker minutes behave like an iOS wheel (description updated in Figma).
+  - Figma consistency pass: Radio details use `radio button/foreground-subtle`;
+    Checkbox uses only `checkbox/*` tokens and its box is fixed geometry
+    (`checkbox/box/radius` and `checkbox/box/border-width` removed);
+    card/time-slot, card/reservation, card/product and the Time Picker
+    separator use new component tokens; cards use `card/*` tokens instead of
+    primitives; the Order bar module holds an instance; Time Picker fades go
+    to the container background; Page Header description matches its tokens;
+    281 bindings with no visible effect removed. Variables: 596 (Primitives
+    155, Semantics 104, Component 337).
   - Effect style `elevation/raised` created in Figma with the card shadow
     and applied to the cards and the navigation IconButton (whose shadow
     had drifted: second layer spread 0 instead of −1).

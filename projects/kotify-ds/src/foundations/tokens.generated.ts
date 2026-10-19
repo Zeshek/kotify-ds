@@ -5138,30 +5138,12 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
   },
   {
     "collection": "Component",
-    "name": "checkbox/box/radius",
-    "type": "number",
-    "css": "--checkbox-box-radius",
-    "aliasOf": "Semantics/radius/md",
-    "opacity": null,
-    "resolved": "8px"
-  },
-  {
-    "collection": "Component",
     "name": "checkbox/box/border-color",
     "type": "color",
     "css": "--checkbox-box-border-color",
     "aliasOf": "Semantics/color/border/strong",
     "opacity": null,
     "resolved": "#d0ccc3"
-  },
-  {
-    "collection": "Component",
-    "name": "checkbox/box/border-width",
-    "type": "number",
-    "css": "--checkbox-box-border-width",
-    "aliasOf": "Semantics/space/minimum",
-    "opacity": null,
-    "resolved": "1px"
   },
   {
     "collection": "Component",
@@ -5351,5 +5333,50 @@ export const KOTIFY_TOKENS: readonly KotifyTokenMeta[] = [
     "aliasOf": "Semantics/space/md",
     "opacity": null,
     "resolved": "16px"
+  },
+  {
+    "collection": "Component",
+    "name": "card/time-slot/border-color",
+    "type": "color",
+    "css": "--card-time-slot-border-color",
+    "aliasOf": "Semantics/color/border/base",
+    "opacity": null,
+    "resolved": "#e4e1da"
+  },
+  {
+    "collection": "Component",
+    "name": "card/time-slot/border-width",
+    "type": "number",
+    "css": "--card-time-slot-border-width",
+    "aliasOf": "Semantics/space/minimum",
+    "opacity": null,
+    "resolved": "1px"
+  },
+  {
+    "collection": "Component",
+    "name": "card/reservation/p",
+    "type": "number",
+    "css": "--card-reservation-p",
+    "aliasOf": "Semantics/space/lg",
+    "opacity": null,
+    "resolved": "20px"
+  },
+  {
+    "collection": "Component",
+    "name": "card/product/image-radius",
+    "type": "number",
+    "css": "--card-product-image-radius",
+    "aliasOf": "Semantics/radius/lg",
+    "opacity": null,
+    "resolved": "12px"
+  },
+  {
+    "collection": "Component",
+    "name": "time picker/separator",
+    "type": "color",
+    "css": "--time-picker-separator",
+    "aliasOf": "Semantics/color/border/base",
+    "opacity": null,
+    "resolved": "#e4e1da"
   }
 ] as const;

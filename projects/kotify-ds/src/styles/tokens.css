@@ -574,9 +574,7 @@
   --checkbox-selected: var(--color-on-primary-container);
   --badge-variant-primary-subtle-background: var(--color-primary-container);
   --badge-variant-primary-subtle-foreground: var(--color-on-primary-container);
-  --checkbox-box-radius: var(--radius-md);
   --checkbox-box-border-color: var(--color-border-strong);
-  --checkbox-box-border-width: var(--space-minimum);
   --radio-button-foreground-subtle: var(--color-on-surface-subtle);
   --checkbox-foreground-subtle: var(--color-on-surface-subtle);
   --order-bar-module-px: var(--space-lg);
@@ -598,6 +596,11 @@
   --bubble-background: var(--color-primary-base);
   --bubble-foreground: var(--color-on-primary-default);
   --order-bar-py: var(--space-md);
+  --card-time-slot-border-color: var(--color-border-base);
+  --card-time-slot-border-width: var(--space-minimum);
+  --card-reservation-p: var(--space-lg);
+  --card-product-image-radius: var(--radius-lg);
+  --time-picker-separator: var(--color-border-base);
 
   /* Effects (Figma effect styles) */
   --elevation-raised: 0 1px 2px -1px rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 10%);

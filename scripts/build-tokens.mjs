@@ -23,7 +23,7 @@ const exportDir = join(root, 'tokens/figma-export');
 const COLLECTIONS = [
   { key: 'P', name: 'Primitives', file: 'primitives.txt', expected: 155, mayReference: null },
   { key: 'S', name: 'Semantics', file: 'semantics.txt', expected: 104, mayReference: 'P' },
-  { key: 'C', name: 'Component', file: 'component.txt', expected: 334, mayReference: 'S' },
+  { key: 'C', name: 'Component', file: 'component.txt', expected: 337, mayReference: 'S' },
 ];
 const TYPES = { C: 'color', F: 'number', S: 'string' };
 const SCOPE_ALIASES = { FILL: 'FRAME_FILL,SHAPE_FILL', TSE: 'TEXT_FILL,STROKE_COLOR,EFFECT_COLOR' };
