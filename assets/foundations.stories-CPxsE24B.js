@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-vtgMY1y5.js";import{J as t,T as n,Y as r,_ as i,b as a,g as o,v as s,x as c}from"./angular-platform-Cdxq2SJf.js";import{r as l,t as u}from"./dist-BD0OEHKK.js";var d;function init__virtual_angular_jit_style_inline_4dffad5d531c97cc(){return(init__virtual_angular_jit_style_inline_4dffad5d531c97cc=e((()=>{d=`
+import{n as e}from"./rolldown-runtime-vtgMY1y5.js";import{J as t,T as n,Y as r,_ as i,b as a,g as o,v as s,x as c}from"./angular-platform-Cdxq2SJf.js";import{r as l,t as u}from"./dist-DttTn_z9.js";var d;function init__virtual_angular_jit_style_inline_4dffad5d531c97cc(){return(init__virtual_angular_jit_style_inline_4dffad5d531c97cc=e((()=>{d=`
     :host { display: block; font-family: var(--font-body-2-font-family), system-ui, sans-serif; color: var(--color-on-canvas-default); }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-md); }
     .group + .group { margin-top: var(--space-2xl); }
