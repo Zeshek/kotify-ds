@@ -83,7 +83,8 @@ collections in code by guessing values or token names.
   or selection through color alone.
 - Do not assume that every surface has global hover or pressed tokens.
   Follow the actual component tokens and contract.
-- `colors/black` is pure black (`#000000`).
+- `colors/black` is intentionally `#000011`, not pure black. Do not
+  "correct" it to `#000000`.
 
 ### Typography
 
@@ -283,7 +284,8 @@ A change is ready for review when:
 - **2026-10-19**
   - Figma declared the source of truth for all token values; outdated
     hex values in older briefs are superseded.
-  - `colors/black` corrected from `#000011` to `#000000` in Figma.
+  - `colors/black` confirmed as intentionally `#000011` (not pure
+    black); documented in its Figma description.
   - Time Picker weight token is named
     `time picker/container/number/font-weight` (no "selected"), matching
     its code syntax; its description now states it applies to the
