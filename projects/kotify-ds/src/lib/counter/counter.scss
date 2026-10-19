@@ -1,0 +1,46 @@
+// Kotify DS Counter — values from Component tokens (counter/*).
+.kds-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--counter-gap);
+}
+
+.kds-counter__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--counter-on-canvas-text-gap);
+}
+
+.kds-counter__number {
+  // Width fits two digits so the buttons do not move while counting.
+  min-width: 2ch;
+  text-align: center;
+  color: var(--counter-foreground);
+  font-family: var(--counter-on-card-font-family), system-ui, sans-serif;
+  font-size: var(--counter-on-card-font-size);
+  font-weight: var(--counter-on-card-font-weight);
+  line-height: var(--counter-on-card-line-height);
+  font-variant-numeric: tabular-nums;
+}
+
+.kds-counter--canvas {
+  gap: var(--counter-on-canvas-gap);
+
+  .kds-counter__number {
+    font-family: var(--counter-on-canvas-number-font-family), Georgia, serif;
+    font-size: var(--counter-on-canvas-number-font-size);
+    font-weight: var(--counter-on-canvas-number-font-weight);
+    line-height: var(--counter-on-canvas-number-line-height);
+  }
+}
+
+.kds-counter__description {
+  color: var(--counter-foreground-subtle);
+  font-family: var(--counter-on-canvas-description-font-family), system-ui, sans-serif;
+  font-size: var(--counter-on-canvas-description-font-size);
+  font-weight: var(--counter-on-canvas-description-font-weight);
+  line-height: var(--counter-on-canvas-description-line-height);
+  letter-spacing: var(--counter-on-canvas-description-letter-spacing);
+  text-transform: uppercase;
+}

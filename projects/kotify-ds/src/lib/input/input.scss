@@ -1,0 +1,6 @@
+// Kotify DS Input — values from Component tokens (input/*).
+@use '../styles/field' as field;
+
+.kds-input {
+  @include field.field;
+}

@@ -1,0 +1,401 @@
+// Kotify DS Card family — values from Component tokens (card/*).
+// Figma notes mirrored or adapted here (see AGENTS.md / README for the list):
+// - several paddings bind primitives (spacing/3, spacing/4, spacing/5) or
+//   border-radius/rounded-12/16; the equal semantic or card tokens are used;
+// - card/time-slot binds colors/white and a raw border #e7e5e4; code uses
+//   card/background and color/border/base (nearest Kotify values).
+@use '../styles/motion' as motion;
+
+.kds-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.kds-card {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 0;
+  border-radius: var(--card-radius);
+  background-color: var(--card-background);
+  color: var(--card-foreground);
+  font-family: var(--font-body-2-font-family), system-ui, sans-serif;
+
+  p { margin: 0; }
+}
+
+.kds-card--elevated { box-shadow: var(--elevation-raised); }
+
+.kds-card--padded {
+  flex-direction: column;
+  padding: var(--card-p);
+}
+
+// Details lines (order and checkout): caption-emphasis, subtle; last may be accent.
+.kds-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap-tiny);
+  margin: 0;
+  padding-top: var(--card-gap-tiny);
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-order-details-font-family), system-ui, sans-serif;
+  font-size: var(--card-order-details-font-size);
+  font-weight: var(--card-order-details-font-weight);
+  line-height: var(--card-order-details-line-height);
+}
+
+.kds-card__accent { color: var(--card-accent); }
+
+// Row separated by the card divider (top stroke), as in Figma: no Divider component.
+.kds-card__divider-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--card-gap);
+  margin-top: var(--card-gap);
+  padding-top: var(--card-gap);
+  border-top: var(--card-divider-height) solid var(--card-divider);
+}
+
+// ── card/product ───────────────────────────────────────────────────────────
+.kds-product-card {
+  align-items: stretch;
+}
+
+.kds-product-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--card-gap);
+  flex: 1;
+  min-width: 0;
+  padding: var(--card-p) var(--card-gap) var(--card-p) var(--card-p);
+}
+
+.kds-product-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap-tiny);
+}
+
+.kds-product-card__title {
+  font-family: var(--card-product-title-font-family), system-ui, sans-serif;
+  font-size: var(--card-product-title-font-size);
+  font-weight: var(--card-product-title-font-weight);
+  line-height: var(--card-product-title-line-height);
+}
+
+.kds-product-card__description {
+  // Figma truncates the description to one line with an ellipsis (textTruncation
+  // ENDING). The full text stays available in the DOM for assistive technology.
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-product-description-font-family), system-ui, sans-serif;
+  font-size: var(--card-product-description-font-size);
+  font-weight: var(--card-product-description-font-weight);
+  line-height: var(--card-product-description-line-height);
+}
+
+.kds-product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--card-gap);
+}
+
+.kds-product-card__price {
+  font-family: var(--card-product-price-font-family), system-ui, sans-serif;
+  font-size: var(--card-product-price-font-size);
+  font-weight: var(--card-product-price-font-weight);
+  line-height: var(--card-product-price-line-height);
+  white-space: nowrap;
+}
+
+// Figma: 144 px square area with a 120 px image (radius 12) centred.
+.kds-product-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 144px;
+}
+
+.kds-product-card__image {
+  display: block;
+  width: 120px;
+  height: 120px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+// ── card/order ─────────────────────────────────────────────────────────────
+.kds-order-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--card-gap);
+}
+
+.kds-order-card__title {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--card-order-title-font-family), system-ui, sans-serif;
+  font-size: var(--card-order-title-font-size);
+  font-weight: var(--card-order-title-font-weight);
+  line-height: var(--card-order-title-line-height);
+}
+
+.kds-order-card__total {
+  font-family: var(--card-order-total-price-font-family), system-ui, sans-serif;
+  font-size: var(--card-order-total-price-font-size);
+  font-weight: var(--card-order-total-price-font-weight);
+  line-height: var(--card-order-total-price-line-height);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.kds-order-card__unit {
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-order-unit-price-font-family), system-ui, sans-serif;
+  font-size: var(--card-order-unit-price-font-size);
+  font-weight: var(--card-order-unit-price-font-weight);
+  line-height: var(--card-order-unit-price-line-height);
+}
+
+// ── card/time-slot (interactive) ───────────────────────────────────────────
+.kds-time-slot-card {
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--card-gap);
+  width: 100%;
+  margin: 0;
+  padding: var(--card-p);
+  border: 1px solid var(--color-border-base);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  // Documented card interaction: pressed scale 0.98, ~120 ms ease-out.
+  transition: transform 120ms ease-out;
+
+  &:active { transform: scale(0.98); }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    &:active { transform: none; }
+  }
+
+  @include motion.focus-ring;
+}
+
+.kds-time-slot-card__time {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--card-gap-tiny);
+}
+
+.kds-time-slot-card__start {
+  font-family: var(--card-time-slot-start-font-family), system-ui, sans-serif;
+  font-size: var(--card-time-slot-start-font-size);
+  font-weight: var(--card-time-slot-start-font-weight);
+  line-height: var(--card-time-slot-start-line-height);
+  font-variant-numeric: tabular-nums;
+}
+
+.kds-time-slot-card__end {
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-time-slot-end-font-family), system-ui, sans-serif;
+  font-size: var(--card-time-slot-end-font-size);
+  font-weight: var(--card-time-slot-end-font-weight);
+  line-height: var(--card-time-slot-end-line-height);
+  font-variant-numeric: tabular-nums;
+}
+
+// ── card/upsell ────────────────────────────────────────────────────────────
+.kds-upsell-card {
+  flex-direction: column;
+  overflow: hidden;
+  width: 162px;
+  max-width: 100%;
+}
+
+.kds-upsell-card__media {
+  height: 112px;
+  background-color: var(--color-surface-subtle);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.kds-upsell-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--card-gap);
+  flex: 1;
+  padding: var(--card-gap);
+}
+
+.kds-upsell-card__title {
+  font-family: var(--card-upsell-title-font-family), system-ui, sans-serif;
+  font-size: var(--card-upsell-title-font-size);
+  font-weight: var(--card-upsell-title-font-weight);
+  line-height: var(--card-upsell-title-line-height);
+}
+
+.kds-upsell-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--card-gap-tiny);
+}
+
+.kds-upsell-card__price {
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-upsell-price-font-family), system-ui, sans-serif;
+  font-size: var(--card-upsell-price-font-size);
+  font-weight: var(--card-upsell-price-font-weight);
+  line-height: var(--card-upsell-price-line-height);
+  white-space: nowrap;
+}
+
+// ── card/checkout ──────────────────────────────────────────────────────────
+.kds-checkout-card__title {
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-checkout-title-font-family), system-ui, sans-serif;
+  font-size: var(--card-checkout-title-font-size);
+  font-weight: var(--card-checkout-title-font-weight);
+  line-height: var(--card-checkout-title-line-height);
+  letter-spacing: var(--card-checkout-title-letter-spacing);
+  text-transform: uppercase;
+}
+
+.kds-checkout-card__lines {
+  margin: var(--card-gap) 0 0;
+  padding: 0;
+}
+
+// .card/checkout/item: first = 0/4, middle = 4/4, last = 4/0 (top/bottom).
+.kds-checkout-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: var(--card-gap);
+  padding-block: var(--card-gap-tiny);
+
+  &:first-child { padding-top: 0; }
+  &:last-child { padding-bottom: 0; }
+
+  .kds-card__details {
+    grid-column: 1 / -1;
+    font-family: var(--card-checkout-details-font-family), system-ui, sans-serif;
+    font-size: var(--card-checkout-details-font-size);
+    font-weight: var(--card-checkout-details-font-weight);
+    line-height: var(--card-checkout-details-line-height);
+  }
+}
+
+.kds-checkout-line__name {
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-checkout-name-font-family), system-ui, sans-serif;
+  font-size: var(--card-checkout-name-font-size);
+  font-weight: var(--card-checkout-name-font-weight);
+  line-height: var(--card-checkout-name-line-height);
+}
+
+.kds-checkout-line__value {
+  margin: 0;
+  text-align: right;
+  color: var(--card-foreground);
+  font-family: var(--card-checkout-value-font-family), system-ui, sans-serif;
+  font-size: var(--card-checkout-value-font-size);
+  font-weight: var(--card-checkout-value-font-weight);
+  line-height: var(--card-checkout-value-line-height);
+  font-variant-numeric: tabular-nums;
+}
+
+.kds-checkout-card__total {
+  font-family: var(--card-checkout-total-font-family), system-ui, sans-serif;
+  font-size: var(--card-checkout-total-font-size);
+  font-weight: var(--card-checkout-total-font-weight);
+  line-height: var(--card-checkout-total-line-height);
+  font-variant-numeric: tabular-nums;
+}
+
+// ── card/reservation ───────────────────────────────────────────────────────
+.kds-reservation-card {
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.kds-reservation-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--card-gap);
+  padding-bottom: var(--card-gap);
+  width: 100%;
+}
+
+.kds-reservation-card__title {
+  font-family: var(--card-reservation-title-font-family), Georgia, serif;
+  font-size: var(--card-reservation-title-font-size);
+  font-weight: var(--card-reservation-title-font-weight);
+  line-height: var(--card-reservation-title-line-height);
+  text-wrap: balance;
+}
+
+.kds-reservation-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap-tiny);
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-reservation-details-font-family), system-ui, sans-serif;
+  font-size: var(--card-reservation-details-font-size);
+  font-weight: var(--card-reservation-details-font-weight);
+  line-height: var(--card-reservation-details-line-height);
+}
+
+.kds-reservation-card__status { padding-block: var(--card-gap); }
+
+.kds-reservation-card__qr-row { padding-block: var(--card-gap); }
+
+// QR container: 16 px padding, radius 16, raised (Figma QRPlaceholder).
+.kds-reservation-card__qr {
+  display: grid;
+  place-items: center;
+  min-width: 147px;
+  min-height: 147px;
+  padding: var(--space-md);
+  border-radius: var(--card-radius);
+  background-color: var(--card-background);
+  box-shadow: var(--elevation-raised);
+
+  > [kdsQr] {
+    display: block;
+    width: 147px;
+    height: 147px;
+    max-width: 100%;
+  }
+}
+
+.kds-reservation-card__code {
+  color: var(--card-foreground-subtle);
+  font-family: var(--card-reservation-code-font-family), system-ui, sans-serif;
+  font-size: var(--card-reservation-code-font-size);
+  font-weight: var(--card-reservation-code-font-weight);
+  line-height: var(--card-reservation-code-line-height);
+}

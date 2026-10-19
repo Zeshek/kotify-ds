@@ -1,0 +1,52 @@
+// Kotify DS Radio Button — values from Component tokens (radio button/*).
+// Note: in Figma the option details text is bound to page header/foreground
+// (color/on canvas/subtle), not to radio button/foreground-subtle. Mirrored here.
+@use '../styles/choice' as choice;
+
+.kds-radio-host { display: block; }
+
+.kds-radio {
+  --_bg: var(--radio-button-default-background);
+  --_border: var(--radio-button-default-border-color);
+
+  position: relative;
+  @include choice.choice-card(radio-button, radio-button-radius);
+}
+
+.kds-radio--selected {
+  --_bg: var(--radio-button-selected-background);
+  --_border: var(--radio-button-selected-border-color);
+}
+
+// 20 px ring with a 2 px inside stroke; selected adds a 10 px dot.
+.kds-radio__ring {
+  display: grid;
+  place-items: center;
+  flex: none;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--radio-button-default-border-color);
+  border-radius: var(--radius-full);
+
+  .kds-radio--selected & {
+    border-color: var(--radio-button-selected-foreground);
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: var(--radius-full);
+      background-color: var(--radio-button-selected-foreground);
+    }
+  }
+}
+
+.kds-radio,
+.kds-radio-group {
+  @include choice.choice-text(radio-button, var(--page-header-foreground));
+}
+
+.kds-radio-group {
+  @include choice.choice-group(radio-button);
+}

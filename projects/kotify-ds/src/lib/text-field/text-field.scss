@@ -1,0 +1,13 @@
+// Kotify DS Text Field — input/* tokens plus text field/min-height.
+@use '../styles/field' as field;
+
+.kds-text-field {
+  @include field.field;
+
+  textarea.kds-field__control {
+    // Figma: 48 px text (text field/min-height) + a 24 px row for the resize
+    // handle + padding and border = 98 px. The native handle does the resizing.
+    min-height: calc(var(--text-field-min-height) + 24px + 2 * var(--input-p) + 2 * var(--input-border-width));
+    resize: vertical;
+  }
+}

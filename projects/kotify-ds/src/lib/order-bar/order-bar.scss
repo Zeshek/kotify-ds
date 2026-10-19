@@ -1,0 +1,49 @@
+// Kotify DS Order bar — values from Component tokens (order bar/*).
+@use '../styles/motion' as motion;
+
+.kds-order-bar-module {
+  display: block;
+  padding: 0 var(--order-bar-module-px) var(--order-bar-module-p-bottom);
+}
+
+.kds-order-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-base);
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: var(--order-bar-py) var(--order-bar-px);
+  border: 0;
+  border-radius: var(--order-bar-radius);
+  background-color: var(--order-bar-background);
+  color: var(--order-bar-foreground);
+  font-family: var(--order-bar-font-family), system-ui, sans-serif;
+  font-size: var(--order-bar-font-size);
+  font-weight: var(--order-bar-font-weight);
+  line-height: var(--order-bar-line-height);
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  // Raw value in Figma (0 25 50 −12, black 25 %): a floating elevation that has
+  // no Kotify token yet. See the open question in AGENTS.md.
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+
+  @include motion.press-motion;
+  @include motion.focus-ring;
+}
+
+.kds-order-bar__action { text-align: center; }
+
+.kds-order-bar__total { font-variant-numeric: tabular-nums; }
+
+.kds-order-bar__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

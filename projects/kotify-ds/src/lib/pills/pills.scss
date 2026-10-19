@@ -1,0 +1,44 @@
+// Kotify DS Pills — values from Component tokens (pills/*).
+@use '../styles/motion' as motion;
+
+.kds-pills {
+  display: flex;
+  gap: var(--pills-module-gap);
+  // Figma keeps the pills on one row; on narrow screens the row scrolls.
+  overflow-x: auto;
+  scrollbar-width: none;
+  // Room for the focus ring inside the scroll container.
+  padding: calc(var(--focus-ring-width) + var(--focus-ring-offset));
+  margin: calc(-1 * (var(--focus-ring-width) + var(--focus-ring-offset)));
+}
+
+.kds-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: var(--pills-py) var(--pills-px);
+  // Selected keeps a transparent border so both states share the 38 px height.
+  border: var(--pills-default-border-width) solid var(--pills-default-border-color);
+  border-radius: var(--pills-radius);
+  background-color: var(--pills-default-background);
+  color: var(--pills-default-foreground);
+  font-family: var(--pills-font-family), system-ui, sans-serif;
+  font-size: var(--pills-font-size);
+  font-weight: var(--pills-font-weight);
+  line-height: var(--pills-line-height);
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  @include motion.focus-ring;
+
+  &.kds-pill--selected {
+    border-color: transparent;
+    background-color: var(--pills-selected-background);
+    color: var(--pills-selected-foreground);
+  }
+}

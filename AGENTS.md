@@ -307,6 +307,34 @@ When rebuilding or extending a prototype:
 - Integration with the product prototype and app screens waits until the
   prototype has been rebuilt with Kotify DS and validated.
 
+## Known Figma inconsistencies
+
+Found while implementing the components. The code mirrors Figma (or uses the
+equal semantic token where Figma binds a primitive) and these stay open until
+they are fixed in Figma. Do not "fix" them in code on your own.
+
+- **Contrast:** `color/on surface/subtle` (neutral-500) is 3.92:1 on white,
+  below 4.5:1 for 12–14 px text. Used by checkbox details, card subtle text,
+  input placeholders, time picker titles and the counter description.
+- **Radio Button:** option details bind `page header/foreground` instead of
+  `radio button/foreground-subtle`.
+- **Checkbox:** the default card binds `radio button/default/*` tokens (same
+  values); the box radius binds the primitive `border-radius/rounded-4`, so
+  `checkbox/box/radius` (8) is unused.
+- **card/time-slot:** background binds the primitive `colors/white`; the border
+  is a raw `#e7e5e4` (code uses `color/border/base`). The contract mentions a
+  selected state, but no selected variant exists.
+- **Order bar:** raw floating shadow (0 25 50 −12, black 25 %), no token yet;
+  the module contains a detached copy of the bar instead of an instance; the
+  horizontal padding binds the primitive `spacing/5`.
+- **Time Picker:** the fades are a raw canvas colour (`#faf7f2`) over the white
+  container.
+- **Page Header:** the description recommends `font/h1` for the title, but the
+  component binds caption tokens.
+- **Primitive bindings in components:** several card paddings and radii bind
+  `spacing/3`, `spacing/4`, `spacing/5`, `border-radius/rounded-12` and
+  `rounded-16` directly; Bubble binds `border-width/border` (it has no stroke).
+
 ## Definition of done
 
 A change is ready for review when:
@@ -360,6 +388,14 @@ A change is ready for review when:
     Text Field resize icon bound to `input/default/foreground`.
   - IconButton implemented in code; Button and IconButton share the
     motion and focus mixins (`src/lib/styles/_motion.scss`).
+  - All remaining components implemented in code (Badge, Bubble, Checkbox,
+    Radio Button, Input, Text Field, Pills, Counter, Page Header, Order bar,
+    Time Picker and the Card family), pending QA.
+  - Figma fixes: the selected radio card border is now bound to
+    `radio button/selected/border-color` (was raw `#c2410c`); the Time Picker
+    containers use `elevation/raised` (same values, were raw).
+  - Order bar and the selection components (Pills, Checkbox, Radio) use the
+    semantic focus ring; the Order bar also has the button motion.
   - Effect style `elevation/raised` created in Figma with the card shadow
     and applied to the cards and the navigation IconButton (whose shadow
     had drifted: second layer spread 0 instead of −1).

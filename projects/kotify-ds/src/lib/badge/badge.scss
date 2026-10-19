@@ -1,0 +1,32 @@
+// Kotify DS Badge — values from Component tokens (badge/*).
+.kds-badge {
+  --_bg: var(--badge-variant-primary-default-background);
+  --_fg: var(--badge-variant-primary-default-foreground);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: var(--badge-min-width);
+  padding: var(--badge-py) var(--badge-px);
+  border-radius: var(--badge-radius);
+  background-color: var(--_bg);
+  color: var(--_fg);
+  font-family: var(--badge-font-family), system-ui, sans-serif;
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  line-height: var(--badge-line-height);
+  white-space: nowrap;
+
+  @each $v in primary, positive, negative, warning {
+    &.kds-badge--#{$v} {
+      --_bg: var(--badge-variant-#{$v}-default-background);
+      --_fg: var(--badge-variant-#{$v}-default-foreground);
+
+      &.kds-badge--subtle {
+        --_bg: var(--badge-variant-#{$v}-subtle-background);
+        --_fg: var(--badge-variant-#{$v}-subtle-foreground);
+      }
+    }
+  }
+}

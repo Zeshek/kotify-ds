@@ -1,0 +1,59 @@
+// Shared field shell for Input and Text Field (input/* tokens).
+@mixin field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--input-title-gap);
+  min-width: 0;
+
+  .kds-field__title {
+    color: var(--input-title-foreground);
+    font-family: var(--input-title-font-family), system-ui, sans-serif;
+    font-size: var(--input-title-font-size);
+    font-weight: var(--input-title-font-weight);
+    line-height: var(--input-title-line-height);
+    letter-spacing: var(--input-title-letter-spacing);
+    text-transform: uppercase;
+  }
+
+  .kds-field__title--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .kds-field__control {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: var(--input-p);
+    border: var(--input-border-width) solid var(--input-default-border-color);
+    border-radius: var(--input-radius);
+    background-color: var(--input-background);
+    color: var(--input-filled-foreground);
+    font-family: var(--input-font-family), system-ui, sans-serif;
+    font-size: var(--input-font-size);
+    font-weight: var(--input-font-weight);
+    line-height: var(--input-line-height);
+    caret-color: var(--input-focus-border-color);
+    outline: none;
+
+    &::placeholder {
+      color: var(--input-default-foreground);
+      opacity: 1;
+    }
+
+    &:not(:placeholder-shown) {
+      border-color: var(--input-filled-border-color);
+    }
+
+    // Figma "focus" variant: the border takes the primary colour.
+    &:focus {
+      border-color: var(--input-focus-border-color);
+      color: var(--input-focus-foreground);
+    }
+  }
+}

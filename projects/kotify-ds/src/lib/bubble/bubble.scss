@@ -1,0 +1,20 @@
+// Kotify DS Bubble — values from Component tokens (bubble/*).
+.kds-bubble {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  box-sizing: border-box;
+  // Figma fixes the size; min-width lets a two-digit number grow instead of clipping.
+  min-width: var(--bubble-size);
+  height: var(--bubble-size);
+  padding-inline: var(--space-2xs);
+  border-radius: var(--bubble-radius);
+  background-color: var(--bubble-background);
+  color: var(--bubble-foreground);
+  font-family: var(--bubble-number-font-family), system-ui, sans-serif;
+  font-size: var(--bubble-number-font-size);
+  font-weight: var(--bubble-number-font-weight);
+  line-height: var(--bubble-number-line-height);
+  font-variant-numeric: tabular-nums;
+}

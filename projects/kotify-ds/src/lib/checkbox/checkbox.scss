@@ -1,0 +1,46 @@
+// Kotify DS Checkbox — values from Component tokens (checkbox/*).
+// Note: the Figma default variant borrows radio button/default/* tokens for the
+// card (same values as checkbox/background and checkbox/border-color), and the
+// box is a fixed 20 px vector (its radius is bound to the primitive
+// border-radius/rounded-4 in Figma, not to checkbox/box/radius = 8).
+@use '../styles/choice' as choice;
+
+.kds-checkbox-host { display: block; }
+
+.kds-checkbox {
+  --_bg: var(--checkbox-background);
+  --_border: var(--checkbox-border-color);
+
+  position: relative;
+  @include choice.choice-card(checkbox, checkbox-radius);
+}
+
+// Box: 20 px vectors exported from Figma (2 px ring with 4 px radius when
+// unchecked; filled box with knocked-out tick when selected).
+.kds-checkbox__box {
+  display: block;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--checkbox-box-border-color);
+
+  > svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}
+
+.kds-checkbox--selected .kds-checkbox__box {
+  color: var(--checkbox-selected);
+}
+
+.kds-checkbox,
+.kds-checkbox-group {
+  @include choice.choice-text(checkbox, var(--checkbox-foreground-subtle));
+}
+
+.kds-checkbox-group {
+  @include choice.choice-group(checkbox);
+}

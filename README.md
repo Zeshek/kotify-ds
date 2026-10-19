@@ -7,14 +7,29 @@ Design system de **Kotify** ("donde la comida te espera a ti") para Angular: tok
 
 ## Estado
 
-| Pieza | Estado |
-|---|---|
-| Tokens (593 variables: Primitives 155, Semantics 104, Component 334) | ✅ Generados desde Figma, con aliases |
-| Storybook: fundamentos (color, tipografía, espaciado, radios) | ✅ |
-| Button | ✅ |
-| IconButton | ✅ |
-| Iconos de Kotify (`more`, `less`, `arrow`) en `src/icons/` | ✅ |
-| Resto de componentes (Badge, Bubble, Card, Checkbox, Counter, Input, Order bar, Page Header, Pills, Radio Button, Text Field, Time Picker) | Pendiente |
+Todos los componentes de la librería de Figma están implementados (pendientes de QA):
+
+| Componente | Selector | Notas |
+|---|---|---|
+| Button | `button[kdsButton]` | 4 variantes, 2 tamaños, motion y foco |
+| IconButton | `button[kdsIconButton]` | `label` obligatorio |
+| Badge | `kds-badge` | |
+| Bubble | `kds-bubble` | |
+| Checkbox | `kds-checkbox`, `kds-checkbox-group` | Formularios Angular |
+| Radio Button | `kds-radio-group`, `kds-radio` | Formularios Angular |
+| Input | `kds-input` | Formularios Angular |
+| Text Field | `kds-text-field` | Formularios Angular |
+| Pills | `kds-pills`, `button[kdsPill]`, `a[kdsPill]` | |
+| Counter | `kds-counter` | Límites del producto |
+| Page Header | `kds-page-header` | |
+| Order bar | `kds-order-bar` | |
+| Time Picker | `kds-time-picker` | Minutos del producto |
+| Cards | `kds-product-card`, `kds-order-card`, `button[kdsTimeSlot]`, `kds-upsell-card`, `kds-checkout-card`, `kds-reservation-card` | |
+| Iconos | `svg[kdsIcon]` (`more`, `less`, `arrow`) | |
+
+Tokens: 593 variables (Primitives 155, Semantics 104, Component 334) y 1 effect style (`elevation/raised`), generados desde Figma.
+
+Storybook público: https://zeshek.github.io/kotify-ds/
 
 ## Requisitos
 
