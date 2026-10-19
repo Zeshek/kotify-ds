@@ -1,0 +1,28 @@
+{
+  "components": {
+    "components-iconbutton": {
+      "id": "components-iconbutton",
+      "name": "IconButton",
+      "path": "./projects/kotify-ds/src/lib/icon-button/icon-button.stories.ts",
+      "stories": {
+        "components-iconbutton--playground": {
+          "id": "components-iconbutton--playground",
+          "name": "Playground"
+        },
+        "components-iconbutton--default": {
+          "id": "components-iconbutton--default",
+          "name": "Default"
+        },
+        "components-iconbutton--navigation": {
+          "id": "components-iconbutton--navigation",
+          "name": "Navigation"
+        },
+        "components-iconbutton--all-variants": {
+          "id": "components-iconbutton--all-variants",
+          "name": "All Variants",
+          "description": "Every Figma variant × size, in the default and disabled states. Hover and pressed are interactive."
+        }
+      }
+    }
+  }
+}

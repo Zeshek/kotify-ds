@@ -1,0 +1,31 @@
+{
+  "components": {
+    "foundations": {
+      "id": "foundations",
+      "name": "Foundations",
+      "path": "./projects/kotify-ds/src/foundations/foundations.stories.ts",
+      "stories": {
+        "foundations--semantic-colors": {
+          "id": "foundations--semantic-colors",
+          "name": "Color · Semantics"
+        },
+        "foundations--primitive-colors": {
+          "id": "foundations--primitive-colors",
+          "name": "Color · Primitives"
+        },
+        "foundations--typography": {
+          "id": "foundations--typography",
+          "name": "Typography"
+        },
+        "foundations--spacing": {
+          "id": "foundations--spacing",
+          "name": "Spacing"
+        },
+        "foundations--radius": {
+          "id": "foundations--radius",
+          "name": "Radius"
+        }
+      }
+    }
+  }
+}
