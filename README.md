@@ -11,8 +11,10 @@ Design system de **Kotify** ("donde la comida te espera a ti") para Angular: tok
 |---|---|
 | Tokens (593 variables: Primitives 155, Semantics 104, Component 334) | ✅ Generados desde Figma, con aliases |
 | Storybook: fundamentos (color, tipografía, espaciado, radios) | ✅ |
-| Button | ✅ Piloto |
-| Resto de componentes (Badge, Bubble, IconButton, Card, Checkbox, Counter, Input, Order bar, Page Header, Pills, Radio Button, Text Field, Time Picker) | Pendiente |
+| Button | ✅ |
+| IconButton | ✅ |
+| Iconos de Kotify (`more`, `less`, `arrow`) en `src/icons/` | ✅ |
+| Resto de componentes (Badge, Bubble, Card, Checkbox, Counter, Input, Order bar, Page Header, Pills, Radio Button, Text Field, Time Picker) | Pendiente |
 
 ## Requisitos
 

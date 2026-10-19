@@ -191,6 +191,14 @@ version of that page as authoritative.
   keep their default background (`color/surface/subtle` and
   `color/feedback/negative-subtle`); their state feedback is the motion
   above. Do not add hover/pressed surface tokens for these cases.
+- **IconButton:** `button[kdsIconButton]` with a required `label` input
+  that becomes the accessible name. The icon is projected inline SVG with
+  `fill="currentColor"`, sized by `iconbutton/size/*/icon-size`. Kotify
+  icons are exported from Figma to `src/icons/`. The navigation variant
+  keeps `surface/base` on hover and pressed (motion is its feedback) and
+  has a two-layer drop shadow that is a raw value in Figma: there is no
+  Kotify shadow token yet. Mirror it and do not invent a token without a
+  design-system decision.
 - **Primary disabled:** the label stays at 90 % opacity (other variants
   use 50 %) because 50 % did not meet legibility contrast on the disabled
   primary background. Do not "harmonise" it.
@@ -344,3 +352,7 @@ A change is ready for review when:
     the 32 kit Separator instances in the documentation frames were
     detached. Icon sets (Lucide, Tabler, Phosphor) and the payment/platform
     logos in Assets were kept.
+  - Template subtitles from the kit replaced on every component page;
+    Text Field resize icon bound to `input/default/foreground`.
+  - IconButton implemented in code; Button and IconButton share the
+    motion and focus mixins (`src/lib/styles/_motion.scss`).

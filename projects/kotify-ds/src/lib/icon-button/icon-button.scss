@@ -1,0 +1,82 @@
+// Kotify DS IconButton — values from Component tokens (iconbutton/*).
+@use '../styles/motion' as motion;
+
+.kds-icon-button {
+  --_bg: var(--iconbutton-variant-default-default-background);
+  --_bg-hover: var(--iconbutton-variant-default-hover-background);
+  --_bg-pressed: var(--iconbutton-variant-default-pressed-background);
+  --_bg-disabled: var(--iconbutton-variant-default-disabled-background);
+  --_fg: var(--iconbutton-variant-default-foreground);
+  --_fg-disabled: var(--iconbutton-variant-default-disabled-foreground);
+  --_icon-size: var(--iconbutton-size-large-icon-size);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  padding: var(--iconbutton-size-large-p);
+  border-radius: var(--iconbutton-size-large-radius);
+  background-color: var(--_bg);
+  color: var(--_fg);
+
+  // Shared motion (hover lift, pressed scale) and keyboard focus ring.
+  @include motion.press-motion;
+  @include motion.focus-ring;
+
+  > svg {
+    display: block;
+    width: var(--_icon-size);
+    height: var(--_icon-size);
+    flex: none;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--_bg-hover);
+  }
+
+  &:active:not(:disabled) {
+    background-color: var(--_bg-pressed);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--_bg-disabled);
+    color: var(--_fg-disabled);
+  }
+
+
+  // ── Sizes ────────────────────────────────────────────────────────────────
+  &.kds-icon-button--medium {
+    --_icon-size: var(--iconbutton-size-medium-icon-size);
+    padding: var(--iconbutton-size-medium-p);
+    border-radius: var(--iconbutton-size-medium-radius);
+  }
+
+  &.kds-icon-button--small {
+    --_icon-size: var(--iconbutton-size-small-icon-size);
+    padding: var(--iconbutton-size-small-p);
+    border-radius: var(--iconbutton-size-small-radius);
+  }
+
+  // ── Variants ─────────────────────────────────────────────────────────────
+  &.kds-icon-button--navigation {
+    --_bg: var(--iconbutton-variant-navigation-default-background);
+    --_bg-hover: var(--iconbutton-variant-navigation-hover-background);
+    --_bg-pressed: var(--iconbutton-variant-navigation-pressed-background);
+    --_bg-disabled: var(--iconbutton-variant-navigation-disabled-background);
+    --_fg: var(--iconbutton-variant-navigation-foreground);
+    --_fg-disabled: var(--iconbutton-variant-navigation-disabled-foreground);
+
+    // Mirrors the Figma navigation variant. These two shadows are raw values in
+    // Figma (no Kotify shadow token exists yet) — see the open question in AGENTS.md.
+    box-shadow:
+      0 1px 3px 0 rgb(0 0 0 / 10%),
+      0 1px 2px 0 rgb(0 0 0 / 10%);
+  }
+}

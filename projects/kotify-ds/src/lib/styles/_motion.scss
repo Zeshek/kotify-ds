@@ -1,0 +1,31 @@
+// Shared button motion (Button, IconButton): hover lifts 2 px, pressed scales
+// to 0.98, ~120 ms ease-out. Disabled controls do not move; reduced motion
+// turns it off. Decision recorded in AGENTS.md and the Figma descriptions.
+@mixin press-motion {
+  transition: transform 120ms ease-out;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled) {
+      transform: none;
+    }
+  }
+}
+
+// Keyboard focus ring from the semantic focus tokens.
+@mixin focus-ring {
+  &:focus-visible {
+    outline: var(--focus-ring-width) solid var(--color-focus-ring);
+    outline-offset: var(--focus-ring-offset);
+  }
+}

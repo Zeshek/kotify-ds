@@ -1,5 +1,6 @@
 // Kotify DS Button — every value comes from Component tokens (button/*),
 // which alias Semantics. See tokens.css (generated from Figma).
+@use '../styles/motion' as motion;
 
 .kds-button {
   // Per-variant custom properties set below; defaults = primary.
@@ -33,28 +34,16 @@
   font-weight: var(--button-size-large-font-weight);
   line-height: var(--button-size-large-line-height);
 
-  // Motion feedback for every variant (on top of the token colour changes,
-  // which secondary and destructive keep equal to default by design):
-  // hover lifts 2 px, pressed scales to 0.98. Off under reduced motion.
-  transition: transform 120ms ease-out;
+  // Shared motion (hover lift, pressed scale) and keyboard focus ring.
+  @include motion.press-motion;
+  @include motion.focus-ring;
 
   &:hover:not(:disabled) {
     background-color: var(--_bg-hover);
-    transform: translateY(-2px);
   }
 
   &:active:not(:disabled) {
     background-color: var(--_bg-pressed);
-    transform: scale(0.98);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    transition: none;
-
-    &:hover:not(:disabled),
-    &:active:not(:disabled) {
-      transform: none;
-    }
   }
 
   &:disabled {
@@ -63,11 +52,6 @@
     color: var(--_fg-disabled);
   }
 
-  // Keyboard focus (code-only; no Figma focus variant). Semantic focus tokens.
-  &:focus-visible {
-    outline: var(--focus-ring-width) solid var(--color-focus-ring);
-    outline-offset: var(--focus-ring-offset);
-  }
 
   // ── Sizes ────────────────────────────────────────────────────────────────
   &.kds-button--small {

@@ -9,6 +9,11 @@
       "input": "src/styles",
       "glob": "**/*.css",
       "output": "styles"
+    },
+    {
+      "input": "src/icons",
+      "glob": "**/*.svg",
+      "output": "icons"
     }
   ]
 }
