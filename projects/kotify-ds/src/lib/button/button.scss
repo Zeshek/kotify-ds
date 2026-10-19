@@ -33,12 +33,28 @@
   font-weight: var(--button-size-large-font-weight);
   line-height: var(--button-size-large-line-height);
 
+  // Motion feedback for every variant (on top of the token colour changes,
+  // which secondary and destructive keep equal to default by design):
+  // hover lifts 2 px, pressed scales to 0.98. Off under reduced motion.
+  transition: transform 120ms ease-out;
+
   &:hover:not(:disabled) {
     background-color: var(--_bg-hover);
+    transform: translateY(-2px);
   }
 
   &:active:not(:disabled) {
     background-color: var(--_bg-pressed);
+    transform: scale(0.98);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled) {
+      transform: none;
+    }
   }
 
   &:disabled {
@@ -71,27 +87,6 @@
     --_bg-disabled: var(--button-variant-secondary-disabled-background);
     --_fg: var(--button-variant-secondary-foreground);
     --_fg-disabled: var(--button-variant-secondary-disabled-foreground);
-
-    // Hover/pressed keep the same background by design (see Figma description).
-    // State feedback is motion: hover lifts 2 px, pressed scales to 0.98.
-    transition: transform 120ms ease-out;
-
-    &:hover:not(:disabled) {
-      transform: translateY(-2px);
-    }
-
-    &:active:not(:disabled) {
-      transform: scale(0.98);
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      transition: none;
-
-      &:hover:not(:disabled),
-      &:active:not(:disabled) {
-        transform: none;
-      }
-    }
   }
 
   &.kds-button--ghost {

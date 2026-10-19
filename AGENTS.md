@@ -182,11 +182,15 @@ version of that page as authoritative.
   collections. They are **not** part of Kotify DS: do not use them.
 - Buttons are sized with horizontal and vertical padding, not fixed
   heights.
-- **Secondary button:** hover and pressed intentionally keep the
-  `color/surface/subtle` background. Do not add hover/pressed surface
-  tokens for this single case. State feedback is motion: hover lifts the
-  button 2 px (`translateY(-2px)`), pressed scales it to 0.98, with a
+- **Button motion (all buttons, every variant):** hover lifts the button
+  2 px (`translateY(-2px)`) and pressed scales it to 0.98, with a
   ~120 ms ease-out transition, disabled under `prefers-reduced-motion`.
+  It applies on top of the colour tokens. Disabled buttons do not move.
+  The same treatment applies to IconButton when it is implemented.
+- **Secondary and destructive buttons:** hover and pressed intentionally
+  keep their default background (`color/surface/subtle` and
+  `color/feedback/negative-subtle`); their state feedback is the motion
+  above. Do not add hover/pressed surface tokens for these cases.
 - **Primary disabled:** the label stays at 90 % opacity (other variants
   use 50 %) because 50 % did not meet legibility contrast on the disabled
   primary background. Do not "harmonise" it.
@@ -333,3 +337,5 @@ A change is ready for review when:
   - Secondary button hover/pressed resolved with motion instead of new
     colour tokens; primary disabled label at 90 % documented as an
     accessibility decision.
+  - Motion (hover lift 2 px, pressed scale 0.98) extended to every
+    button variant, and to IconButton when it is built.

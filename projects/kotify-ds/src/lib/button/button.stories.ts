@@ -19,7 +19,7 @@ const meta: Meta<ButtonArgs> = {
           '  **ghost** for lower-emphasis actions and **destructive** for actions with negative consequences.',
           '- Apply it to a native `<button>` (`<button kdsButton>`) to keep keyboard and disabled semantics.',
           '- Labels are concise and action-oriented. Width follows the content; sizing comes from padding, not a fixed height.',
-          '- **Secondary** keeps its background on hover and pressed by design; feedback is motion: it lifts 2 px on hover and scales to 0.98 when pressed (disabled with `prefers-reduced-motion`).',
+          '- **Motion (all variants):** hover lifts the button 2 px and pressed scales it to 0.98 (120 ms ease-out, off with `prefers-reduced-motion`). Secondary and destructive keep their background on hover and pressed by design, so motion is their state feedback.',
           '- **Primary disabled** keeps its label at 90 % opacity (other variants use 50 %) for legibility.',
           '- Keyboard focus uses `:focus-visible` with the semantic focus tokens (`color/focus/ring`, `focus/ring-width`, `focus/ring-offset`). Tab to a button to see it.',
         ].join('\n'),
